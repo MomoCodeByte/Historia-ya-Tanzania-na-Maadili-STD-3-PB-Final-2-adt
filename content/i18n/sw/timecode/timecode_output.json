@@ -3150,31 +3150,25 @@
           {
             "text": "Dokta",
             "start": 0.1846,
-            "end": 0.5135,
+            "end": 0.5285,
             "display_index": 0
           },
           {
             "text": "Joyce",
-            "start": 0.6182,
-            "end": 1.0368,
+            "start": 0.6481,
+            "end": 1.1116,
             "display_index": 1
           },
           {
-            "text": "herufi",
-            "start": 1.0817,
-            "end": 1.5901,
-            "display_index": 2
-          },
-          {
-            "text": "je",
-            "start": 1.62,
-            "end": 1.8143,
+            "text": "jei",
+            "start": 1.1565,
+            "end": 1.5004,
             "display_index": 2
           },
           {
             "text": "Kahembe",
-            "start": 1.8592,
-            "end": 2.4872,
+            "start": 1.5452,
+            "end": 2.1882,
             "display_index": 3
           }
         ]
@@ -3331,97 +3325,79 @@
           {
             "text": "Bwana",
             "start": 0.1846,
-            "end": 0.349,
+            "end": 0.364,
             "display_index": 0
           },
           {
             "text": "Fikiri",
-            "start": 0.4537,
-            "end": 0.992,
+            "start": 0.4687,
+            "end": 1.0817,
             "display_index": 1
           },
           {
-            "text": "herufi",
-            "start": 1.0219,
-            "end": 1.605,
-            "display_index": 2
-          },
-          {
-            "text": "a",
-            "start": 1.6648,
-            "end": 1.7695,
+            "text": "ei",
+            "start": 1.1265,
+            "end": 1.291,
             "display_index": 2
           },
           {
             "text": "Msimbe",
-            "start": 1.8144,
-            "end": 2.3078,
+            "start": 1.3209,
+            "end": 1.8143,
             "display_index": 3
           },
           {
             "text": "Bwana",
-            "start": 2.3377,
-            "end": 2.6517,
+            "start": 1.8442,
+            "end": 2.1582,
             "display_index": 4
           },
           {
             "text": "Yohana",
-            "start": 2.6816,
-            "end": 3.16,
+            "start": 2.1882,
+            "end": 2.6965,
             "display_index": 5
           },
           {
-            "text": "herufi",
-            "start": 3.19,
-            "end": 3.7432,
-            "display_index": 6
-          },
-          {
-            "text": "pe",
-            "start": 3.803,
-            "end": 3.9675,
+            "text": "pii",
+            "start": 2.7414,
+            "end": 3.0255,
             "display_index": 6
           },
           {
             "text": "Mwenda",
-            "start": 4.0123,
-            "end": 4.3562,
+            "start": 3.0703,
+            "end": 3.4292,
             "display_index": 7
           },
           {
             "text": "na",
-            "start": 4.3861,
-            "end": 4.5057,
+            "start": 3.4591,
+            "end": 3.5787,
             "display_index": 8
           },
           {
             "text": "Bwana",
-            "start": 4.5357,
-            "end": 4.8796,
+            "start": 3.6086,
+            "end": 3.9525,
             "display_index": 9
           },
           {
             "text": "Gwakisa",
-            "start": 4.9244,
-            "end": 5.5075,
+            "start": 3.9974,
+            "end": 4.5805,
             "display_index": 10
           },
           {
-            "text": "herufi",
-            "start": 5.5375,
-            "end": 6.1355,
-            "display_index": 11
-          },
-          {
-            "text": "u",
-            "start": 6.1804,
-            "end": 6.2252,
+            "text": "yuu",
+            "start": 4.6104,
+            "end": 4.8197,
             "display_index": 11
           },
           {
             "text": "Mwandoloma",
-            "start": 6.2701,
-            "end": 7.0476,
+            "start": 4.8646,
+            "end": 5.672,
             "display_index": 12
           }
         ]
@@ -3463,127 +3439,103 @@
           {
             "text": "Dokta",
             "start": 0.1846,
-            "end": 0.5135,
+            "end": 0.5285,
             "display_index": 0
           },
           {
             "text": "Joyce",
-            "start": 0.6182,
-            "end": 0.992,
+            "start": 0.6331,
+            "end": 1.0817,
             "display_index": 1
           },
           {
-            "text": "herufi",
-            "start": 1.0368,
-            "end": 1.5302,
-            "display_index": 2
-          },
-          {
-            "text": "je",
-            "start": 1.5751,
-            "end": 1.7545,
+            "text": "jei",
+            "start": 1.1415,
+            "end": 1.4555,
             "display_index": 2
           },
           {
             "text": "Kahembe",
-            "start": 1.7994,
-            "end": 2.3078,
+            "start": 1.5004,
+            "end": 2.0387,
             "display_index": 3
           },
           {
             "text": "Bwana",
-            "start": 2.3377,
-            "end": 2.6816,
+            "start": 2.0835,
+            "end": 2.4274,
             "display_index": 4
           },
           {
             "text": "Castor",
-            "start": 2.7264,
-            "end": 3.1899,
+            "start": 2.4722,
+            "end": 2.9357,
             "display_index": 5
           },
           {
-            "text": "herufi",
-            "start": 3.2348,
-            "end": 3.8179,
-            "display_index": 6
-          },
-          {
-            "text": "a",
-            "start": 3.8777,
-            "end": 4.0123,
+            "text": "ei",
+            "start": 2.9806,
+            "end": 3.1451,
             "display_index": 6
           },
           {
             "text": "Lyuma",
-            "start": 4.0572,
-            "end": 4.4459,
+            "start": 3.175,
+            "end": 3.5338,
             "display_index": 7
           },
           {
             "text": "Bibi",
-            "start": 4.4908,
-            "end": 4.9244,
+            "start": 3.5787,
+            "end": 4.0123,
             "display_index": 8
           },
           {
             "text": "Edna",
-            "start": 4.9692,
-            "end": 5.2384,
+            "start": 4.0572,
+            "end": 4.3562,
             "display_index": 9
           },
           {
-            "text": "herufi",
-            "start": 5.2683,
-            "end": 5.8066,
-            "display_index": 10
-          },
-          {
-            "text": "eme",
-            "start": 5.8514,
-            "end": 6.1056,
+            "text": "em",
+            "start": 4.4011,
+            "end": 4.6254,
             "display_index": 10
           },
           {
             "text": "Mathew",
-            "start": 6.1505,
-            "end": 6.5392,
+            "start": 4.6552,
+            "end": 5.044,
             "display_index": 11
           },
           {
             "text": "na",
-            "start": 6.5841,
-            "end": 6.7037,
+            "start": 5.0889,
+            "end": 5.2085,
             "display_index": 12
           },
           {
             "text": "Bwana",
-            "start": 6.7336,
-            "end": 7.0626,
+            "start": 5.2384,
+            "end": 5.5823,
             "display_index": 13
           },
           {
             "text": "Boniventure",
-            "start": 7.1074,
-            "end": 7.9597,
+            "start": 5.6272,
+            "end": 6.5093,
             "display_index": 14
           },
           {
-            "text": "herufi",
-            "start": 8.0045,
-            "end": 8.5727,
-            "display_index": 15
-          },
-          {
-            "text": "a",
-            "start": 8.6325,
-            "end": 8.7073,
+            "text": "ei",
+            "start": 6.5542,
+            "end": 6.7336,
             "display_index": 15
           },
           {
             "text": "Bazira",
-            "start": 8.7522,
-            "end": 9.3502,
+            "start": 6.7785,
+            "end": 7.3765,
             "display_index": 16
           }
         ]
@@ -3598,31 +3550,25 @@
           {
             "text": "Dokta",
             "start": 0.1846,
-            "end": 0.5135,
+            "end": 0.5584,
             "display_index": 0
           },
           {
             "text": "Aneth",
-            "start": 0.6182,
-            "end": 1.0219,
+            "start": 0.663,
+            "end": 1.0967,
             "display_index": 1
           },
           {
-            "text": "herufi",
-            "start": 1.0668,
-            "end": 1.6499,
-            "display_index": 2
-          },
-          {
-            "text": "a",
-            "start": 1.6947,
-            "end": 1.8144,
+            "text": "ei",
+            "start": 1.1415,
+            "end": 1.3658,
             "display_index": 2
           },
           {
             "text": "Komba",
-            "start": 1.8592,
-            "end": 2.3526,
+            "start": 1.4107,
+            "end": 1.934,
             "display_index": 3
           }
         ]
@@ -204088,31 +204034,25 @@
           {
             "text": "Dokta",
             "start": 0.1846,
-            "end": 0.5135,
+            "end": 0.5285,
             "display_index": 0
           },
           {
             "text": "Joyce",
-            "start": 0.6182,
-            "end": 1.0368,
+            "start": 0.6481,
+            "end": 1.1116,
             "display_index": 1
           },
           {
-            "text": "herufi",
-            "start": 1.0817,
-            "end": 1.5901,
-            "display_index": 2
-          },
-          {
-            "text": "je",
-            "start": 1.62,
-            "end": 1.8143,
+            "text": "jei",
+            "start": 1.1565,
+            "end": 1.5004,
             "display_index": 2
           },
           {
             "text": "Kahembe",
-            "start": 1.8592,
-            "end": 2.4872,
+            "start": 1.5452,
+            "end": 2.1882,
             "display_index": 3
           }
         ]
@@ -204212,31 +204152,25 @@
           {
             "text": "Dokta",
             "start": 0.1846,
-            "end": 0.5135,
+            "end": 0.5584,
             "display_index": 0
           },
           {
             "text": "Aneth",
-            "start": 0.6182,
-            "end": 1.0219,
+            "start": 0.663,
+            "end": 1.0967,
             "display_index": 1
           },
           {
-            "text": "herufi",
-            "start": 1.0668,
-            "end": 1.6499,
-            "display_index": 2
-          },
-          {
-            "text": "a",
-            "start": 1.6947,
-            "end": 1.8144,
+            "text": "ei",
+            "start": 1.1415,
+            "end": 1.3658,
             "display_index": 2
           },
           {
             "text": "Komba",
-            "start": 1.8592,
-            "end": 2.3526,
+            "start": 1.4107,
+            "end": 1.934,
             "display_index": 3
           }
         ]
@@ -206967,116 +206901,92 @@
           {
             "text": "Joyce",
             "start": 0.6331,
-            "end": 1.0069,
+            "end": 1.0817,
             "display_index": 1
           },
           {
-            "text": "herufi",
-            "start": 1.0518,
-            "end": 1.5153,
+            "text": "jei",
+            "start": 1.1415,
+            "end": 1.4555,
             "display_index": 2
           },
           {
-            "text": "je",
-            "start": 1.5602,
-            "end": 1.7545,
-            "display_index": 3
-          },
-          {
             "text": "Kahembe",
-            "start": 1.7994,
-            "end": 2.3825,
+            "start": 1.5004,
+            "end": 2.0985,
             "display_index": 3
           },
           {
             "text": "Bwana",
-            "start": 2.547,
-            "end": 2.876,
+            "start": 2.2779,
+            "end": 2.6218,
             "display_index": 4
           },
           {
             "text": "Castor",
-            "start": 2.9208,
-            "end": 3.3843,
+            "start": 2.6666,
+            "end": 3.1451,
             "display_index": 5
           },
           {
-            "text": "herufi",
-            "start": 3.4292,
-            "end": 3.9973,
+            "text": "ei",
+            "start": 3.19,
+            "end": 3.3395,
             "display_index": 6
           },
           {
-            "text": "a",
-            "start": 4.0572,
-            "end": 4.1469,
+            "text": "Lyuma",
+            "start": 3.3694,
+            "end": 3.818,
             "display_index": 7
           },
           {
-            "text": "Lyuma",
-            "start": 4.1917,
-            "end": 4.6403,
-            "display_index": 8
-          },
-          {
             "text": "Bibi",
-            "start": 4.8347,
-            "end": 5.2085,
+            "start": 4.0273,
+            "end": 4.416,
             "display_index": 8
           },
           {
             "text": "Edna",
-            "start": 5.2533,
-            "end": 5.5225,
+            "start": 4.4609,
+            "end": 4.745,
             "display_index": 9
           },
           {
-            "text": "herufi",
-            "start": 5.5524,
-            "end": 6.0907,
+            "text": "em",
+            "start": 4.7898,
+            "end": 5.0141,
             "display_index": 10
           },
           {
-            "text": "eme",
-            "start": 6.1355,
-            "end": 6.3897,
+            "text": "Mathew",
+            "start": 5.044,
+            "end": 5.5374,
             "display_index": 11
           },
           {
-            "text": "Mathew",
-            "start": 6.4346,
-            "end": 6.928,
+            "text": "Bwana",
+            "start": 5.7169,
+            "end": 6.0309,
             "display_index": 12
           },
           {
-            "text": "Bwana",
-            "start": 7.0925,
-            "end": 7.4065,
-            "display_index": 13
-          },
-          {
             "text": "Boniventure",
-            "start": 7.4364,
-            "end": 8.2887,
+            "start": 6.0607,
+            "end": 6.9728,
             "display_index": 13
           },
           {
-            "text": "herufi",
-            "start": 8.3185,
-            "end": 8.8568,
+            "text": "ei",
+            "start": 7.0177,
+            "end": 7.1971,
             "display_index": 14
           },
           {
-            "text": "a",
-            "start": 8.9166,
-            "end": 8.9914,
-            "display_index": 15
-          },
-          {
             "text": "Bazira",
-            "start": 9.0363,
-            "end": 9.6493,
-            "display_index": 16
+            "start": 7.242,
+            "end": 7.8401,
+            "display_index": 15
           }
         ]
       }
@@ -207866,92 +207776,74 @@
           {
             "text": "Bwana",
             "start": 0.1846,
-            "end": 0.349,
+            "end": 0.364,
             "display_index": 0
           },
           {
             "text": "Fikiri",
-            "start": 0.4537,
-            "end": 0.992,
+            "start": 0.4687,
+            "end": 1.0667,
             "display_index": 1
           },
           {
-            "text": "herufi",
-            "start": 1.0219,
-            "end": 1.59,
+            "text": "ei",
+            "start": 1.1116,
+            "end": 1.276,
             "display_index": 2
           },
           {
-            "text": "a",
-            "start": 1.6499,
-            "end": 1.7545,
-            "display_index": 3
-          },
-          {
             "text": "Msimbe",
-            "start": 1.7994,
-            "end": 2.4125,
+            "start": 1.306,
+            "end": 1.949,
             "display_index": 3
           },
           {
             "text": "Bwana",
-            "start": 2.5769,
-            "end": 2.876,
+            "start": 2.1134,
+            "end": 2.4424,
             "display_index": 4
           },
           {
             "text": "Yohana",
-            "start": 2.9059,
-            "end": 3.3694,
+            "start": 2.4722,
+            "end": 2.9657,
             "display_index": 5
           },
           {
-            "text": "herufi",
-            "start": 3.3993,
-            "end": 3.9525,
+            "text": "pii",
+            "start": 3.0105,
+            "end": 3.2946,
             "display_index": 6
           },
           {
-            "text": "pe",
-            "start": 4.0123,
-            "end": 4.1768,
+            "text": "Mwenda",
+            "start": 3.3395,
+            "end": 3.7731,
             "display_index": 7
           },
           {
-            "text": "Mwenda",
-            "start": 4.2217,
-            "end": 4.6403,
-            "display_index": 8
-          },
-          {
             "text": "Bwana",
-            "start": 4.8347,
-            "end": 5.1637,
+            "start": 3.9675,
+            "end": 4.3263,
             "display_index": 8
           },
           {
             "text": "Gwakisa",
-            "start": 5.2085,
-            "end": 5.7916,
+            "start": 4.3712,
+            "end": 4.9543,
             "display_index": 9
           },
           {
-            "text": "herufi",
-            "start": 5.8215,
-            "end": 6.4196,
+            "text": "yuu",
+            "start": 4.9842,
+            "end": 5.1786,
             "display_index": 10
           },
           {
-            "text": "u",
-            "start": 6.4645,
-            "end": 6.5093,
-            "display_index": 11
-          },
-          {
             "text": "Mwandoloma",
-            "start": 6.5542,
-            "end": 7.3466,
-            "display_index": 12
+            "start": 5.2235,
+            "end": 6.0458,
+            "display_index": 11
           }
         ]
       }

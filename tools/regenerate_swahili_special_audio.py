@@ -31,6 +31,13 @@ LETTER_NAMES = {
     "s": "ese", "t": "te", "u": "u", "v": "ve", "w": "dabalyu",
     "x": "eksi", "y": "wai", "z": "zedi",
 }
+ENGLISH_INITIAL_NAMES = {
+    "a": "ei", "b": "bii", "c": "sii", "d": "dii", "e": "ii", "f": "ef",
+    "g": "jii", "h": "eichi", "i": "ai", "j": "jei", "k": "kei", "l": "el",
+    "m": "em", "n": "en", "o": "ou", "p": "pii", "q": "kyuu", "r": "aa",
+    "s": "es", "t": "tii", "u": "yuu", "v": "vii", "w": "dablyuu",
+    "x": "eksi", "y": "wai", "z": "zed",
+}
 ROMAN_VALUES = {"i": 1, "v": 5, "x": 10, "l": 50, "c": 100, "d": 500, "m": 1000}
 TITLE_EXPANSIONS = {
     "bw": "Bwana",
@@ -115,6 +122,18 @@ def normalize_token(token: str, full_text: str) -> str:
     if re.fullmatch(r"[ivxlcdm]+", core) and core.islower() and (len(core) > 1 or "." in suffix):
         return number_sw(roman_to_int(core))
 
+    name_initial = bool(
+        len(core) == 1
+        and core.isupper()
+        and "." in suffix
+        and re.search(
+            rf"\b(?!Sehemu\b)[A-Z][A-Za-zÀ-ÖØ-öø-ÿ'’-]+[ \t]+{re.escape(core)}\.[ \t]+[A-Z][A-Za-zÀ-ÖØ-öø-ÿ'’-]+",
+            full_text,
+        )
+    )
+    if name_initial:
+        return ENGLISH_INITIAL_NAMES[core.lower()]
+
     if len(core) == 1 and core.isalpha() and core.lower() in LETTER_NAMES:
         return f"herufi {LETTER_NAMES[core.lower()]}"
 
@@ -147,6 +166,7 @@ def needs_normalization(text: str) -> bool:
     return bool(
         re.search(r"\d", text)
         or re.search(r"(?<!\w)(?:Bw|Dkt|Bi)\.(?!\w)", text, re.IGNORECASE)
+        or re.search(r"\b(?!Sehemu\b)[A-Z][A-Za-zÀ-ÖØ-öø-ÿ'’-]+[ \t]+[A-Z]\.[ \t]+[A-Z][A-Za-zÀ-ÖØ-öø-ÿ'’-]+", text)
         or re.fullmatch(r"[A-Za-z]", stripped)
         or (stripped.islower() and re.fullmatch(r"[ivxlcdm]+", stripped))
     )
