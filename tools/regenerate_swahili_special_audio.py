@@ -162,21 +162,26 @@ async def run(limit: int | None, requested_ids: list[str] | None) -> None:
     texts = json.loads(texts_path.read_text(encoding="utf-8"))
     audios = json.loads(audios_path.read_text(encoding="utf-8"))
     timecodes = json.loads(timecodes_path.read_text(encoding="utf-8"))
-    selected = [(key, value) for key, value in texts.items() if key in audios and needs_normalization(value)]
     if requested_ids:
         requested = set(requested_ids)
-        selected = [(key, value) for key, value in selected if key in requested]
+        selected = [(key, value) for key, value in texts.items() if key in audios and key in requested]
+    else:
+        selected = [(key, value) for key, value in texts.items() if key in audios and needs_normalization(value)]
     if limit is not None:
         selected = selected[:limit]
 
-    pronunciation: dict[str, str] = {}
+    pronunciation_path = I18N / "pronunciations.json"
+    pronunciation: dict[str, str] = (
+        json.loads(pronunciation_path.read_text(encoding="utf-8")) if pronunciation_path.exists() else {}
+    )
     semaphore = asyncio.Semaphore(8)
 
     async def worker(text_id: str, displayed: str) -> tuple[str, dict]:
         spoken, display_map = normalize_text(displayed)
         pronunciation[text_id] = spoken
         async with semaphore:
-            result = await synthesize(text_id, spoken, display_map, I18N / "audio" / audios[text_id])
+            audio_filename = str(audios[text_id]).split("?")[0].split("/")[-1]
+            result = await synthesize(text_id, spoken, display_map, I18N / "audio" / audio_filename)
         print(f"{text_id}: {displayed!r} -> {spoken!r}")
         return text_id, result
 
@@ -187,7 +192,7 @@ async def run(limit: int | None, requested_ids: list[str] | None) -> None:
             timecodes[text_id] = result
             completed += 1
         timecodes_path.write_text(json.dumps(timecodes, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-        (I18N / "pronunciations.json").write_text(
+        pronunciation_path.write_text(
             json.dumps(pronunciation, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
         )
         print(f"Saved {completed}/{len(selected)}")

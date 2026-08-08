@@ -351875,5 +351875,2300 @@
         ]
       }
     ]
+  },
+  "pg009_n0023": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6332,
+            "display_index": 0
+          },
+          {
+            "text": "che",
+            "start": 0.7528,
+            "end": 1.1116,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg009_n0026": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6481,
+            "display_index": 0
+          },
+          {
+            "text": "de",
+            "start": 0.7677,
+            "end": 1.0667,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg009_n0029": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.7229,
+            "display_index": 0
+          },
+          {
+            "text": "e",
+            "start": 0.8425,
+            "end": 1.0219,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg010_n0006": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.678,
+            "display_index": 0
+          },
+          {
+            "text": "ge",
+            "start": 0.7976,
+            "end": 1.1266,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg024_n0011": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6332,
+            "display_index": 0
+          },
+          {
+            "text": "che",
+            "start": 0.7528,
+            "end": 1.1116,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg024_n0014": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6481,
+            "display_index": 0
+          },
+          {
+            "text": "de",
+            "start": 0.7677,
+            "end": 1.0667,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg024_n0017": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.7229,
+            "display_index": 0
+          },
+          {
+            "text": "e",
+            "start": 0.8425,
+            "end": 1.0219,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg024_n0023": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.678,
+            "display_index": 0
+          },
+          {
+            "text": "ge",
+            "start": 0.7976,
+            "end": 1.1266,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg026_n0006": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6332,
+            "display_index": 0
+          },
+          {
+            "text": "che",
+            "start": 0.7528,
+            "end": 1.1116,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg026_n0009": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6481,
+            "display_index": 0
+          },
+          {
+            "text": "de",
+            "start": 0.7677,
+            "end": 1.0667,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg026_n0012": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.7229,
+            "display_index": 0
+          },
+          {
+            "text": "e",
+            "start": 0.8425,
+            "end": 1.0219,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg026_n0018": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.678,
+            "display_index": 0
+          },
+          {
+            "text": "ge",
+            "start": 0.7976,
+            "end": 1.1266,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg027_n0012": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6332,
+            "display_index": 0
+          },
+          {
+            "text": "che",
+            "start": 0.7528,
+            "end": 1.1116,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg027_n0015": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6481,
+            "display_index": 0
+          },
+          {
+            "text": "de",
+            "start": 0.7677,
+            "end": 1.0667,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg027_n0018": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.7229,
+            "display_index": 0
+          },
+          {
+            "text": "e",
+            "start": 0.8425,
+            "end": 1.0219,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg027_n0024": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.678,
+            "display_index": 0
+          },
+          {
+            "text": "ge",
+            "start": 0.7976,
+            "end": 1.1266,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg047_n0021": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6332,
+            "display_index": 0
+          },
+          {
+            "text": "che",
+            "start": 0.7528,
+            "end": 1.1116,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg047_n0024": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6481,
+            "display_index": 0
+          },
+          {
+            "text": "de",
+            "start": 0.7677,
+            "end": 1.0667,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg047_n0027": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.7229,
+            "display_index": 0
+          },
+          {
+            "text": "e",
+            "start": 0.8425,
+            "end": 1.0219,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg047_n0033": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.678,
+            "display_index": 0
+          },
+          {
+            "text": "ge",
+            "start": 0.7976,
+            "end": 1.1266,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg048_n0031": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "mbili",
+            "start": 0.2145,
+            "end": 0.6481,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg053_n0020": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6332,
+            "display_index": 0
+          },
+          {
+            "text": "che",
+            "start": 0.7528,
+            "end": 1.1116,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg053_n0023": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6481,
+            "display_index": 0
+          },
+          {
+            "text": "de",
+            "start": 0.7677,
+            "end": 1.0667,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg053_n0026": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.7229,
+            "display_index": 0
+          },
+          {
+            "text": "e",
+            "start": 0.8425,
+            "end": 1.0219,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg055_n0020": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6332,
+            "display_index": 0
+          },
+          {
+            "text": "che",
+            "start": 0.7528,
+            "end": 1.1116,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg055_n0023": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6481,
+            "display_index": 0
+          },
+          {
+            "text": "de",
+            "start": 0.7677,
+            "end": 1.0667,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg055_n0026": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.7229,
+            "display_index": 0
+          },
+          {
+            "text": "e",
+            "start": 0.8425,
+            "end": 1.0219,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg057_n0028": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6332,
+            "display_index": 0
+          },
+          {
+            "text": "che",
+            "start": 0.7528,
+            "end": 1.1116,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg057_n0031": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6481,
+            "display_index": 0
+          },
+          {
+            "text": "de",
+            "start": 0.7677,
+            "end": 1.0667,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg057_n0034": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.7229,
+            "display_index": 0
+          },
+          {
+            "text": "e",
+            "start": 0.8425,
+            "end": 1.0219,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg058_n0006": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.678,
+            "display_index": 0
+          },
+          {
+            "text": "ge",
+            "start": 0.7976,
+            "end": 1.1266,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg059_n0011": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6332,
+            "display_index": 0
+          },
+          {
+            "text": "che",
+            "start": 0.7528,
+            "end": 1.1116,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg059_n0014": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6481,
+            "display_index": 0
+          },
+          {
+            "text": "de",
+            "start": 0.7677,
+            "end": 1.0667,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg059_n0017": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.7229,
+            "display_index": 0
+          },
+          {
+            "text": "e",
+            "start": 0.8425,
+            "end": 1.0219,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg059_n0023": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.678,
+            "display_index": 0
+          },
+          {
+            "text": "ge",
+            "start": 0.7976,
+            "end": 1.1266,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg062_n0021": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6332,
+            "display_index": 0
+          },
+          {
+            "text": "che",
+            "start": 0.7528,
+            "end": 1.1116,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg062_n0024": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6481,
+            "display_index": 0
+          },
+          {
+            "text": "de",
+            "start": 0.7677,
+            "end": 1.0667,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg062_n0027": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.7229,
+            "display_index": 0
+          },
+          {
+            "text": "e",
+            "start": 0.8425,
+            "end": 1.0219,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg062_n0033": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.678,
+            "display_index": 0
+          },
+          {
+            "text": "ge",
+            "start": 0.7976,
+            "end": 1.1266,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg087_n0003": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6332,
+            "display_index": 0
+          },
+          {
+            "text": "che",
+            "start": 0.7528,
+            "end": 1.1116,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg087_n0008": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6481,
+            "display_index": 0
+          },
+          {
+            "text": "de",
+            "start": 0.7677,
+            "end": 1.0667,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg087_n0012": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.7229,
+            "display_index": 0
+          },
+          {
+            "text": "e",
+            "start": 0.8425,
+            "end": 1.0219,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg092_n0017": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6332,
+            "display_index": 0
+          },
+          {
+            "text": "che",
+            "start": 0.7528,
+            "end": 1.1116,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg109_n0023": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "Kwa",
+            "start": 0.1846,
+            "end": 0.2593,
+            "display_index": 0
+          },
+          {
+            "text": "mfano",
+            "start": 0.2593,
+            "end": 0.7228,
+            "display_index": 1
+          },
+          {
+            "text": "jamii",
+            "start": 0.7528,
+            "end": 1.2013,
+            "display_index": 2
+          },
+          {
+            "text": "nyingi",
+            "start": 1.2312,
+            "end": 1.5302,
+            "display_index": 3
+          },
+          {
+            "text": "zilikuwa",
+            "start": 1.5751,
+            "end": 2.1284,
+            "display_index": 4
+          },
+          {
+            "text": "na",
+            "start": 2.1582,
+            "end": 2.248,
+            "display_index": 5
+          },
+          {
+            "text": "chakula",
+            "start": 2.2779,
+            "end": 2.8311,
+            "display_index": 6
+          },
+          {
+            "text": "cha",
+            "start": 2.876,
+            "end": 3.0853,
+            "display_index": 7
+          },
+          {
+            "text": "ndizi",
+            "start": 3.1152,
+            "end": 3.5189,
+            "display_index": 8
+          },
+          {
+            "text": "ingawa",
+            "start": 3.5638,
+            "end": 3.9824,
+            "display_index": 9
+          },
+          {
+            "text": "mapishi",
+            "start": 4.0123,
+            "end": 4.5656,
+            "display_index": 10
+          },
+          {
+            "text": "ya",
+            "start": 4.5955,
+            "end": 4.6702,
+            "display_index": 11
+          },
+          {
+            "text": "ndizi",
+            "start": 4.7001,
+            "end": 5.0291,
+            "display_index": 12
+          },
+          {
+            "text": "yalitofautiana",
+            "start": 5.0739,
+            "end": 6.1804,
+            "display_index": 13
+          },
+          {
+            "text": "kati",
+            "start": 6.2252,
+            "end": 6.5393,
+            "display_index": 14
+          },
+          {
+            "text": "ya",
+            "start": 6.5691,
+            "end": 6.6588,
+            "display_index": 15
+          },
+          {
+            "text": "jamii",
+            "start": 6.6887,
+            "end": 7.1224,
+            "display_index": 16
+          },
+          {
+            "text": "na",
+            "start": 7.1523,
+            "end": 7.257,
+            "display_index": 17
+          },
+          {
+            "text": "jamii",
+            "start": 7.2868,
+            "end": 7.8102,
+            "display_index": 18
+          }
+        ]
+      }
+    ]
+  },
+  "pg115_n0017": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6332,
+            "display_index": 0
+          },
+          {
+            "text": "che",
+            "start": 0.7528,
+            "end": 1.1116,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg115_n0032": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6332,
+            "display_index": 0
+          },
+          {
+            "text": "che",
+            "start": 0.7528,
+            "end": 1.1116,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg115_n0035": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6481,
+            "display_index": 0
+          },
+          {
+            "text": "de",
+            "start": 0.7677,
+            "end": 1.0667,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg115_n0038": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.7229,
+            "display_index": 0
+          },
+          {
+            "text": "e",
+            "start": 0.8425,
+            "end": 1.0219,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg116_n0020": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6332,
+            "display_index": 0
+          },
+          {
+            "text": "che",
+            "start": 0.7528,
+            "end": 1.1116,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg116_n0024": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6481,
+            "display_index": 0
+          },
+          {
+            "text": "de",
+            "start": 0.7677,
+            "end": 1.0667,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg116_n0028": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.7229,
+            "display_index": 0
+          },
+          {
+            "text": "e",
+            "start": 0.8425,
+            "end": 1.0219,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg151_n0025": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6332,
+            "display_index": 0
+          },
+          {
+            "text": "che",
+            "start": 0.7528,
+            "end": 1.1116,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg152_n0011": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6332,
+            "display_index": 0
+          },
+          {
+            "text": "che",
+            "start": 0.7528,
+            "end": 1.1116,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "gl133": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "mazao",
+            "start": 0.2145,
+            "end": 0.8873,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg009_n0023_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6332,
+            "display_index": 0
+          },
+          {
+            "text": "che",
+            "start": 0.7528,
+            "end": 1.1116,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg009_n0026_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6481,
+            "display_index": 0
+          },
+          {
+            "text": "de",
+            "start": 0.7677,
+            "end": 1.0667,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg009_n0029_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.7229,
+            "display_index": 0
+          },
+          {
+            "text": "e",
+            "start": 0.8425,
+            "end": 1.0219,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg010_n0006_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.678,
+            "display_index": 0
+          },
+          {
+            "text": "ge",
+            "start": 0.7976,
+            "end": 1.1266,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg024_n0011_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6332,
+            "display_index": 0
+          },
+          {
+            "text": "che",
+            "start": 0.7528,
+            "end": 1.1116,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg024_n0014_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6481,
+            "display_index": 0
+          },
+          {
+            "text": "de",
+            "start": 0.7677,
+            "end": 1.0667,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg024_n0017_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.7229,
+            "display_index": 0
+          },
+          {
+            "text": "e",
+            "start": 0.8425,
+            "end": 1.0219,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg024_n0023_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.678,
+            "display_index": 0
+          },
+          {
+            "text": "ge",
+            "start": 0.7976,
+            "end": 1.1266,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg026_n0006_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6332,
+            "display_index": 0
+          },
+          {
+            "text": "che",
+            "start": 0.7528,
+            "end": 1.1116,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg026_n0009_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6481,
+            "display_index": 0
+          },
+          {
+            "text": "de",
+            "start": 0.7677,
+            "end": 1.0667,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg026_n0012_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.7229,
+            "display_index": 0
+          },
+          {
+            "text": "e",
+            "start": 0.8425,
+            "end": 1.0219,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg026_n0018_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.678,
+            "display_index": 0
+          },
+          {
+            "text": "ge",
+            "start": 0.7976,
+            "end": 1.1266,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg027_n0012_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6332,
+            "display_index": 0
+          },
+          {
+            "text": "che",
+            "start": 0.7528,
+            "end": 1.1116,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg027_n0015_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6481,
+            "display_index": 0
+          },
+          {
+            "text": "de",
+            "start": 0.7677,
+            "end": 1.0667,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg027_n0018_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.7229,
+            "display_index": 0
+          },
+          {
+            "text": "e",
+            "start": 0.8425,
+            "end": 1.0219,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg027_n0024_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.678,
+            "display_index": 0
+          },
+          {
+            "text": "ge",
+            "start": 0.7976,
+            "end": 1.1266,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg047_n0021_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6332,
+            "display_index": 0
+          },
+          {
+            "text": "che",
+            "start": 0.7528,
+            "end": 1.1116,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg047_n0024_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6481,
+            "display_index": 0
+          },
+          {
+            "text": "de",
+            "start": 0.7677,
+            "end": 1.0667,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg047_n0027_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.7229,
+            "display_index": 0
+          },
+          {
+            "text": "e",
+            "start": 0.8425,
+            "end": 1.0219,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg047_n0033_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.678,
+            "display_index": 0
+          },
+          {
+            "text": "ge",
+            "start": 0.7976,
+            "end": 1.1266,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg053_n0020_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6332,
+            "display_index": 0
+          },
+          {
+            "text": "che",
+            "start": 0.7528,
+            "end": 1.1116,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg053_n0023_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6481,
+            "display_index": 0
+          },
+          {
+            "text": "de",
+            "start": 0.7677,
+            "end": 1.0667,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg053_n0026_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.7229,
+            "display_index": 0
+          },
+          {
+            "text": "e",
+            "start": 0.8425,
+            "end": 1.0219,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg055_n0020_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6332,
+            "display_index": 0
+          },
+          {
+            "text": "che",
+            "start": 0.7528,
+            "end": 1.1116,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg055_n0023_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6481,
+            "display_index": 0
+          },
+          {
+            "text": "de",
+            "start": 0.7677,
+            "end": 1.0667,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg055_n0026_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.7229,
+            "display_index": 0
+          },
+          {
+            "text": "e",
+            "start": 0.8425,
+            "end": 1.0219,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg057_n0028_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6332,
+            "display_index": 0
+          },
+          {
+            "text": "che",
+            "start": 0.7528,
+            "end": 1.1116,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg057_n0031_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6481,
+            "display_index": 0
+          },
+          {
+            "text": "de",
+            "start": 0.7677,
+            "end": 1.0667,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg057_n0034_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.7229,
+            "display_index": 0
+          },
+          {
+            "text": "e",
+            "start": 0.8425,
+            "end": 1.0219,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg058_n0006_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.678,
+            "display_index": 0
+          },
+          {
+            "text": "ge",
+            "start": 0.7976,
+            "end": 1.1266,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg059_n0011_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6332,
+            "display_index": 0
+          },
+          {
+            "text": "che",
+            "start": 0.7528,
+            "end": 1.1116,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg059_n0014_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6481,
+            "display_index": 0
+          },
+          {
+            "text": "de",
+            "start": 0.7677,
+            "end": 1.0667,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg059_n0017_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.7229,
+            "display_index": 0
+          },
+          {
+            "text": "e",
+            "start": 0.8425,
+            "end": 1.0219,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg059_n0023_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.678,
+            "display_index": 0
+          },
+          {
+            "text": "ge",
+            "start": 0.7976,
+            "end": 1.1266,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg062_n0021_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6332,
+            "display_index": 0
+          },
+          {
+            "text": "che",
+            "start": 0.7528,
+            "end": 1.1116,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg062_n0024_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6481,
+            "display_index": 0
+          },
+          {
+            "text": "de",
+            "start": 0.7677,
+            "end": 1.0667,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg062_n0027_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.7229,
+            "display_index": 0
+          },
+          {
+            "text": "e",
+            "start": 0.8425,
+            "end": 1.0219,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg062_n0033_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.678,
+            "display_index": 0
+          },
+          {
+            "text": "ge",
+            "start": 0.7976,
+            "end": 1.1266,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg087_n0003_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6332,
+            "display_index": 0
+          },
+          {
+            "text": "che",
+            "start": 0.7528,
+            "end": 1.1116,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg087_n0008_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6481,
+            "display_index": 0
+          },
+          {
+            "text": "de",
+            "start": 0.7677,
+            "end": 1.0667,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg087_n0012_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.7229,
+            "display_index": 0
+          },
+          {
+            "text": "e",
+            "start": 0.8425,
+            "end": 1.0219,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg092_n0017_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6332,
+            "display_index": 0
+          },
+          {
+            "text": "che",
+            "start": 0.7528,
+            "end": 1.1116,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg115_n0017_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6332,
+            "display_index": 0
+          },
+          {
+            "text": "che",
+            "start": 0.7528,
+            "end": 1.1116,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg115_n0032_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6332,
+            "display_index": 0
+          },
+          {
+            "text": "che",
+            "start": 0.7528,
+            "end": 1.1116,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg115_n0035_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6481,
+            "display_index": 0
+          },
+          {
+            "text": "de",
+            "start": 0.7677,
+            "end": 1.0667,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg115_n0038_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.7229,
+            "display_index": 0
+          },
+          {
+            "text": "e",
+            "start": 0.8425,
+            "end": 1.0219,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg116_n0020_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6332,
+            "display_index": 0
+          },
+          {
+            "text": "che",
+            "start": 0.7528,
+            "end": 1.1116,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg116_n0024_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6481,
+            "display_index": 0
+          },
+          {
+            "text": "de",
+            "start": 0.7677,
+            "end": 1.0667,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg116_n0028_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.7229,
+            "display_index": 0
+          },
+          {
+            "text": "e",
+            "start": 0.8425,
+            "end": 1.0219,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg151_n0025_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6332,
+            "display_index": 0
+          },
+          {
+            "text": "che",
+            "start": 0.7528,
+            "end": 1.1116,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  "pg152_n0011_easy_read": {
+    "timecodes": [
+      null,
+      {
+        "word_timestamps": [
+          {
+            "text": "herufi",
+            "start": 0.1846,
+            "end": 0.6332,
+            "display_index": 0
+          },
+          {
+            "text": "che",
+            "start": 0.7528,
+            "end": 1.1116,
+            "display_index": 0
+          }
+        ]
+      }
+    ]
   }
 }
