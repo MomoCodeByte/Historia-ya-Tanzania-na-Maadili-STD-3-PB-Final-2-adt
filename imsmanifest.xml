@@ -507,6 +507,8 @@
       <file href="images/pdf-pages/pg150.jpg"/>
       <file href="images/pdf-pages/pg151.jpg"/>
       <file href="images/pdf-pages/pg152.jpg"/>
+      <file href="assets/readalong-sw.js"/>
+      <file href="content/readalong-positions.json"/>
     </resource>
   </resources>
 
