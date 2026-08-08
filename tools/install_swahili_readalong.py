@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SCRIPT_TAG = '  <script src="./assets/readalong-sw.js?v=4"></script>'
+SCRIPT_TAG = '  <script src="./assets/readalong-sw.js?v=5"></script>'
 
 
 def update_html() -> int:
@@ -21,7 +21,7 @@ def update_html() -> int:
             source = source.replace("</body>", SCRIPT_TAG + "\n</body>")
         source = re.sub(
             r'<script src="\./assets/offline-preloader\.js(?:\?v=[^"]+)?"></script>',
-            '<script src="./assets/offline-preloader.js?v=readalong-4"></script>',
+            '<script src="./assets/offline-preloader.js?v=readalong-5"></script>',
             source,
         )
         path.write_text(source, encoding="utf-8")

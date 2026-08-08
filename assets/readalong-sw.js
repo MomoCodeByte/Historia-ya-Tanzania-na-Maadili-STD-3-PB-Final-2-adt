@@ -73,6 +73,35 @@
       });
     }
     section.appendChild(layer);
+    mirrorRuntimeHighlight();
+  }
+
+  function setPrintedHighlight(textId, index) {
+    document.querySelectorAll(".sw-page-word-box.is-active").forEach((word) => word.classList.remove("is-active"));
+    if (!textId || index < 0) return;
+    const printed = document.querySelector(`.sw-page-word-box[data-readalong-id="${CSS.escape(textId)}"][data-word-index="${index}"]`);
+    if (printed) printed.classList.add("is-active");
+  }
+
+  function mirrorRuntimeHighlight() {
+    const active = document.querySelector('#content [data-id] [data-word-index].bg-yellow-300');
+    if (!active) {
+      setPrintedHighlight("", -1);
+      return;
+    }
+    const owner = active.closest("[data-id]");
+    setPrintedHighlight(owner?.getAttribute("data-id") || "", Number(active.getAttribute("data-word-index")));
+  }
+
+  function watchRuntimeHighlight() {
+    const content = document.getElementById("content");
+    if (!content) return;
+    new MutationObserver(mirrorRuntimeHighlight).observe(content, {
+      subtree: true,
+      childList: true,
+      attributes: true,
+      attributeFilter: ["class"],
+    });
   }
 
   function renderSentence(id) {
@@ -120,11 +149,9 @@
     if (index === state.activeIndex) return;
     const panel = ensurePanel();
     panel.querySelectorAll(".sw-readalong-word.is-active").forEach((word) => word.classList.remove("is-active"));
-    document.querySelectorAll(".sw-page-word-box.is-active").forEach((word) => word.classList.remove("is-active"));
     const active = panel.querySelector(`[data-word-index="${index}"]`);
     if (active) active.classList.add("is-active");
-    const printed = document.querySelector(`.sw-page-word-box[data-readalong-id="${CSS.escape(id)}"][data-word-index="${index}"]`);
-    if (printed) printed.classList.add("is-active");
+    setPrintedHighlight(id, index);
     state.activeIndex = index;
   }
 
@@ -167,6 +194,7 @@
 
   injectStyles();
   ensurePanel();
+  watchRuntimeHighlight();
   new MutationObserver(() => document.querySelectorAll("audio").forEach(attach))
     .observe(document.documentElement, { childList: true, subtree: true });
   loadData().catch((error) => console.warn("[sw-readalong] Imeshindwa kupakia timecodes", error));
