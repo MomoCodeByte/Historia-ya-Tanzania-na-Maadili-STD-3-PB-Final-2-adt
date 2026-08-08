@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SCRIPT_TAG = '  <script src="./assets/readalong-sw.js?v=2"></script>'
+SCRIPT_TAG = '  <script src="./assets/readalong-sw.js?v=3"></script>'
 
 
 def update_html() -> int:
