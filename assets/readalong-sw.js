@@ -43,7 +43,7 @@
       .sw-readalong-word.is-active{background:#fde047;color:#111827;box-shadow:0 0 0 3px rgba(234,179,8,.28);text-decoration:underline 3px #dc2626;text-underline-offset:3px}
       .sw-page-word-layer{position:absolute;z-index:20;inset:0;width:100%;height:100%;pointer-events:none;overflow:hidden}
       .sw-page-word-box{position:absolute;box-sizing:border-box;border-radius:1px;background:transparent;transition:background-color .06s linear}
-      .sw-page-word-box.is-active{background:rgba(250,204,21,.62);mix-blend-mode:multiply}
+      .sw-page-word-box.is-active{background:rgba(255,235,59,.82);outline:2px solid rgba(245,158,11,.9)}
       @media(max-width:640px){#sw-readalong-panel{bottom:78px;width:96vw;padding:8px 10px 10px;font-size:17px;line-height:1.45}}
     `;
     document.head.appendChild(style);
@@ -148,7 +148,7 @@
       fetch("./content/i18n/sw/texts.json").then((response) => response.json()),
       fetch("./content/i18n/sw/audios.json").then((response) => response.json()),
       fetch("./content/i18n/sw/timecode/timecode_output.json").then((response) => response.json()),
-      fetch("./content/readalong-positions.json").then((response) => response.json()),
+      fetch("./content/readalong-positions.json?v=4", { cache: "no-store" }).then((response) => response.json()),
     ]);
     state.texts = texts;
     state.timecodes = timecodes;
