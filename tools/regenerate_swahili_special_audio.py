@@ -32,6 +32,11 @@ LETTER_NAMES = {
     "x": "eksi", "y": "wai", "z": "zedi",
 }
 ROMAN_VALUES = {"i": 1, "v": 5, "x": 10, "l": 50, "c": 100, "d": 500, "m": 1000}
+TITLE_EXPANSIONS = {
+    "bw": "Bwana",
+    "dkt": "Dokta",
+    "bi": "Bibi",
+}
 
 
 def number_sw(number: int) -> str:
@@ -69,12 +74,32 @@ def digits_sw(value: str) -> str:
     return " ".join(ONES[int(char)] for char in value if char.isdigit())
 
 
+def swahili_clock(hour: int, minute: int) -> str:
+    swahili_hour = ((hour + 5) % 12) + 1
+    if 5 <= hour < 6:
+        period = "alfajiri"
+    elif 6 <= hour < 12:
+        period = "asubuhi"
+    elif 12 <= hour < 16:
+        period = "mchana"
+    elif 16 <= hour < 19:
+        period = "jioni"
+    else:
+        period = "usiku"
+    minute_phrase = f" na dakika {number_sw(minute)}" if minute else ""
+    return f"saa {number_sw(swahili_hour)}{minute_phrase} {period}"
+
+
 def normalize_token(token: str, full_text: str) -> str:
     prefix = re.match(r"^\W*", token).group(0)
     suffix = re.search(r"\W*$", token).group(0)
     core = token[len(prefix):len(token) - len(suffix) if suffix else None]
     if not core:
         return token
+
+    title = TITLE_EXPANSIONS.get(core.lower())
+    if title:
+        return title
 
     date = re.fullmatch(r"(\d{1,2})[/-](\d{1,2})[/-](\d{2,4})", core)
     if date:
@@ -84,7 +109,8 @@ def normalize_token(token: str, full_text: str) -> str:
     clock = re.fullmatch(r"(\d{1,2}):(\d{2})", core)
     if clock:
         hour, minute = map(int, clock.groups())
-        return f"saa {number_sw(hour)} na dakika {number_sw(minute)}"
+        if 0 <= hour <= 23 and 0 <= minute <= 59:
+            return swahili_clock(hour, minute)
 
     if re.fullmatch(r"[ivxlcdm]+", core) and core.islower() and (len(core) > 1 or "." in suffix):
         return number_sw(roman_to_int(core))
@@ -120,6 +146,7 @@ def needs_normalization(text: str) -> bool:
     stripped = text.strip().rstrip(".)")
     return bool(
         re.search(r"\d", text)
+        or re.search(r"(?<!\w)(?:Bw|Dkt|Bi)\.(?!\w)", text, re.IGNORECASE)
         or re.fullmatch(r"[A-Za-z]", stripped)
         or (stripped.islower() and re.fullmatch(r"[ivxlcdm]+", stripped))
     )
