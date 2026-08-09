@@ -86,7 +86,7 @@ def normalize_token(token: str, full_text: str) -> str:
         hour, minute = map(int, clock.groups())
         return f"saa {number_sw(hour)} na dakika {number_sw(minute)}"
 
-    if re.fullmatch(r"[ivxlcdm]+", core) and core.islower():
+    if re.fullmatch(r"[ivxlcdm]+", core) and core.islower() and (len(core) > 1 or "." in suffix):
         return number_sw(roman_to_int(core))
 
     if len(core) == 1 and core.isalpha() and core.lower() in LETTER_NAMES:
@@ -155,7 +155,7 @@ async def synthesize(text_id: str, spoken: str, display_map: list[int], output: 
     raise RuntimeError(f"{text_id}: {last_error}")
 
 
-async def run(limit: int | None) -> None:
+async def run(limit: int | None, requested_ids: list[str] | None) -> None:
     texts_path = I18N / "texts.json"
     audios_path = I18N / "audios.json"
     timecodes_path = I18N / "timecode" / "timecode_output.json"
@@ -163,11 +163,14 @@ async def run(limit: int | None) -> None:
     audios = json.loads(audios_path.read_text(encoding="utf-8"))
     timecodes = json.loads(timecodes_path.read_text(encoding="utf-8"))
     selected = [(key, value) for key, value in texts.items() if key in audios and needs_normalization(value)]
+    if requested_ids:
+        requested = set(requested_ids)
+        selected = [(key, value) for key, value in selected if key in requested]
     if limit is not None:
         selected = selected[:limit]
 
     pronunciation: dict[str, str] = {}
-    semaphore = asyncio.Semaphore(4)
+    semaphore = asyncio.Semaphore(8)
 
     async def worker(text_id: str, displayed: str) -> tuple[str, dict]:
         spoken, display_map = normalize_text(displayed)
@@ -178,8 +181,8 @@ async def run(limit: int | None) -> None:
         return text_id, result
 
     completed = 0
-    for start in range(0, len(selected), 40):
-        results = await asyncio.gather(*(worker(*item) for item in selected[start:start + 40]))
+    for start in range(0, len(selected), 80):
+        results = await asyncio.gather(*(worker(*item) for item in selected[start:start + 80]))
         for text_id, result in results:
             timecodes[text_id] = result
             completed += 1
@@ -195,8 +198,9 @@ async def run(limit: int | None) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--limit", type=int)
+    parser.add_argument("--ids", nargs="+")
     args = parser.parse_args()
-    asyncio.run(run(args.limit))
+    asyncio.run(run(args.limit, args.ids))
 
 
 if __name__ == "__main__":

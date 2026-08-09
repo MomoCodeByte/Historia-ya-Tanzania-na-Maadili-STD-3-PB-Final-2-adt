@@ -189,7 +189,7 @@
     state.texts = texts;
     state.timecodes = timecodes;
     state.positions = positions;
-    state.idsByFile = Object.fromEntries(Object.entries(audios).map(([id, file]) => [String(file).split("/").pop(), id]));
+    state.idsByFile = Object.fromEntries(Object.entries(audios).map(([id, file]) => [String(file).split("/").pop().split("?")[0], id]));
     state.ready = true;
     renderPrintedWordLayer();
     document.querySelectorAll("audio").forEach(attach);
