@@ -119,7 +119,8 @@ def normalize_token(token: str, full_text: str) -> str:
         if 0 <= hour <= 23 and 0 <= minute <= 59:
             return swahili_clock(hour, minute)
 
-    if re.fullmatch(r"[ivxlcdm]+", core) and core.islower() and (len(core) > 1 or "." in suffix):
+    is_parenthesized_roman = prefix.endswith("(") and suffix.startswith(")")
+    if re.fullmatch(r"[ivxlcdm]+", core) and core.islower() and ("." in suffix or is_parenthesized_roman):
         return number_sw(roman_to_int(core))
 
     name_initial = bool(

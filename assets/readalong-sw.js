@@ -184,7 +184,7 @@
       fetch("./content/i18n/sw/texts.json").then((response) => response.json()),
       fetch("./content/i18n/sw/audios.json").then((response) => response.json()),
       fetch("./content/i18n/sw/timecode/timecode_output.json").then((response) => response.json()),
-      fetch("./content/readalong-positions.json?v=12", { cache: "no-store" }).then((response) => response.json()),
+      fetch("./content/readalong-positions.json?v=13", { cache: "no-store" }).then((response) => response.json()),
     ]);
     state.texts = texts;
     state.timecodes = timecodes;
