@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SCRIPT_TAG = '  <script src="./assets/readalong-sw.js?v=5"></script>'
+SCRIPT_TAG = '  <script src="./assets/readalong-sw.js?v=8"></script>'
 
 
 def update_html() -> int:
@@ -20,8 +20,8 @@ def update_html() -> int:
         else:
             source = source.replace("</body>", SCRIPT_TAG + "\n</body>")
         source = re.sub(
-            r'<script src="\./assets/offline-preloader\.js(?:\?v=[^"]+)?"></script>',
-            '<script src="./assets/offline-preloader.js?v=readalong-5"></script>',
+            r'\s*<script src="\./assets/offline-preloader\.js(?:\?v=[^"]+)?"></script>',
+            "",
             source,
         )
         path.write_text(source, encoding="utf-8")
@@ -45,9 +45,7 @@ def update_preloader() -> None:
             else:
                 inline[key] = candidate.read_text(encoding="utf-8")
     inline["./assets/readalong-sw.js"] = (ROOT / "assets" / "readalong-sw.js").read_text(encoding="utf-8")
-    inline["./content/readalong-positions.json"] = json.loads(
-        (ROOT / "content" / "readalong-positions.json").read_text(encoding="utf-8")
-    )
+    inline.pop("./content/readalong-positions.json", None)
 
     compact = json.dumps(inline, ensure_ascii=False, separators=(",", ":"))
     path.write_text(source[:start] + compact + source[end:], encoding="utf-8")
@@ -68,7 +66,6 @@ def update_manifest() -> None:
 
 def main() -> None:
     changed = update_html()
-    update_preloader()
     update_manifest()
     print(f"Installed Swahili read-along on {changed} HTML files.")
 

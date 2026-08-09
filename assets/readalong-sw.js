@@ -77,9 +77,12 @@
   }
 
   function setPrintedHighlight(textId, index) {
-    document.querySelectorAll(".sw-page-word-box.is-active").forEach((word) => word.classList.remove("is-active"));
-    if (!textId || index < 0) return;
-    const printed = document.querySelector(`.sw-page-word-box[data-readalong-id="${CSS.escape(textId)}"][data-word-index="${index}"]`);
+    const current = document.querySelector(".sw-page-word-box.is-active");
+    const printed = textId && index >= 0
+      ? document.querySelector(`.sw-page-word-box[data-readalong-id="${CSS.escape(textId)}"][data-word-index="${index}"]`)
+      : null;
+    if (current === printed) return;
+    if (current) current.classList.remove("is-active");
     if (printed) printed.classList.add("is-active");
   }
 
@@ -96,7 +99,13 @@
   function watchRuntimeHighlight() {
     const content = document.getElementById("content");
     if (!content) return;
-    new MutationObserver(mirrorRuntimeHighlight).observe(content, {
+    new MutationObserver((mutations) => {
+      const runtimeChanged = mutations.some((mutation) => {
+        const target = mutation.target instanceof Element ? mutation.target : mutation.target.parentElement;
+        return target && !target.closest(".sw-page-word-layer") && target.closest("[data-id]");
+      });
+      if (runtimeChanged) mirrorRuntimeHighlight();
+    }).observe(content, {
       subtree: true,
       childList: true,
       attributes: true,
@@ -175,7 +184,7 @@
       fetch("./content/i18n/sw/texts.json").then((response) => response.json()),
       fetch("./content/i18n/sw/audios.json").then((response) => response.json()),
       fetch("./content/i18n/sw/timecode/timecode_output.json").then((response) => response.json()),
-      fetch("./content/readalong-positions.json?v=4", { cache: "no-store" }).then((response) => response.json()),
+      fetch("./content/readalong-positions.json?v=8", { cache: "no-store" }).then((response) => response.json()),
     ]);
     state.texts = texts;
     state.timecodes = timecodes;
