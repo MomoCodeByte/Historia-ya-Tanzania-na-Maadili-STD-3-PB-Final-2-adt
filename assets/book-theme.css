@@ -1,0 +1,1305 @@
+:root {
+  --book-paper: #fffefb;
+  --book-ink: #202020;
+  --book-brown: #65391f;
+  --book-amber: #b96b18;
+  --book-amber-soft: #f6d49d;
+  --book-purple: #784a60;
+  --book-green: #006b5a;
+  --book-lime: #5f761f;
+  --book-red: #b6003d;
+  --book-blue: #07549b;
+  --book-focus: #07549b;
+  --book-shadow: 0 12px 30px rgb(57 36 18 / 12%);
+}
+
+/* Darasa la 3 source-fidelity pass.
+   Keep the converted page close to the A4 source instead of scaling typography
+   and activity chrome to the full desktop viewport. */
+:root {
+  --book-source-page-width: 56rem;
+}
+
+#content {
+  width: min(100%, var(--book-source-page-width)) !important;
+  max-width: var(--book-source-page-width) !important;
+}
+
+#content h1:not(.sr-only) {
+  font-size: clamp(1.55rem, 2.5vw, 2rem) !important;
+  line-height: 1.18 !important;
+}
+
+#content h2:not(.sr-only) {
+  font-size: clamp(1.3rem, 2vw, 1.65rem) !important;
+  line-height: 1.22 !important;
+}
+
+#content h3:not(.sr-only) {
+  font-size: clamp(1.15rem, 1.8vw, 1.4rem) !important;
+}
+
+#content :where(p, li, td, th, label, textarea, input) {
+  font-size: clamp(1rem, 1.45vw, 1.18rem) !important;
+}
+
+#content section[data-section-type="text_only"] :where(p, ol, ul),
+#content section[data-section-type="text_and_single_image"] :where(p, ol, ul),
+#content section[data-section-type="text_and_images"] :where(p, ol, ul) {
+  line-height: 1.48 !important;
+}
+
+#content .book-zoezi-heading,
+#content .book-copyable-panel__title {
+  font-size: clamp(1.3rem, 2.2vw, 1.7rem) !important;
+  line-height: 1.15 !important;
+}
+
+#content section[data-section-type^="activity_"]:not([data-section-type="activity_quiz"]) {
+  width: min(100%, 48rem) !important;
+}
+
+#content section[data-section-type^="activity_"] textarea,
+#content section[data-section-type^="activity_"] textarea.book-source-response {
+  min-height: 5.5rem !important;
+  line-height: 1.75rem !important;
+}
+
+#content .book-response-panel,
+#content .book-source-response-panel {
+  padding: .75rem !important;
+  margin-top: .75rem !important;
+}
+
+.book-source-first:not(.source-page) {
+  padding-top: clamp(3.5rem, 6vw, 5rem) !important;
+}
+
+@media (max-width: 640px) {
+  #content {
+    width: 100% !important;
+  }
+
+  #content section[data-section-type^="activity_"]:not([data-section-type="activity_quiz"]) {
+    padding-inline: .75rem !important;
+  }
+}
+
+/* Collapsed answers preserve the printed page composition until requested. */
+#content section[data-section-type="activity_open_ended_answer"]:not(.book-responses-expanded) textarea,
+#content section[data-section-type="activity_open_ended_answer"]:not(.book-responses-expanded) textarea.book-source-response,
+#content section[data-section-type="activity_open_ended_answer"]:not(.book-responses-expanded) .book-source-response-panel,
+#content section[data-section-type="activity_open_ended_answer"]:not(.book-responses-expanded) .book-response-panel,
+#content section[data-section-type="activity_open_ended_answer"]:not(.book-responses-expanded) .book-clear-response {
+  display: none !important;
+}
+
+/* Collapsed answers preserve the printed page composition until requested. */
+#content section[data-section-type="activity_open_ended_answer"]:not(.book-responses-expanded) textarea,
+#content section[data-section-type="activity_open_ended_answer"]:not(.book-responses-expanded) textarea.book-source-response,
+#content section[data-section-type="activity_open_ended_answer"]:not(.book-responses-expanded) .book-source-response-panel,
+#content section[data-section-type="activity_open_ended_answer"]:not(.book-responses-expanded) .book-response-panel,
+#content section[data-section-type="activity_open_ended_answer"]:not(.book-responses-expanded) .book-clear-response {
+  display: none !important;
+}
+
+#content section[data-section-type="activity_open_ended_answer"]:not(.book-responses-expanded) textarea,
+#content section[data-section-type="activity_open_ended_answer"]:not(.book-responses-expanded) .book-source-response-panel,
+#content section[data-section-type="activity_open_ended_answer"]:not(.book-responses-expanded) .book-response-panel {
+  display: none !important;
+}
+
+.book-toggle-response,
+.book-clear-response {
+  min-height: 2.5rem;
+  padding: .45rem .8rem;
+  border: 1px solid var(--book-brown);
+  border-radius: .65rem;
+  background: #fff;
+  color: var(--book-brown);
+  font-weight: 700;
+}
+
+html {
+  background: #292929;
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  padding-bottom: 5.5rem;
+  background: #f4f0e9 !important;
+  color: var(--book-ink);
+  font-family: "Atkinson Hyperlegible", "Merriweather", sans-serif !important;
+  line-height: 1.55;
+  overflow-x: hidden;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body > main {
+  width: 100%;
+  min-width: 0;
+}
+
+body :where(p, h1, h2, h3, h4, h5, h6, span, div, button, input, textarea, select) {
+  font-family: inherit;
+}
+
+#content {
+  width: min(100%, 78rem) !important;
+  max-width: 78rem !important;
+  min-height: calc(100vh - 5.5rem);
+  margin-inline: auto !important;
+  background: var(--book-paper);
+  box-shadow: var(--book-shadow);
+}
+
+#content > section,
+#content > div > section,
+#content section[data-section-id],
+#content section[data-id] {
+  position: relative;
+  isolation: isolate;
+}
+
+/* Multiple extracted fragments from one printed page remain one reader page. */
+#content.book-merged-content {
+  padding-bottom: clamp(1.5rem, 4vw, 3rem);
+}
+
+#content.book-merged-content > .book-page-fragment {
+  min-height: 0 !important;
+  box-shadow: none !important;
+}
+
+#content.book-merged-content > .book-page-fragment--continuation {
+  margin-top: 0 !important;
+  padding-top: clamp(.5rem, 1.5vw, 1rem) !important;
+  scroll-margin-top: 2rem;
+}
+
+#content.book-merged-content > .book-page-fragment:not(:last-of-type) {
+  padding-bottom: clamp(.5rem, 1.5vw, 1rem) !important;
+}
+
+#content.book-merged-content > .book-page-fragment--continuation + .book-page-fragment--continuation {
+  margin-top: 0 !important;
+}
+
+/* Extraction fragments are implementation details, not visual page breaks. */
+#content.book-merged-content > .book-page-fragment--continuation > .book-fragment-edge-first {
+  margin-top: 0 !important;
+}
+
+#content.book-merged-content > .book-page-fragment:not(:last-of-type) > .book-fragment-edge-last {
+  margin-bottom: 0 !important;
+}
+
+#content .book-watermark {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  width: max-content;
+  max-width: 95%;
+  color: rgb(239 68 68 / 11%);
+  font-size: clamp(2.25rem, 7.5vw, 6.25rem);
+  font-weight: 800;
+  letter-spacing: .02em;
+  pointer-events: none;
+  transform: translate(-50%, -50%) rotate(-46deg);
+  user-select: none;
+}
+
+/* Keep ordinary source headings compact; chapter banners have their own scale. */
+#content h1.adt-h2:not(.book-chapter-title) {
+  font-size: clamp(1.5rem, 3vw, 2.15rem) !important;
+  line-height: 1.16 !important;
+}
+
+#content h1.adt-h2[class*="text-blue"] {
+  color: var(--book-blue) !important;
+}
+
+#content section[data-section-id^="pg"] > *:not(.book-watermark) {
+  position: relative;
+  z-index: 1;
+}
+
+.book-source-first:not(.source-page) {
+  padding-top: clamp(5.5rem, 10vw, 8.5rem) !important;
+  background-image:
+    radial-gradient(rgb(180 105 24 / 37%) .7px, transparent .8px),
+    linear-gradient(180deg, #fff 0, #fff7ea 55%, #fff 100%);
+  background-position: top left;
+  background-repeat: repeat-x, no-repeat;
+  background-size: 4px 4px, 100% clamp(5rem, 9vw, 7.5rem);
+}
+
+#content :where(h1, h2, h3) {
+  text-wrap: balance;
+}
+
+#content h1:not(.sr-only) {
+  color: var(--book-brown);
+  font-size: clamp(2rem, 5vw, 3.7rem);
+  font-weight: 800;
+  line-height: 1.08;
+}
+
+#content h2:not(.sr-only) {
+  color: var(--book-blue);
+  font-size: clamp(1.5rem, 3vw, 2.15rem);
+  font-weight: 800;
+  line-height: 1.16;
+}
+
+#content h3:not(.sr-only) {
+  color: var(--book-brown);
+  font-weight: 800;
+}
+
+#content :where(p, li, td, th, label, textarea, input) {
+  font-size: clamp(1.08rem, 1.3vw, 1.35rem);
+}
+
+#content p {
+  max-width: 75ch;
+  text-wrap: pretty;
+}
+
+/* Page 31: source-faithful housing section with a calm reading measure. */
+#content .pg037-housing-page {
+  width: 100%;
+  padding: clamp(1.5rem, 3.5vw, 3rem) clamp(1.25rem, 6vw, 4.75rem) clamp(3rem, 7vw, 5rem) !important;
+}
+
+#content .pg037-housing-page.book-source-first {
+  padding-top: clamp(5.75rem, 9vw, 7.25rem) !important;
+}
+
+#content .pg037-housing-copy {
+  width: min(100%, 52rem);
+  margin-inline: auto;
+}
+
+#content .pg037-housing-copy :where(.pg037-housing-continuation, .pg037-housing-body, .pg037-housing-summary) {
+  max-width: none;
+  margin: 0;
+  color: #242424;
+  font-size: clamp(1.08rem, 1.55vw, 1.28rem);
+  line-height: 1.55;
+  text-align: left;
+}
+
+#content .pg037-housing-continuation {
+  margin-bottom: clamp(1.4rem, 3vw, 2.1rem) !important;
+}
+
+#content h1.pg037-housing-title {
+  margin: 0 0 .6rem;
+  color: #0759ad !important;
+  font-size: clamp(1.55rem, 3vw, 2rem) !important;
+  font-weight: 800;
+  line-height: 1.18;
+  text-align: left;
+}
+
+#content .pg037-housing-body {
+  margin-bottom: clamp(1.5rem, 3vw, 2.25rem) !important;
+}
+
+#content .pg037-housing-summary {
+  padding-top: clamp(1rem, 2.5vw, 1.5rem);
+  border-top: 2px solid rgb(185 107 24 / 42%);
+}
+
+@media (max-width: 600px) {
+  #content .pg037-housing-page {
+    padding-inline: 1.15rem !important;
+  }
+
+  #content .pg037-housing-page.book-source-first {
+    padding-top: 5.25rem !important;
+  }
+}
+
+#content img {
+  max-width: 100%;
+  height: auto;
+}
+
+#content a {
+  color: #064fa1;
+  font-weight: 700;
+  text-decoration-thickness: .12em;
+  text-underline-offset: .16em;
+}
+
+#content :where(a, button, input, textarea, select, [tabindex="0"]):focus-visible {
+  outline: 3px solid var(--book-focus) !important;
+  outline-offset: 3px !important;
+}
+
+/* Source-style chapter openers */
+.book-chapter-opener:not(.source-page) {
+  margin-inline: auto !important;
+  max-width: 68rem !important;
+  padding-inline: clamp(1.25rem, 5vw, 4rem) !important;
+}
+
+.book-chapter-opener > :first-child:not(.sr-only) {
+  border-block: 1px solid var(--book-amber);
+  background: linear-gradient(180deg, var(--book-amber), var(--book-amber-soft) 11%, #fff 50%, #f0bd69 100%);
+  box-shadow: 0 4px 0 #8c4e12;
+}
+
+.source-page .chapter-banner {
+  border-color: var(--book-amber) !important;
+  background: linear-gradient(180deg, var(--book-amber), var(--book-amber-soft) 10%, #fff 48%, #e7ad54 100%) !important;
+}
+
+.source-page .chapter-badge {
+  background: var(--book-purple) !important;
+}
+
+.source-page .chapter-title {
+  font-size: clamp(2.1rem, 4vw, 3.55rem) !important;
+}
+
+.source-page .intro-box {
+  border-color: var(--book-green) !important;
+}
+
+.source-page .intro-head {
+  background: var(--book-green) !important;
+}
+
+/* Book panels and extracted source artwork */
+#content :where(.rounded-2xl, .rounded-3xl, [class*="rounded-["]) {
+  scroll-margin-block: 7rem;
+}
+
+#content section[data-section-type="boxed_text"] > div:not(.source-texture),
+#content section[data-section-type="foreword"] > div,
+#content section[data-section-type="table_of_contents"] > div {
+  margin-inline: auto;
+}
+
+#content section[data-section-type="text_only"],
+#content section[data-section-type="text_and_single_image"],
+#content section[data-section-type="text_and_images"] {
+  max-width: 72rem;
+  margin-inline: auto;
+}
+
+#content section[data-section-type="text_only"] :where(p, ol, ul),
+#content section[data-section-type="text_and_single_image"] :where(p, ol, ul),
+#content section[data-section-type="text_and_images"] :where(p, ol, ul) {
+  line-height: 1.65;
+}
+
+/* Source-style activities */
+#content section[data-section-type^="activity_"]:not([data-section-type="activity_quiz"]) {
+  width: min(100%, 64rem);
+  margin-inline: auto;
+  padding: clamp(1rem, 3vw, 2rem);
+  border: 2px solid rgb(182 0 61 / 72%);
+  border-radius: 1.5rem;
+  background: linear-gradient(180deg, #fff7f9, #fff 46%, #fffaf5);
+  box-shadow: 0 8px 22px rgb(89 35 43 / 10%);
+}
+
+#content section[data-section-type="activity_matching"] {
+  border-color: var(--book-lime);
+  background: linear-gradient(180deg, #fbfde9, #fff);
+}
+
+#content section[data-section-type="activity_true_false"] {
+  border-color: var(--book-green);
+  background: linear-gradient(180deg, #effaf6, #fff);
+}
+
+#content section[data-section-type^="activity_"] textarea,
+#content section[data-section-type^="activity_"] input[type="text"] {
+  width: 100%;
+  min-height: 3.25rem;
+  border: 2px solid #9ca3af !important;
+  border-radius: .9rem;
+  background-color: #fff !important;
+  color: #111827;
+  padding: .9rem 1rem !important;
+  caret-color: var(--book-blue);
+}
+
+#content section[data-section-type^="activity_"] textarea {
+  min-height: 10rem;
+  line-height: 1.65;
+  resize: vertical !important;
+}
+
+.book-response-panel {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 1rem;
+  background: rgb(255 255 255 / 85%);
+}
+
+.book-response-label {
+  display: block;
+  margin-bottom: .55rem;
+  color: var(--book-brown);
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.book-response-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: .75rem;
+  margin-top: .9rem;
+}
+
+.book-save-status,
+.book-activity-message {
+  min-height: 1.5rem;
+  color: #17643d;
+  font-size: 1rem !important;
+  font-weight: 700;
+}
+
+.book-activity-message[data-tone="error"] {
+  color: #a3122f;
+}
+
+.book-clear-response,
+.book-secondary-action {
+  min-height: 2.75rem;
+  border: 2px solid var(--book-brown);
+  border-radius: .8rem;
+  background: #fff;
+  color: var(--book-brown);
+  padding: .55rem 1rem;
+  font-size: 1rem !important;
+  font-weight: 800;
+}
+
+.book-clear-response:hover,
+.book-secondary-action:hover {
+  background: #fff4e2;
+}
+
+.book-matching-selected {
+  outline: 4px solid var(--book-blue) !important;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 5px #fff !important;
+}
+
+/* Dedicated quiz pages */
+#content section[data-section-type="activity_quiz"] {
+  width: 100%;
+  max-width: 100%;
+  padding-block: clamp(1.25rem, 4vw, 3rem);
+  overflow-x: clip;
+}
+
+#content section[data-section-type="activity_quiz"] > .flex {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding-inline: clamp(.75rem, 3vw, 1.5rem) !important;
+}
+
+#content section[data-section-type="activity_quiz"] .quiz-card {
+  width: min(100%, 48rem) !important;
+  max-width: calc(100vw - 2rem) !important;
+  margin-inline: auto !important;
+  overflow: hidden;
+  border: 2px solid var(--book-amber);
+  border-radius: 1.5rem !important;
+  background: #fffaf1 !important;
+  box-shadow: var(--book-shadow) !important;
+}
+
+#content section[data-section-type="activity_quiz"] .quiz-header {
+  border-bottom: 4px solid var(--book-brown);
+  background: linear-gradient(180deg, var(--book-amber), #f4cb89 18%, #fff7e8 100%) !important;
+}
+
+#content section[data-section-type="activity_quiz"] .quiz-question {
+  color: #231f1c !important;
+  font-size: clamp(1.55rem, 3vw, 2.2rem);
+  line-height: 1.2;
+}
+
+#content section[data-section-type="activity_quiz"] .quiz-body {
+  background: linear-gradient(180deg, #fffaf1, #fff) !important;
+}
+
+#content section[data-section-type="activity_quiz"] .activity-option {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-height: 4.5rem;
+  border: 2px solid var(--book-green) !important;
+  border-radius: 1rem !important;
+  background: #fff !important;
+  color: #171717 !important;
+  box-shadow: 0 5px 0 rgb(0 107 90 / 18%) !important;
+}
+
+#content section[data-section-type="activity_quiz"] .activity-option:hover {
+  background: #f2fbf7 !important;
+}
+
+#content section[data-section-type="activity_quiz"] .activity-option.selected-option {
+  border-width: 4px !important;
+  background: #e8f5ef !important;
+}
+
+#content [data-submit-target] button,
+#content section[data-section-type="activity_quiz"] button {
+  min-width: 9rem;
+  min-height: 3.25rem;
+  border: 2px solid var(--book-brown) !important;
+  border-radius: .9rem !important;
+  background: var(--book-green) !important;
+  color: #fff !important;
+  font-weight: 800;
+  box-shadow: 0 5px 0 var(--book-brown) !important;
+}
+
+/* Clean source footer: page number only */
+.book-source-footer {
+  position: relative;
+  z-index: 2;
+  width: min(100%, 68rem);
+  margin: clamp(2.5rem, 6vw, 5rem) auto 0;
+  padding-bottom: 1.25rem;
+}
+
+.book-source-footer__rule {
+  height: 2.5rem;
+  background: linear-gradient(180deg, var(--book-amber), #eab665 22%, #fff 84%);
+}
+
+.book-source-footer__number {
+  display: grid;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: -1.8rem auto 0;
+  place-items: center;
+  border: 5px solid #fff;
+  border-radius: 44% 56% 48% 52%;
+  background: var(--book-brown);
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.book-production-mark {
+  display: none !important;
+}
+
+/* Copyable HTML replacements for source artwork that contains baked-in text. */
+#content .book-embedded-text-source,
+#content .book-copyable-source-duplicate,
+#content img.book-embedded-text-image {
+  display: none !important;
+}
+
+#content .book-copyable-panel {
+  --panel-accent: #b6003d;
+  --panel-dark: #720022;
+  --panel-soft: #fff4f6;
+  position: relative;
+  width: min(100%, 58rem);
+  margin: clamp(1.4rem, 4vw, 2.5rem) auto clamp(1.25rem, 3vw, 2rem);
+  padding: clamp(2.1rem, 4vw, 2.75rem) clamp(1rem, 3vw, 1.65rem) clamp(1rem, 3vw, 1.5rem);
+  border: 2px solid var(--panel-accent);
+  border-radius: .35rem;
+  background: linear-gradient(180deg, #fff 0%, var(--panel-soft) 100%);
+  color: #202020;
+  box-shadow: none;
+  user-select: text;
+}
+
+#content .book-copyable-panel__title {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: fit-content;
+  max-width: calc(100% - 2rem);
+  margin: 0;
+  padding: .35rem clamp(1.25rem, 4vw, 3rem);
+  border-radius: .65rem;
+  background: linear-gradient(180deg, #f36396 0%, var(--panel-accent) 52%, var(--panel-dark) 100%);
+  color: #fff !important;
+  font-size: clamp(1.1rem, 2.5vw, 1.45rem) !important;
+  font-weight: 800;
+  line-height: 1.1;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 .22rem 0 rgb(84 0 27 / 24%);
+}
+
+#content .book-copyable-panel__content {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(.85rem, 2.5vw, 1.4rem);
+}
+
+#content .book-copyable-panel__icon {
+  display: grid;
+  width: clamp(3.5rem, 9vw, 5.25rem);
+  aspect-ratio: 1;
+  flex: 0 0 auto;
+  place-items: center;
+  border: clamp(.35rem, 1vw, .65rem) solid var(--panel-accent);
+  border-radius: 50%;
+  background: #fff;
+  color: var(--panel-dark);
+  font-size: clamp(1.45rem, 4vw, 2.25rem);
+  font-weight: 900;
+  box-shadow: inset 0 0 0 1px #d7d7d7;
+  user-select: none;
+  overflow: hidden;
+}
+
+#content .book-copyable-panel__icon-art {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#content .book-copyable-panel__body :where(p, ol) {
+  max-width: none;
+  margin: 0;
+  color: #202020;
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+  line-height: 1.45;
+}
+
+#content .book-copyable-panel__body p + p {
+  margin-top: .65rem;
+}
+
+#content .book-copyable-panel__body ol {
+  display: grid;
+  gap: .6rem;
+  padding-left: 1.55rem;
+}
+
+#content .book-copyable-panel--zoezi {
+  --panel-accent: #98002f;
+  --panel-dark: #6d001f;
+  --panel-soft: #fff;
+  padding-top: 1.7rem;
+  border: 0;
+  border-top: .42rem solid #b96a17;
+  border-radius: 0;
+  background: transparent;
+}
+
+#content .book-copyable-panel--zoezi .book-copyable-panel__title {
+  left: 1rem;
+  min-width: min(15rem, calc(100% - 2rem));
+  padding-block: .28rem;
+  background: #98002f;
+  transform: translateY(-55%);
+  box-shadow: none;
+}
+
+#content .book-copyable-panel--zoezi .book-copyable-panel__icon {
+  border-color: #98002f;
+  color: var(--panel-accent);
+}
+
+#content .book-zoezi-heading:not(.book-embedded-text-source):not(.book-copyable-source-duplicate) {
+  display: block !important;
+  width: fit-content !important;
+  min-width: min(16rem, calc(100% - 2rem));
+  max-width: calc(100% - 2rem);
+  margin: clamp(1.5rem, 4vw, 2.5rem) 0 clamp(1rem, 2vw, 1.5rem) !important;
+  padding: .36rem clamp(1.25rem, 4vw, 2.5rem) !important;
+  border: 0 !important;
+  border-radius: .65rem .65rem .85rem .85rem !important;
+  background: #98002f !important;
+  color: #fff !important;
+  font-size: clamp(1.15rem, 2.5vw, 1.55rem) !important;
+  font-weight: 800 !important;
+  line-height: 1.15 !important;
+  text-align: center !important;
+  box-shadow: 0 .2rem 0 rgb(84 0 27 / 22%) !important;
+}
+
+#content .book-copyable-panel--zoezi .book-copyable-panel__content,
+#content .book-copyable-panel--utangulizi .book-copyable-panel__content {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+#content .book-copyable-panel--review {
+  --panel-accent: #98002f;
+  --panel-dark: #6d001f;
+  --panel-soft: #fff;
+  padding: 1.7rem .55rem .2rem;
+  border: 0;
+  border-top: .42rem solid #b96a17;
+  border-radius: 0;
+  background: transparent;
+}
+
+#content .book-copyable-panel--review .book-copyable-panel__title {
+  left: 1.25rem;
+  min-width: min(16rem, calc(100% - 2.5rem));
+  padding: .32rem 1.5rem;
+  border-radius: .65rem .65rem .85rem .85rem;
+  background: #98002f;
+  transform: translateY(-58%);
+}
+
+#content .book-copyable-panel--fikiri {
+  --panel-accent: #546f16;
+  --panel-dark: #33470b;
+  --panel-soft: #fbfce9;
+  border-color: var(--panel-accent);
+}
+
+#content .book-copyable-panel--fikiri .book-copyable-panel__title {
+  background: linear-gradient(180deg, #7f9623, var(--panel-accent));
+}
+
+#content .book-copyable-panel--utangulizi {
+  --panel-accent: #006b5a;
+  --panel-dark: #004d40;
+  --panel-soft: #f8fffd;
+  padding-top: 2.25rem;
+  border-color: var(--panel-accent);
+  border-width: 3px;
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0 .35rem .8rem rgb(0 77 64 / 13%);
+}
+
+#content .book-copyable-panel--utangulizi .book-copyable-panel__title {
+  left: 1.25rem;
+  min-width: 9rem;
+  padding: .3rem 1.1rem;
+  background: #dff0ec;
+  color: #202020 !important;
+  transform: translateY(-45%);
+  box-shadow: none;
+}
+
+#content .book-copyable-panel--utangulizi .book-copyable-panel__body :where(p, ol) {
+  font-style: italic;
+}
+
+/* One source-faithful chapter banner for all eight chapters. */
+#content .book-chapter-source {
+  display: none !important;
+}
+
+#content .book-chapter-banner-shell {
+  margin: 0 0 clamp(1.75rem, 4vw, 2.75rem) !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+#content .book-chapter-banner {
+  display: flex !important;
+  width: min(100%, 58rem) !important;
+  min-height: 6.2rem;
+  margin: 0 auto !important;
+  padding: 0 clamp(1rem, 3vw, 2rem) 0 0 !important;
+  align-items: center !important;
+  gap: clamp(1rem, 3vw, 2rem) !important;
+  border: 0 !important;
+  border-block: 3px solid var(--book-amber) !important;
+  border-radius: 0 !important;
+  background: linear-gradient(180deg, #c37822 0%, #f0c17f 10%, #fff 48%, #e6a64b 100%) !important;
+  box-shadow: none !important;
+}
+
+#content .book-chapter-label {
+  display: grid !important;
+  width: clamp(7.5rem, 18vw, 10.5rem) !important;
+  min-height: 6.7rem;
+  margin: -1rem 0 -.35rem clamp(1rem, 4vw, 3.25rem) !important;
+  padding: .8rem !important;
+  flex: 0 0 auto;
+  place-items: center;
+  border: 0 !important;
+  border-radius: .25rem .25rem 1.45rem 1.45rem !important;
+  background: #784a60 !important;
+  color: #fff !important;
+  font-size: clamp(1.35rem, 3vw, 2rem) !important;
+  font-weight: 800 !important;
+  line-height: 1.12 !important;
+  text-align: center !important;
+  box-shadow: 0 .45rem 0 #4f2e3e !important;
+}
+
+#content .book-chapter-title {
+  width: auto !important;
+  max-width: 28ch !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  flex: 1 1 auto;
+  border: 0 !important;
+  background: transparent !important;
+  color: #171717 !important;
+  font-size: clamp(1.65rem, 3.6vw, 2.65rem) !important;
+  font-weight: 850 !important;
+  line-height: 1.08 !important;
+  text-align: center !important;
+  box-shadow: none !important;
+}
+
+/* Page 39: readable health text without duplicated production artwork. */
+#content .pg045-health-page {
+  width: 100%;
+  padding: clamp(5.75rem, 9vw, 7.25rem) clamp(1.25rem, 6vw, 4.75rem) clamp(2.5rem, 6vw, 4.5rem) !important;
+}
+
+#content .pg045-health-copy {
+  width: min(100%, 52rem);
+  margin-inline: auto;
+}
+
+#content .pg045-health-copy > p {
+  max-width: none;
+  margin: 0 0 clamp(1.2rem, 2.5vw, 1.75rem);
+  color: #242424;
+  font-size: clamp(1.08rem, 1.55vw, 1.28rem);
+  line-height: 1.52;
+  text-align: left;
+}
+
+/* Printed page 40: keep the summary hierarchy and scale from the PDF. */
+#content .pg046-summary-page {
+  width: 100%;
+  padding: clamp(5.75rem, 9vw, 7.25rem) clamp(1.25rem, 6vw, 4.75rem) clamp(2.5rem, 6vw, 4.5rem) !important;
+}
+
+#content .pg046-summary-copy {
+  width: min(100%, 52rem);
+  margin-inline: auto;
+}
+
+#content .pg046-summary-copy > h1 {
+  margin: 0 0 .8rem !important;
+  color: #0757a6 !important;
+  font-size: clamp(1.35rem, 2.4vw, 1.75rem) !important;
+  line-height: 1.15 !important;
+}
+
+#content .pg046-summary-copy > p {
+  max-width: none;
+  margin: 0;
+  color: #242424;
+  font-size: clamp(1.08rem, 1.55vw, 1.28rem);
+  line-height: 1.52;
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  #content .book-copyable-panel {
+    margin-top: 2rem;
+    padding-inline: .9rem;
+  }
+
+  #content .book-copyable-panel__content {
+    grid-template-columns: 1fr;
+    justify-items: start;
+  }
+
+  #content .book-copyable-panel__icon {
+    width: 3.7rem;
+  }
+
+  #content .book-copyable-panel--zoezi .book-copyable-panel__title {
+    left: .7rem;
+    min-width: 0;
+    max-width: calc(100% - 1.4rem);
+    transform: translateY(-55%);
+  }
+
+  #content .book-chapter-banner {
+    min-height: 0;
+    padding: .8rem !important;
+    flex-direction: column;
+    align-items: stretch !important;
+  }
+
+  #content .book-chapter-label {
+    width: min(100%, 12rem) !important;
+    min-height: 0;
+    margin: -1.25rem auto .2rem !important;
+    padding: .7rem 1rem !important;
+  }
+
+  #content .book-chapter-title {
+    max-width: none !important;
+    padding: .3rem .5rem !important;
+  }
+
+  #content .pg045-health-page {
+    padding-inline: 1.15rem !important;
+    padding-top: 5.25rem !important;
+  }
+
+  #content .pg046-summary-page {
+    padding-inline: 1.15rem !important;
+    padding-top: 5.25rem !important;
+  }
+}
+
+@media (max-width: 760px) {
+  body {
+    padding-bottom: 5rem;
+  }
+
+  #content {
+    min-height: calc(100vh - 5rem);
+    box-shadow: none;
+  }
+
+  #content section[data-section-type^="activity_"]:not([data-section-type="activity_quiz"]) {
+    width: calc(100% - 1rem);
+    border-radius: 1rem;
+  }
+
+  #content section[data-section-type="activity_quiz"] .quiz-body,
+  #content section[data-section-type="activity_quiz"] .quiz-header {
+    padding-inline: 1rem !important;
+  }
+
+  #content section[data-section-type="activity_quiz"] .activity-option {
+    width: 100% !important;
+    padding: 1rem !important;
+    text-align: left !important;
+  }
+}
+
+/* PDF-faithful activity pages: the source card is the visual container. */
+#content section[data-section-type="activity_open_ended_answer"],
+#content section[data-section-type="activity_fill_in_the_blank"],
+#content section[data-section-type="activity_other"] {
+  width: min(100%, 68rem) !important;
+  padding: clamp(1rem, 3vw, 2rem) !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+#content .book-response-panel,
+#content .book-source-response-panel {
+  margin-top: clamp(1rem, 2.5vw, 1.75rem);
+  padding: clamp(.85rem, 2vw, 1.25rem);
+  border: 2px solid rgb(182 0 61 / 78%);
+  border-radius: 1rem;
+  background: #fffafa;
+  box-shadow: 0 .5rem 1.25rem rgb(127 29 29 / 9%);
+}
+
+#content .book-response-panel .book-response-label,
+#content .book-source-response-panel .book-response-label {
+  display: block;
+  margin-bottom: .6rem;
+  color: var(--book-brown);
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  font-weight: 700;
+}
+
+#content section[data-section-type^="activity_"] textarea.book-source-response,
+#content section[data-section-type^="activity_"] input.book-source-response {
+  display: block !important;
+  position: static !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  min-height: 10rem;
+  margin: 0 !important;
+  padding: .65rem .8rem !important;
+  overflow: auto !important;
+  clip: auto !important;
+  clip-path: none !important;
+  white-space: pre-wrap !important;
+  resize: vertical;
+  border: 1px solid #aeb6c2 !important;
+  border-radius: .65rem !important;
+  background: repeating-linear-gradient(
+    to bottom,
+    #fff 0,
+    #fff 1.95rem,
+    #d7dce2 2rem
+  ) !important;
+  color: #171717;
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  line-height: 2rem;
+}
+
+#content section[data-section-type^="activity_"] textarea.book-source-response:focus-visible,
+#content section[data-section-type^="activity_"] input.book-source-response:focus-visible {
+  outline: 3px solid #005fcc !important;
+  outline-offset: 2px;
+}
+
+#content .book-source-artwork-shell:not(.book-embedded-text-source),
+#content .book-source-artwork-host,
+#content .book-source-response-host {
+  display: block !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+#content img.book-source-activity-image {
+  display: block !important;
+  width: 100% !important;
+  max-width: none !important;
+  height: auto !important;
+  margin: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  object-fit: contain !important;
+  box-shadow: none !important;
+}
+
+#content .book-source-crop-frame {
+  display: block !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  border: 0 !important;
+  background: transparent !important;
+}
+
+.book-source-duplicate-block {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+#content .book-kazi-ribbon:not(.book-source-duplicate-block) {
+  width: fit-content !important;
+  max-width: min(92%, 34rem) !important;
+  margin-inline: auto !important;
+  padding: .45rem clamp(1.25rem, 4vw, 3rem) !important;
+  border: 0 !important;
+  border-radius: .8rem !important;
+  background: linear-gradient(180deg, #f45c91 0%, #d90050 48%, #720022 100%) !important;
+  box-shadow: 0 .35rem 0 rgb(83 0 27 / 30%) !important;
+  color: #fff !important;
+  text-align: center !important;
+}
+
+#content .book-kazi-heading:not(.book-source-duplicate-block) {
+  margin: 0 !important;
+  color: #fff !important;
+  font-size: clamp(1.2rem, 3vw, 1.65rem) !important;
+  font-weight: 800 !important;
+  line-height: 1.15 !important;
+  white-space: normal !important;
+}
+
+#content .book-kazi-card:not(.book-source-artwork-shell) {
+  border-color: #d70046 !important;
+  background: linear-gradient(180deg, #fff 0%, #fff6f8 100%) !important;
+  box-shadow: none !important;
+}
+
+#content .book-kazi-card :where(p, [data-id]):not(.book-kazi-heading):not(.book-source-duplicate-block) {
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
+  line-height: 1.45;
+}
+
+#content section[data-section-type="activity_true_false"] {
+  width: min(100%, 68rem) !important;
+  padding: clamp(1rem, 3vw, 2rem) !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+#content section[data-section-type="activity_true_false"] h1 {
+  color: #fff !important;
+  font-size: clamp(1.3rem, 3vw, 1.8rem) !important;
+}
+
+#content section[data-section-type="activity_true_false"] label:has(input[type="radio"]) {
+  display: inline-flex !important;
+  min-height: 2.65rem;
+  gap: .45rem;
+  padding: .45rem .7rem;
+  border: 2px solid #a7b0bd;
+  border-radius: .75rem;
+  background: #fff;
+  color: #172033;
+  font-weight: 800;
+}
+
+#content section[data-section-type="activity_true_false"] label:has(input[type="radio"]):focus-within {
+  outline: 3px solid #005fcc;
+  outline-offset: 2px;
+}
+
+#content section[data-section-type="activity_true_false"] label > div[aria-hidden="true"] {
+  width: 1rem !important;
+  height: 1rem !important;
+  border: 2px solid #7a8492;
+  border-radius: 50% !important;
+  background: #fff;
+}
+
+#content section[data-section-type="activity_true_false"] label.book-true-false-choice::after {
+  content: attr(data-choice);
+  color: #172033;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+@media (max-width: 760px) {
+  #content section[data-section-type="activity_open_ended_answer"],
+  #content section[data-section-type="activity_fill_in_the_blank"],
+  #content section[data-section-type="activity_other"] {
+    width: min(100% - .5rem, 68rem) !important;
+    padding: .75rem .25rem 1.25rem !important;
+    border-radius: 0 !important;
+  }
+}
+
+/* These edge rules intentionally follow component rules so fragment seams stay compact. */
+#content.book-merged-content > .book-page-fragment--continuation > .book-fragment-edge-first {
+  margin-top: 0 !important;
+}
+
+#content.book-merged-content > .book-page-fragment:not(:last-of-type) > .book-fragment-edge-last {
+  margin-bottom: 0 !important;
+}
+
+#content .book-activity-message:empty {
+  display: none !important;
+  min-height: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+
+  body > canvas {
+    display: none !important;
+  }
+}
+
+@media print {
+  html, body, #content {
+    background: #fff !important;
+    box-shadow: none !important;
+  }
+
+  body {
+    padding-bottom: 0;
+  }
+
+  #interface-container, #nav-container,
+  .book-response-tools {
+    display: none !important;
+  }
+}
+
+/* Final source-fidelity overrides must remain last in this stylesheet. */
+#content {
+  width: min(100%, var(--book-source-page-width)) !important;
+  max-width: var(--book-source-page-width) !important;
+}
+
+#content h1:not(.sr-only) {
+  font-size: clamp(1.55rem, 2.5vw, 2rem) !important;
+  line-height: 1.18 !important;
+}
+
+#content h2:not(.sr-only) {
+  font-size: clamp(1.3rem, 2vw, 1.65rem) !important;
+  line-height: 1.22 !important;
+}
+
+#content h3:not(.sr-only) {
+  font-size: clamp(1.15rem, 1.8vw, 1.4rem) !important;
+}
+
+#content :where(p, li, td, th, label, textarea, input) {
+  font-size: clamp(1rem, 1.45vw, 1.18rem) !important;
+}
+
+#content section[data-section-type="text_only"] :where(p, ol, ul),
+#content section[data-section-type="text_and_single_image"] :where(p, ol, ul),
+#content section[data-section-type="text_and_images"] :where(p, ol, ul) {
+  line-height: 1.48 !important;
+}
+
+#content .book-zoezi-heading,
+#content .book-copyable-panel__title {
+  font-size: clamp(1.3rem, 2.2vw, 1.7rem) !important;
+  line-height: 1.15 !important;
+}
+
+#content section[data-section-type^="activity_"]:not([data-section-type="activity_quiz"]) {
+  width: min(100%, 48rem) !important;
+}
+
+#content section[data-section-type^="activity_"] textarea,
+#content section[data-section-type^="activity_"] textarea.book-source-response {
+  min-height: 5.5rem !important;
+  line-height: 1.75rem !important;
+}
+
+#content .book-response-panel,
+#content .book-source-response-panel {
+  padding: .75rem !important;
+  margin-top: .75rem !important;
+}
+
+.book-source-first:not(.source-page) {
+  padding-top: clamp(3.5rem, 6vw, 5rem) !important;
+}
+
+@media (max-width: 640px) {
+  #content {
+    width: 100% !important;
+  }
+
+  #content section[data-section-type^="activity_"]:not([data-section-type="activity_quiz"]) {
+    padding-inline: .75rem !important;
+  }
+}
