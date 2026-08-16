@@ -49,6 +49,28 @@
     video.defaultMuted = true;
     video.volume = 0;
     video.setAttribute("muted", "");
+    video.preload = "auto";
+    video.setAttribute("preload", "auto");
+    video.setAttribute("playsinline", "");
+    if (video.networkState === HTMLMediaElement.NETWORK_EMPTY) video.load();
+  };
+
+  // Fetch the current page's sign video as soon as the book page opens. This
+  // puts it in the browser cache before the learner opens the sign panel and
+  // removes the visible wait that otherwise happens on every page.
+  const warmCurrentSignVideo = () => {
+    const pageNumber = Number(
+      document.querySelector('meta[name="page-section-id"]')?.content,
+    );
+    if (!Number.isInteger(pageNumber) || pageNumber < 1) return;
+    const href = `./content/i18n/sw/video/page_${pageNumber}.mp4`;
+    const preload = document.createElement("link");
+    preload.rel = "preload";
+    preload.as = "video";
+    preload.type = "video/mp4";
+    preload.href = href;
+    document.head.append(preload);
+    fetch(href, { cache: "force-cache", priority: "high" }).catch(() => {});
   };
 
   const hideSubmitButtons = (root) => {
@@ -99,8 +121,14 @@
     }
     hideSubmitButtons(document);
     suppressFooterTts(document);
-  }).observe(document.documentElement, { childList: true, subtree: true });
+  }).observe(document.documentElement, {
+    childList: true,
+    subtree: true,
+    attributes: true,
+    attributeFilter: ["src"],
+  });
 
+  warmCurrentSignVideo();
   hideSubmitButtons(document);
   suppressFooterTts(document);
 })();
