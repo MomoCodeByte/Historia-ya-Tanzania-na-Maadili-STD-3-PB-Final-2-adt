@@ -26,6 +26,7 @@
               adlcp:scormtype="sco"
               href="index.html">
       <file href="index.html"/>
+      <file href="pg001_sec001.html"/>
       <file href="pg002_sec001.html"/>
       <file href="pg003_sec001.html"/>
       <file href="pg004_sec001.html"/>
@@ -507,6 +508,19 @@
       <file href="images/pdf-pages/pg150.jpg"/>
       <file href="images/pdf-pages/pg151.jpg"/>
       <file href="images/pdf-pages/pg152.jpg"/>
+      <file href="back-cover.html"/>
+      <file href="assets/covers/front-cover.png"/>
+      <file href="assets/covers/back-cover.png"/>
+      <file href="assets/semantic-pages.css"/>
+      <file href="assets/viewer-responsive.css"/>
+      <file href="assets/book-interactions.css"/>
+      <file href="assets/book-interactions.js"/>
+      <file href="content/semantic-book-pages.css"/>
+      <file href="content/semantic-flow-pages.js"/>
+      <file href="images/semantic-pages/pg001-certificate.png"/>
+      <file href="images/semantic-pages/pg004-signature.png"/>
+      <file href="images/semantic-pages/pg006-qr.png"/>
+      <file href="images/semantic-pages/activity-write-icon.png"/>
       <file href="assets/readalong-sw.js"/>
       <file href="content/readalong-positions.json"/>
     </resource>

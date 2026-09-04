@@ -1,0 +1,546 @@
+:root {
+  --history-paper: #ffffff;
+  --history-ink: #292525;
+  --history-brown: #922716;
+  --history-green: #129b80;
+  --history-dark-green: #075a43;
+  --history-blue: #2f5db6;
+  --history-orange: #f47b12;
+  --history-page-width: 68.75rem;
+}
+
+html {
+  background: #e9e7e2;
+}
+
+body {
+  margin: 0;
+  padding-bottom: 5.5rem;
+  overflow-x: clip;
+  background: #e9e7e2 !important;
+  color: var(--history-ink);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.semantic-page-wrap {
+  width: 100%;
+  min-width: 0;
+  padding: .75rem;
+  background: #e9e7e2;
+}
+
+.semantic-page {
+  width: min(100%, var(--history-page-width));
+  max-width: 100%;
+  min-width: 0;
+  min-height: min(142vw, 97.65rem);
+  margin-inline: auto;
+  padding: clamp(2rem, 7vw, 6.2rem) clamp(1.4rem, 9vw, 6.9rem);
+  border: 1px solid #dedbd4;
+  background: var(--history-paper);
+  box-shadow: 0 10px 28px rgb(50 42 32 / 14%);
+  font-size: clamp(1.12rem, 2.5vw, 1.62rem);
+  line-height: 1.55;
+}
+
+.semantic-page :is(img, svg, video, canvas, table) {
+  max-width: 100%;
+}
+
+.semantic-page :is(p, li, td, th, dd, dt, address, figcaption, a) {
+  overflow-wrap: anywhere;
+}
+
+.semantic-page--dense {
+  padding-top: clamp(1.5rem, 5vw, 4.5rem);
+  padding-bottom: clamp(1.5rem, 5vw, 4.5rem);
+  font-size: clamp(1.08rem, 2.5vw, 1.55rem);
+  line-height: 1.5;
+}
+
+.semantic-page p {
+  margin: 0 0 1.25em;
+}
+
+.semantic-page p:last-child {
+  margin-bottom: 0;
+}
+
+.page-copy {
+  text-align: justify;
+  font-style: italic;
+  hyphens: auto;
+}
+
+.page-copy--plain {
+  font-style: normal;
+}
+
+.page-heading-ribbon {
+  width: min(100%, 34rem);
+  margin: 0 auto clamp(1.5rem, 4vw, 3rem);
+  padding: .35em 1.2em .45em;
+  border-block: .28rem solid var(--history-green);
+  border-radius: 999px;
+  color: var(--history-brown);
+  background: #f8fffc;
+  text-align: center;
+  font-size: clamp(1.55rem, 3.8vw, 2.55rem);
+  font-style: italic;
+  font-weight: 800;
+  line-height: 1.05;
+}
+
+.title-panel {
+  padding: clamp(1.4rem, 4vw, 3rem) clamp(1rem, 3vw, 2rem) 1.1rem;
+  border-bottom: .35rem solid var(--history-green);
+  border-radius: 0 0 1.3rem 1.3rem;
+  background: #eefbf8;
+  text-align: center;
+}
+
+.book-main-title {
+  margin: 0;
+  color: var(--history-brown);
+  font-size: clamp(2.8rem, 8.2vw, 6.2rem);
+  font-style: italic;
+  font-weight: 800;
+  line-height: .98;
+}
+
+.book-subtitle {
+  margin: .38em 0 0;
+  color: var(--history-brown);
+  font-size: clamp(1.55rem, 4.1vw, 3.15rem);
+  font-style: italic;
+  font-weight: 800;
+}
+
+.book-student-label {
+  width: min(92%, 33rem);
+  margin: -1rem auto 0;
+  padding: .32em 1em;
+  border-radius: 999px;
+  background: var(--history-green);
+  color: #fff;
+  text-align: center;
+  font-size: clamp(1.15rem, 3vw, 2rem);
+  font-style: italic;
+  font-weight: 800;
+}
+
+.book-level {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .55em;
+  margin: .75em 0 1.55em;
+  color: var(--history-brown);
+  font-size: clamp(1.3rem, 3.4vw, 2.35rem);
+  font-style: italic;
+  font-weight: 800;
+}
+
+.book-level strong {
+  display: inline-grid;
+  width: 1.45em;
+  aspect-ratio: 1;
+  place-items: center;
+  border: .12em solid #e7b3a8;
+  border-radius: 50%;
+  background: #8d1026;
+  color: #fff;
+  font-style: normal;
+}
+
+.certificate-figure {
+  width: min(72%, 31rem);
+  margin: 0 auto 1.15rem;
+}
+
+.certificate-figure img,
+.qr-figure img,
+.signature-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.publisher-name {
+  margin-top: .35em;
+  color: var(--history-brown);
+  text-align: center;
+  font-size: clamp(1.15rem, 3vw, 2rem);
+  font-style: italic;
+  font-weight: 800;
+}
+
+.copyright-page {
+  display: flex;
+  min-height: inherit;
+  flex-direction: column;
+  gap: clamp(2.1rem, 7vw, 5.5rem);
+  justify-content: flex-start;
+  padding-top: clamp(3rem, 9vw, 7rem);
+}
+
+.copyright-page address {
+  font-style: italic;
+}
+
+.contact-table {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: .1em 1.25em;
+  margin-top: 1.4em;
+}
+
+.contact-table a {
+  color: #1459bd;
+  text-decoration: underline;
+  text-underline-offset: .13em;
+}
+
+.rights-notice {
+  margin-top: auto;
+  font-style: italic;
+}
+
+.toc-list {
+  display: grid;
+  gap: .48em;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-style: italic;
+}
+
+.toc-item a {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: end;
+  gap: .45em;
+  color: inherit;
+  text-decoration: none;
+}
+
+.toc-item a::after {
+  content: "";
+  grid-column: 2;
+  grid-row: 1;
+  margin-bottom: .26em;
+  border-bottom: .13em dotted currentColor;
+}
+
+.toc-item .toc-label {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.toc-item .toc-page {
+  grid-column: 3;
+  grid-row: 1;
+  min-width: 2.2em;
+  text-align: right;
+}
+
+.toc-item--chapter {
+  margin-top: .45em;
+  color: var(--history-green);
+  font-weight: 800;
+}
+
+.toc-item--sub {
+  padding-left: 0;
+}
+
+.credits-intro {
+  margin-bottom: .55em !important;
+}
+
+.credit-grid {
+  display: grid;
+  grid-template-columns: minmax(7.5rem, 10rem) 1fr;
+  gap: .28em .7em;
+  margin: .65em 0;
+}
+
+.credit-grid dt {
+  font-style: italic;
+  font-weight: 800;
+}
+
+.credit-grid dd {
+  margin: 0;
+  font-style: italic;
+}
+
+.signature-block {
+  width: min(100%, 25rem);
+  margin-top: .8em;
+  font-style: italic;
+}
+
+.signature-image {
+  width: 12rem;
+  max-width: 55%;
+  margin-bottom: .35rem;
+}
+
+.intro-page p {
+  margin-bottom: 1.35em;
+}
+
+.library-page {
+  padding-top: clamp(3rem, 8vw, 6rem);
+}
+
+.library-lead {
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.library-lead a {
+  color: #1459bd;
+  text-decoration: underline;
+}
+
+.library-layout {
+  display: grid;
+  grid-template-columns: minmax(12rem, 18rem) 1fr;
+  align-items: center;
+  gap: clamp(2rem, 8vw, 7rem);
+}
+
+.qr-figure {
+  width: min(100%, 17rem);
+  margin: 0;
+}
+
+.library-publisher {
+  font-size: clamp(1.2rem, 3vw, 2.1rem);
+  font-style: italic;
+  font-weight: 800;
+}
+
+.chapter-banner {
+  display: grid;
+  grid-template-columns: minmax(8.5rem, 11.5rem) 1fr;
+  align-items: stretch;
+  margin-bottom: 1.7rem;
+  border-block: .3rem solid var(--history-green);
+}
+
+.chapter-number {
+  display: grid;
+  place-items: center;
+  padding: .6em;
+  border-radius: 0 0 1rem 1rem;
+  background: var(--history-orange);
+  color: #fff;
+  text-align: center;
+  font-size: clamp(1.2rem, 3.2vw, 2.05rem);
+  font-style: italic;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.chapter-title {
+  align-self: center;
+  margin: 0;
+  padding: .45em .7em;
+  color: var(--history-brown);
+  text-align: center;
+  font-size: clamp(1.55rem, 4vw, 2.75rem);
+  font-style: italic;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.intro-box {
+  margin-bottom: 1.35rem;
+  border: .23rem solid var(--history-blue);
+  border-radius: 1rem;
+  background: #fff;
+}
+
+.intro-box h2 {
+  margin: 0;
+  padding: .12em .7em;
+  border-radius: .7rem .7rem 0 0;
+  background: var(--history-blue);
+  color: #fff;
+  font-size: clamp(1.1rem, 2.7vw, 1.8rem);
+  font-style: italic;
+  line-height: 1.2;
+}
+
+.intro-box p {
+  padding: .75em;
+}
+
+.think-box,
+.activity-box {
+  position: relative;
+  display: grid;
+  grid-template-columns: 4.8rem 1fr;
+  align-items: center;
+  margin: 1.25rem 0;
+  padding: 1.65rem .9rem .85rem;
+  border: .12rem solid #e19028;
+  border-radius: .55rem;
+  background: #eef8f3;
+}
+
+.think-box {
+  background: #fff1f3;
+}
+
+.callout-title {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  min-width: min(72%, 24rem);
+  padding: .17em .8em .24em;
+  transform: translate(-50%, -45%);
+  border-radius: .55rem;
+  background: var(--history-dark-green);
+  color: #fff;
+  text-align: center;
+  font-size: clamp(1rem, 2.4vw, 1.5rem);
+  font-style: italic;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.think-box .callout-title {
+  left: 22%;
+  min-width: 9rem;
+  background: #2859b2;
+  color: #ffeb1a;
+}
+
+.activity-icon,
+.think-icon {
+  display: grid;
+  width: 4rem;
+  aspect-ratio: 1;
+  place-items: center;
+  overflow: hidden;
+  border: .32rem solid var(--history-green);
+  border-radius: 50%;
+  background: #fff;
+}
+
+.activity-icon img {
+  width: 78%;
+  height: auto;
+}
+
+.think-icon {
+  font-size: 2.1rem;
+  font-style: normal;
+}
+
+.callout-copy {
+  margin: 0 !important;
+  padding-left: .35em;
+  font-style: italic;
+}
+
+.section-heading {
+  margin: 1.3em 0 .25em;
+  color: var(--history-brown);
+  font-size: clamp(1.35rem, 3.2vw, 2.15rem);
+  font-style: italic;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.alpha-list {
+  display: grid;
+  gap: .18em;
+  margin: -.35em 0 0;
+  padding: 0;
+  list-style: none;
+  font-style: italic;
+}
+
+.alpha-list li {
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  gap: .25em;
+}
+
+.continuation-line {
+  margin-top: .8em;
+}
+
+.page-narration-hook {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.semantic-exercise-shell section {
+  width: min(100%, 54rem);
+  margin-inline: auto;
+}
+
+.semantic-exercise-shell textarea {
+  width: 100%;
+  min-height: 12rem;
+  padding: 1rem;
+  border: 2px solid #a7d7ca;
+  border-radius: .8rem;
+  background: repeating-linear-gradient(to bottom, #fff 0, #fff 2rem, #d7e3ea 2.05rem, #fff 2.1rem);
+  color: #222;
+  font: inherit;
+  resize: vertical;
+}
+
+@media (max-width: 700px) {
+  .semantic-page-wrap {
+    padding: 0;
+  }
+
+  .semantic-page {
+    min-height: 100vh;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .page-copy {
+    text-align: left;
+  }
+
+  .contact-table,
+  .credit-grid,
+  .library-layout,
+  .chapter-banner {
+    grid-template-columns: 1fr;
+  }
+
+  .chapter-number {
+    border-radius: 0;
+  }
+
+  .think-box,
+  .activity-box {
+    grid-template-columns: 3.6rem 1fr;
+  }
+
+  .activity-icon,
+  .think-icon {
+    width: 3.2rem;
+  }
+}

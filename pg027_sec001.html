@@ -9,15 +9,17 @@
   <link href="./content/tailwind_output.css" rel="stylesheet">
   <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
   <link href="./assets/fonts.css" rel="stylesheet">
+  <link href="./content/semantic-book-pages.css?v=responsive-20260904-1" rel="stylesheet">
 <link rel="stylesheet" href="./assets/book-interactions.css?v=1">
+  <link rel="stylesheet" href="./assets/viewer-responsive.css?v=1">
 </head>
-<body class="min-h-screen bg-neutral-100">
-  <main class="w-full">
+<body class="semantic-book-body min-h-screen">
+  <main class="semantic-book-main">
     <h1 class="sr-only">Historia ya Tanzania na Maadili - ukurasa 27</h1>
-    <div id="content" class="mx-auto w-full bg-neutral-100 px-2 py-3 opacity-0 max-sm:px-0 max-sm:py-0">
-      <section role="article" data-section-type="pdf_faithful_page" data-section-id="pg027_sec001" class="mx-auto w-full max-w-[900px] overflow-hidden bg-white shadow-md max-sm:shadow-none">
-        <img src="images/pdf-pages/pg027.jpg" alt="Ukurasa 27 wa kitabu Historia ya Tanzania na Maadili" class="block h-auto w-full max-w-full" />
-        <div class="sr-only" aria-label="Maudhui ya maandishi ya ukurasa 27">
+    <div id="content" class="semantic-book-content">
+      <section role="article" data-section-type="semantic_text_page" data-section-id="pg027_sec001" class="semantic-page source-front-page semantic-flow-page">
+        <div class="source-page-inner" data-page-number="27"></div>
+        <div class="page-narration-hook" aria-hidden="true">
           <span data-id="pg027_n0002">kiimani, kielimu au rangi.</span>
           <span data-id="pg027_n0003">Vitendo vya kimaadili ni muhimu kwa sababu husaidia:</span>
           <span data-id="pg027_n0006">(a)</span>
@@ -41,9 +43,7 @@
           <span data-id="pg027_n0031">Hivyo, ni wajibu wetu kwa sasa kuendeleza vitendo vya maadili shuleni na nyumbani.</span>
           <span data-id="pg027_n0032">Kujifunza Historia ya Tanzania na Maadili kutaisaidia jamii kwa sasa kujenga maadili, kukuza utaifa na kulinda maslahi ya nchi na rasilimali za Taifa.</span>
           <span data-id="pg027_n0033">Kwa kufanya hivyo, tutaishi katika misingi ya utu, uadilifu, usawa, umoja na upendo.</span>
-          <span data-id="pg027_n0035">Historia ya Tanzania na Maadili STD 3 PB Final.indd 21</span>
-          <span data-id="pg027_n0036">29/11/2024 17:14</span>
-          <span data-id="pg027_im002_ai1">Kazi ya kufanya namba 12. Andika mambo uliyojifunza kuhusu vitendo vya maadili na jinsi ya kutumia maadili hayo nyumbani na shuleni.</span>
+<span data-id="pg027_im002_ai1">Kazi ya kufanya namba 12. Andika mambo uliyojifunza kuhusu vitendo vya maadili na jinsi ya kutumia maadili hayo nyumbani na shuleni.</span>
           <span data-id="pg027_n0039">Kazi ya kufanya namba 12</span>
           <span data-id="pg027_n0040">Andika mambo uliyojifunza kuhusu vitendo vya maadili na jinsi ya kudumisha maadili hayo nyumbani na shuleni.</span>
         </div>
@@ -53,11 +53,11 @@
 <!-- BOOK_INTERACTIONS_START -->
 <aside id="book-interactive-shell" class="book-interactive-shell" hidden aria-hidden="true" aria-label="Mazoezi ya ukurasa huu"><h2 class="book-interactive-shell__title">Mazoezi ya ukurasa huu</h2><section data-section-type="activity_open_ended_answer" data-section-id="pg027_sec002" class="mx-auto max-w-4xl">
     <div class="rounded-[22px] bg-[#fbf6e6] px-6 py-5 max-lg:px-5 max-lg:py-4 max-sm:px-3 max-sm:py-3">
-      <img src="images/pg027_im002_ai1.png" alt="Kazi ya kufanya namba 12" data-id="pg027_im002_ai1" class="block mx-auto max-w-full h-auto" style="max-width: 100%; height: auto;">
+      <img src="images/pg027_im002_ai1.png" alt="Kazi ya kufanya namba 12" class="block mx-auto max-w-full h-auto" style="max-width: 100%; height: auto;">
     </div>
 
-    <h1 class="sr-only" data-id="pg027_n0039">Kazi ya kufanya namba 12</h1>
-    <p class="sr-only"><span data-id="pg027_n0040">Andika mambo uliyojifunza kuhusu vitendo vya maadili na jinsi ya kudumisha maadili hayo nyumbani na shuleni.</span></p>
+    <h1 class="sr-only">Kazi ya kufanya namba 12</h1>
+    <p class="sr-only"><span>Andika mambo uliyojifunza kuhusu vitendo vya maadili na jinsi ya kudumisha maadili hayo nyumbani na shuleni.</span></p>
 
     <div class="mt-10 max-lg:mt-8 max-sm:mt-6 mb-6">
       <textarea class="w-full min-h-[150px] max-lg:min-h-[135px] max-sm:min-h-[120px] rounded-xl border border-slate-300 bg-white p-3 max-sm:p-2 resize-none text-[18px] leading-8 max-sm:text-[16px] max-sm:leading-7" style="background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 31px, #cbd5e1 32px, transparent 33px);" data-aria-id="aria-1-0-0" aria-label="Jibu kuhusu mambo uliyojifunza kuhusu vitendo vya maadili na jinsi ya kudumisha maadili hayo nyumbani na shuleni" tabindex="0"></textarea>
@@ -68,11 +68,12 @@
 
   <div class="relative z-50" id="interface-container"></div>
   <div class="relative z-50" id="nav-container"></div>
-  <script src="./assets/offline-preloader.js?v=audiofix-20260824-1"></script>
-  <script src="./assets/offline-preloader.js?v=audiofix-20260824-1"></script>
+  <script src="./content/semantic-flow-pages.js?v=8"></script>
+  <script src="./assets/offline-preloader.js?v=responsive-20260904-1"></script>
   <script src="./assets/scorm.js"></script>
   <script src="./assets/sign-language-tts-compat.js?v=audiofix-20260824-1"></script>
   <script src="./assets/base.bundle.local.js?v=audiofix-20260824-1"></script>
-<script src="./assets/book-interactions.js?v=1"></script>
+  <script src="./assets/readalong-sw.js?v=audiofix-20260824-1"></script>
+  <script src="./assets/book-interactions.js?v=1"></script>
 </body>
 </html>

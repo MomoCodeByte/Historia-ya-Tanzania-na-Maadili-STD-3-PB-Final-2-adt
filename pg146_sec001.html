@@ -9,15 +9,17 @@
   <link href="./content/tailwind_output.css" rel="stylesheet">
   <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
   <link href="./assets/fonts.css" rel="stylesheet">
+  <link href="./content/semantic-book-pages.css?v=responsive-20260904-1" rel="stylesheet">
 <link rel="stylesheet" href="./assets/book-interactions.css?v=1">
+  <link rel="stylesheet" href="./assets/viewer-responsive.css?v=1">
 </head>
-<body class="min-h-screen bg-neutral-100">
-  <main class="w-full">
+<body class="semantic-book-body min-h-screen">
+  <main class="semantic-book-main">
     <h1 class="sr-only">Historia ya Tanzania na Maadili - ukurasa 146</h1>
-    <div id="content" class="mx-auto w-full bg-neutral-100 px-2 py-3 opacity-0 max-sm:px-0 max-sm:py-0">
-      <section role="article" data-section-type="pdf_faithful_page" data-section-id="pg146_sec001" class="mx-auto w-full max-w-[900px] overflow-hidden bg-white shadow-md max-sm:shadow-none">
-        <img src="images/pdf-pages/pg146.jpg" alt="Ukurasa 146 wa kitabu Historia ya Tanzania na Maadili" class="block h-auto w-full max-w-full" />
-        <div class="sr-only" aria-label="Maudhui ya maandishi ya ukurasa 146">
+    <div id="content" class="semantic-book-content">
+      <section role="article" data-section-type="semantic_text_page" data-section-id="pg146_sec001" class="semantic-page source-front-page semantic-flow-page">
+        <div class="source-page-inner" data-page-number="146"></div>
+        <div class="page-narration-hook" aria-hidden="true">
           <span data-id="pg146_n0002">Miiko mbalimbali iliwekwa ili kusimamia na kutunza maadili ya jamii husika.</span>
           <span data-id="pg146_n0003">Miiko hii ilionya na kukataza tabia fulani ili kukuza na kutunza maadili ya jamii husika.</span>
           <span data-id="pg146_n0006">Kazi ya kufanya namba 8</span>
@@ -40,22 +42,22 @@
   </main>
 <!-- BOOK_INTERACTIONS_START -->
 <aside id="book-interactive-shell" class="book-interactive-shell" hidden aria-hidden="true" aria-label="Mazoezi ya ukurasa huu"><h2 class="book-interactive-shell__title">Mazoezi ya ukurasa huu</h2><section data-section-type="activity_other" data-section-id="pg146_sec002" class="w-full">
-    
+
     <div class="relative mx-auto mt-16 max-w-4xl rounded-md border border-orange-400 bg-cyan-50 px-8 pb-6 pt-10 max-lg:mt-14 max-lg:px-6 max-lg:pb-5 max-lg:pt-9 max-sm:mt-10 max-sm:px-5 max-sm:pb-5 max-sm:pt-12">
-      
+
       <!-- Title Badge -->
       <div class="absolute left-1/2 top-0 z-10 -translate-x-1/2 -translate-y-1/2 rounded-[1rem] bg-gradient-to-b from-emerald-500 via-emerald-700 to-green-950 px-10 py-2 shadow-[0_10px_18px_rgba(0,0,0,0.22)] max-lg:px-8 max-sm:max-w-[78%] max-sm:px-5 max-sm:py-2">
-        <div data-id="pg146_n0006" class="text-center text-[2rem] font-bold italic leading-none text-white max-lg:text-[1.6rem] max-sm:text-[0.95rem]">
+        <div class="text-center text-[2rem] font-bold italic leading-none text-white max-lg:text-[1.6rem] max-sm:text-[0.95rem]">
           Kazi ya kufanya namba 8
         </div>
       </div>
 
       <div class="grid grid-cols-[108px_1fr] items-center gap-6 max-lg:grid-cols-[94px_1fr] max-lg:gap-5 max-sm:grid-cols-1 max-sm:items-start max-sm:gap-4">
-        
+
         <!-- Round Activities Icon -->
         <div class="flex justify-center max-sm:justify-start">
           <div class="flex h-[96px] w-[96px] items-center justify-center overflow-hidden rounded-full border-[6px] border-emerald-700 bg-white shadow-[inset_0_0_0_3px_#1aa784] max-lg:h-[84px] max-lg:w-[84px] max-sm:h-[72px] max-sm:w-[72px]">
-            
+
             <!-- Checklist SVG Icon -->
             <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 max-lg:h-10 max-lg:w-10 max-sm:h-9 max-sm:w-9 text-emerald-800" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
               <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
@@ -66,7 +68,7 @@
 
         <!-- Question Text -->
         <div class="z-10 text-left text-[1.1rem] leading-[1.5] text-stone-800 max-lg:text-[1.02rem] max-sm:text-[0.95rem]">
-          <span data-id="pg146_n0007">Waulize wazazi au walezi wako kuhusu miiko iliyowekwa katika jamii yako ili kukuza na kutunza maadili katika jamii.</span>
+          <span>Waulize wazazi au walezi wako kuhusu miiko iliyowekwa katika jamii yako ili kukuza na kutunza maadili katika jamii.</span>
         </div>
 
       </div>
@@ -77,11 +79,12 @@
 
   <div class="relative z-50" id="interface-container"></div>
   <div class="relative z-50" id="nav-container"></div>
-  <script src="./assets/offline-preloader.js?v=audiofix-20260824-1"></script>
-  <script src="./assets/offline-preloader.js?v=audiofix-20260824-1"></script>
+  <script src="./content/semantic-flow-pages.js?v=10"></script>
+  <script src="./assets/offline-preloader.js?v=responsive-20260904-1"></script>
   <script src="./assets/scorm.js"></script>
   <script src="./assets/sign-language-tts-compat.js?v=audiofix-20260824-1"></script>
   <script src="./assets/base.bundle.local.js?v=audiofix-20260824-1"></script>
-<script src="./assets/book-interactions.js?v=1"></script>
+  <script src="./assets/readalong-sw.js?v=audiofix-20260824-1"></script>
+  <script src="./assets/book-interactions.js?v=1"></script>
 </body>
 </html>

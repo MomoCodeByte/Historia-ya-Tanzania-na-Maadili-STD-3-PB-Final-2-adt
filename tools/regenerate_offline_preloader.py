@@ -16,7 +16,11 @@ def main() -> None:
     if not match:
         raise RuntimeError("Could not locate INLINE resources in offline-preloader.js")
     inline = json.loads(match.group(1))
-    for required in ("./assets/book-interactions.css", "./assets/book-interactions.js"):
+    for required in (
+        "./assets/book-interactions.css",
+        "./assets/book-interactions.js",
+        "./assets/viewer-responsive.css",
+    ):
         inline.setdefault(required, "")
     refreshed = {}
     for key in inline:

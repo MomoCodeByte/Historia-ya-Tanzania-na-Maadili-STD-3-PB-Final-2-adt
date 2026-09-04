@@ -3,35 +3,33 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Historia ya Tanzania na Maadili</title>
-  <meta name="title-id" content="pg001_sec001" />
-  <meta name="page-section-id" content="1" />
+  <title>Jalada la mbele | Historia ya Tanzania na Maadili</title>
+  <meta name="title-id" content="front_cover" />
   <link href="./content/tailwind_output.css" rel="stylesheet">
   <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
   <link href="./assets/fonts.css" rel="stylesheet">
+  <style>
+    /* The front cover has no narrated/sign-language page content. */
+    .front-cover-page #interface-container,
+    .front-cover-page #nav-container [aria-label="Lugha ya ishara"],
+    .front-cover-page #nav-container [aria-label="Sign language"] {
+      display: none !important;
+    }
+  </style>
+  <link rel="stylesheet" href="./assets/viewer-responsive.css?v=1">
 </head>
-<body class="min-h-screen bg-neutral-100">
+<body class="front-cover-page min-h-screen bg-neutral-100">
   <main class="w-full">
-    <h1 class="sr-only">Historia ya Tanzania na Maadili - ukurasa 1</h1>
+    <h1 class="sr-only">Jalada la mbele la Historia ya Tanzania na Maadili</h1>
     <div id="content" class="mx-auto w-full bg-neutral-100 px-2 py-3 opacity-0 max-sm:px-0 max-sm:py-0">
-      <section role="article" data-section-type="pdf_faithful_page" data-section-id="pg001_sec001" class="mx-auto w-full max-w-[900px] overflow-hidden bg-white shadow-md max-sm:shadow-none">
-        <img src="images/pdf-pages/pg001.jpg" alt="Ukurasa 1 wa kitabu Historia ya Tanzania na Maadili" class="block h-auto w-full max-w-full" />
-        <div class="sr-only" aria-label="Maudhui ya maandishi ya ukurasa 1">
-          <span data-id="pg001_n0003">Historia ya</span>
-          <span data-id="pg001_n0004">Tanzania na Maadili</span>
-          <span data-id="pg001_n0005">Kitabu cha Mwanafunzi</span>
-          <span data-id="pg001_n0006">Darasa la 3</span>
-          <span data-id="pg001_im001">Cheti cha uthibati cha kitabu, kilichotolewa na Wizara ya Elimu, Sayansi na Teknolojia. Kinaonyesha kuwa kitabu cha Historia ya Tanzania na Maadili Darasa la Tatu kimeidhinishwa kutumika shuleni.</span>
-          <span data-id="pg001_n0008">Taasisi ya Elimu Tanzania</span>
-          <span data-id="pg001_n0009">Historia ya Tanzania na Maadili STD 3 PB Final.indd 1</span>
-          <span data-id="pg001_n0010">29/11/2024 17:14</span>
-        </div>
-      </section>
+      <figure role="group" aria-label="Jalada la mbele" data-section-type="cover" data-section-id="front_cover" class="mx-auto w-full max-w-[1100px] overflow-hidden bg-white shadow-md max-sm:shadow-none">
+        <img src="assets/covers/front-cover.png" alt="Jalada la mbele la Historia ya Tanzania na Maadili, Kitabu cha Mwanafunzi Darasa la 3" class="block h-auto w-full max-w-full" />
+      </figure>
     </div>
   </main>
-  <div class="relative z-50" id="interface-container"></div>
+  <div class="relative z-50" id="interface-container" aria-hidden="true"></div>
   <div class="relative z-50" id="nav-container"></div>
-  <script src="./assets/offline-preloader.js?v=audiofix-20260824-1"></script>
+  <script src="./assets/offline-preloader.js?v=responsive-20260904-1"></script>
   <script src="./assets/scorm.js"></script>
   <script src="./assets/sign-language-tts-compat.js?v=audiofix-20260824-1"></script>
   <script src="./assets/base.bundle.local.js?v=audiofix-20260824-1"></script>
