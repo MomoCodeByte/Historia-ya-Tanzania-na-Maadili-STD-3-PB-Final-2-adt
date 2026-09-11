@@ -1114,6 +1114,41 @@ body.semantic-book-body {
   font-weight: 700;
 }
 
+.flow-page-48 .flow-list-item[data-marker^="(i"] {
+  grid-template-columns: 4.8cqw minmax(0, 1fr);
+}
+
+.flow-page-48 .flow-list-item[data-marker^="(i"]::before {
+  white-space: nowrap;
+}
+
+.flow-page-76 .flow-page76-exercise {
+  padding: 1.3cqw 1.4cqw;
+  border: .14cqw solid #f08ab7;
+  background: #fbf2cf;
+}
+
+.flow-page-76 .flow-page76-exercise > :first-child {
+  margin-top: 0;
+}
+
+.flow-page-76 .flow-vocabulary-title {
+  margin-top: 1.8cqw;
+  color: #98280f;
+  text-align: left;
+}
+
+.flow-page-123 .flow-vocabulary-title {
+  margin-top: 2.2cqw;
+  margin-bottom: .55cqw;
+  color: #98280f;
+  text-align: left;
+}
+
+#book-interactive-shell [data-section-id="pg078_sec001"] img + p {
+  display: none;
+}
+
 .flow-page-145 .flow-list-item {
   grid-template-columns: 5cqw minmax(0, 1fr);
 }
@@ -1663,6 +1698,157 @@ body.semantic-book-body {
   background: #f6fff8;
   font-weight: 700;
 }
+
+.flow-page-126 .flow-figure-instruction,
+.flow-page-126 .flow-family-tree figcaption {
+  color: #006eb8;
+}
+
+.flow-page-126 .flow-family-tree {
+  position: relative;
+}
+
+.flow-page-126 .flow-family-tree h3,
+.flow-page-126 .flow-tree-level span {
+  position: relative;
+  z-index: 1;
+  border-color: #252525;
+  border-radius: 0;
+  background: #fff;
+  color: #171717;
+}
+
+.flow-page-126 .flow-tree-connectors {
+  position: absolute;
+  top: 3.6cqw;
+  left: 50%;
+  z-index: 0;
+  width: 62cqw;
+  height: 9.8cqw;
+  overflow: visible;
+  color: #252525;
+  pointer-events: none;
+  transform: translateX(-50%);
+}
+
+.flow-page-126 .flow-tree-connectors path:not([fill]) {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.35;
+  vector-effect: non-scaling-stroke;
+}
+
+.flow-page-126 .flow-family-tree figcaption strong {
+  font-weight: 800;
+}
+
+.flow-page-127 .flow-figure-instruction,
+.flow-page-129 .flow-figure-instruction {
+  color: #006eb8;
+}
+
+.flow-page-138 .flow-exercise {
+  border-color: #ed3f70;
+  border-top-color: #ed1c24;
+  border-radius: 0;
+  background: #fbf2d3;
+}
+
+.flow-page-138 .flow-vocabulary-title {
+  margin-top: 1.25cqw;
+  margin-bottom: .85cqw;
+  color: #98280f;
+  text-align: left;
+}
+
+.flow-page-138 .flow-page138-glossary {
+  grid-template-columns: 18cqw 1fr;
+  gap: 1.2cqw;
+  font-size: 2.05cqw;
+  line-height: 1.25;
+}
+
+.flow-page-127 .flow-page127-family-diagram {
+  width: 100%;
+  margin-top: .45cqw;
+}
+
+.flow-page-127 .flow-family-relations {
+  position: relative;
+  width: min(100%, 74cqw);
+  height: 18cqw;
+  margin: 0 auto;
+}
+
+.flow-page-127 .flow-extended-tree-connectors {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.flow-page-127 .flow-extended-tree-connectors path:not([fill]) {
+  fill: none;
+  stroke: #2f69ad;
+  stroke-width: 1.25;
+  vector-effect: non-scaling-stroke;
+}
+
+.flow-page-127 .flow-relation-label {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 14.6%;
+  height: 24%;
+  padding: .2cqw .3cqw;
+  border: .12cqw solid #2f69ad;
+  background: #fff;
+  color: #151515;
+  font-size: 1.18cqw;
+  font-weight: 600;
+  line-height: 1.08;
+  text-align: center;
+}
+
+.flow-page-127 .flow-relation-label-1,
+.flow-page-127 .flow-relation-label-2 {
+  top: 0;
+  width: 34%;
+  height: 19%;
+}
+
+.flow-page-127 .flow-relation-label-1 { left: 8%; }
+.flow-page-127 .flow-relation-label-2 { left: 58%; }
+.flow-page-127 .flow-relation-label-3,
+.flow-page-127 .flow-relation-label-4,
+.flow-page-127 .flow-relation-label-5,
+.flow-page-127 .flow-relation-label-6,
+.flow-page-127 .flow-relation-label-7,
+.flow-page-127 .flow-relation-label-8 { top: 34%; }
+.flow-page-127 .flow-relation-label-9,
+.flow-page-127 .flow-relation-label-10,
+.flow-page-127 .flow-relation-label-11,
+.flow-page-127 .flow-relation-label-12,
+.flow-page-127 .flow-relation-label-13,
+.flow-page-127 .flow-relation-label-14 { top: 69%; height: 27%; }
+.flow-page-127 .flow-relation-label-3,
+.flow-page-127 .flow-relation-label-9 { left: 1%; }
+.flow-page-127 .flow-relation-label-4,
+.flow-page-127 .flow-relation-label-10 { left: 17.7%; }
+.flow-page-127 .flow-relation-label-5,
+.flow-page-127 .flow-relation-label-11 { left: 34.4%; }
+.flow-page-127 .flow-relation-label-6,
+.flow-page-127 .flow-relation-label-12 { left: 51%; }
+.flow-page-127 .flow-relation-label-7,
+.flow-page-127 .flow-relation-label-13 { left: 67.7%; }
+.flow-page-127 .flow-relation-label-8,
+.flow-page-127 .flow-relation-label-14 { left: 84.4%; }
 
 .flow-family-tree h3 {
   width: 19cqw;

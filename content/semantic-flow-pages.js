@@ -206,18 +206,37 @@
   const sourceOrder = {
     27: ["pg027_n0002", "pg027_n0003", "pg027_n0006", "pg027_n0007", "pg027_n0009", "pg027_n0010", "pg027_n0012", "pg027_n0013", "pg027_n0015", "pg027_n0016", "pg027_n0018", "pg027_n0019", "pg027_n0021", "pg027_n0022", "pg027_n0024", "pg027_n0025", "pg027_n0039", "pg027_im002_ai1", "pg027_n0040", "pg027_n0027", "pg027_n0028", "pg027_n0029", "pg027_n0030", "pg027_n0031", "pg027_n0032", "pg027_n0033"],
     40: ["pg040_n0006", "pg040_n0003", "pg040_n0004", "pg040_n0008", "pg040_n0010", "pg040_n0011", "pg040_n0012", "pg040_im001", "pg040_n0014", "pg040_n0016"],
-    48: ["pg048_n0006", "pg048_n0008", "pg048_n0009", "pg048_n0010", "pg048_n0013", "pg048_n0014", "pg048_n0016", "pg048_n0017", "pg048_n0019", "pg048_n0020", "pg048_n0022", "pg048_n0023", "pg048_n0003", "pg048_n0004", "pg048_n0025", "pg048_n0026", "pg048_n0028", "pg048_n0029", "pg048_n0031", "pg048_n0032", "pg048_n0034", "pg048_n0035"],
+    48: ["pg048_n0006", "pg048_n0003", "pg048_n0004", "pg048_n0008", "pg048_n0009", "pg048_n0010", "pg048_n0013", "pg048_n0014", "pg048_n0016", "pg048_n0017", "pg048_n0019", "pg048_n0020", "pg048_n0022", "pg048_n0023", "pg048_n0025", "pg048_n0026", "pg048_n0028", "pg048_n0029", "pg048_n0031", "pg048_n0032", "pg048_n0034", "pg048_n0035"],
+    51: ["pg051_n0002", "pg051_n0003", "pg051_n0005", "pg051_n0007", "pg051_n0008", "pg051_n0009", "pg051_n0010", "pg051_n0012", "pg051_n0013", "pg051_n0015", "pg051_n0025", "pg051_n0026", "pg051_n0017", "pg051_n0018", "pg051_n0019"],
     53: ["pg053_n0002", "pg053_n0003", "pg053_n0033", "pg053_n0034", "pg053_n0005", "pg053_n0006", "pg053_n0007", "pg053_n0010", "pg053_n0011", "pg053_n0012", "pg053_im001", "pg053_n0014", "pg053_n0017", "pg053_n0018", "pg053_n0020", "pg053_n0021", "pg053_n0023", "pg053_n0024", "pg053_n0026", "pg053_n0027"],
     55: ["pg055_n0006", "pg055_n0008", "pg055_n0002", "pg055_n0003", "pg055_im002", "pg055_n0010", "pg055_n0011", "pg055_n0014", "pg055_n0015", "pg055_n0017", "pg055_n0018", "pg055_n0020", "pg055_n0021", "pg055_n0023", "pg055_n0024", "pg055_n0026", "pg055_n0027", "pg055_im001", "pg055_n0029"],
     57: ["pg057_n0001", "pg057_n0004", "pg057_n0005", "pg057_im002", "pg057_n0007", "pg057_n0009", "pg057_n0010", "pg057_n0013", "pg057_n0014", "pg057_im003", "pg057_n0016", "pg057_n0017", "pg057_n0018", "pg057_n0019", "pg057_n0022", "pg057_n0023", "pg057_n0025", "pg057_n0026", "pg057_n0028", "pg057_n0029", "pg057_n0031", "pg057_n0032", "pg057_n0034", "pg057_n0035"],
     61: ["pg061_n0003", "pg061_n0004", "pg061_n0006", "pg061_n0007", "pg061_n0008", "pg061_im001", "pg061_n0010", "pg061_n0020", "pg061_n0021", "pg061_n0012", "pg061_n0013", "pg061_n0014"],
     62: ["pg062_n0002", "pg062_n0003", "pg062_n0004", "pg062_n0005", "pg062_n0007", "pg062_n0009", "pg062_n0010", "pg062_n0040", "pg062_n0041", "pg062_im001", "pg062_n0012", "pg062_n0015", "pg062_n0016", "pg062_n0018", "pg062_n0019", "pg062_n0021", "pg062_n0022", "pg062_n0024", "pg062_n0025", "pg062_n0027", "pg062_n0028", "pg062_n0030", "pg062_n0031", "pg062_n0033", "pg062_n0034"],
     73: ["pg073_n0002", "pg073_n0003", "pg073_n0004", "pg073_n0005", "pg073_n0006", "pg073_n0008", "pg073_n0010", "pg073_n0019", "pg073_n0020", "pg073_n0012", "pg073_n0014", "pg073_im002"],
-    81: ["pg081_im001", "pg081_im002", "pg081_im003", "pg081_im004", "pg081_n0009", "pg081_n0011", "pg081_n0013", "pg081_n0014", "pg081_im005", "pg081_n0016", "pg081_n0022", "pg081_n0023", "pg081_n0024"],
+    75: ["pg075_n0002", "pg075_n0003", "pg075_n0004", "pg075_n0013", "pg075_n0014", "pg075_im001", "pg075_n0006", "pg075_n0007", "pg075_n0009", "pg075_n0010", "pg075_n0016", "pg075_n0017", "pg075_n0018", "pg075_n0022", "pg075_n0024", "pg075_n0026", "pg075_n0028", "pg075_n0031", "pg075_n0033", "pg075_n0036", "pg075_n0039", "pg075_n0041", "pg075_n0044", "pg075_n0047", "pg075_n0049", "pg075_n0052", "pg075_n0055", "pg075_n0057", "pg075_n0060"],
+    77: ["pg077_n0002", "pg077_n0003", "pg077_n0005", "pg077_n0007", "pg077_n0008", "pg077_n0009", "pg077_n0010", "pg077_n0012", "pg077_n0013", "pg077_n0015", "pg077_n0016", "pg077_n0023", "pg077_n0024", "pg077_n0018"],
+    81: ["pg081_im001", "pg081_im002", "pg081_im003", "pg081_im004", "pg081_n0009", "pg081_n0022", "pg081_n0023", "pg081_n0024", "pg081_n0011", "pg081_n0013", "pg081_n0014", "pg081_im005", "pg081_n0016"],
+    87: ["pg087_n0003", "pg087_n0004", "pg087_n0005", "pg087_n0006", "pg087_n0008", "pg087_n0009", "pg087_n0010", "pg087_n0012", "pg087_n0013", "pg087_n0014", "pg087_n0016", "pg087_n0017", "pg087_n0018", "pg087_n0037", "pg087_im002", "pg087_n0038", "pg087_n0020", "pg087_n0022", "pg087_n0023", "pg087_n0024", "pg087_n0025", "pg087_n0026", "pg087_n0027", "pg087_n0029", "pg087_n0030", "pg087_n0031"],
+    88: ["pg088_n0002", "pg088_n0003", "pg088_n0004", "pg088_n0005", "pg088_n0006", "pg088_n0007", "pg088_n0008", "pg088_n0010", "pg088_n0011", "pg088_n0012", "pg088_n0013", "pg088_n0014", "pg088_n0015", "pg088_n0024", "pg088_n0027", "pg088_n0028", "pg088_n0030", "pg088_n0031", "pg088_n0017", "pg088_n0018"],
+    89: ["pg089_n0002", "pg089_n0003", "pg089_n0004", "pg089_n0028", "pg089_n0029", "pg089_n0006", "pg089_n0007", "pg089_n0010", "pg089_n0012", "pg089_n0014", "pg089_n0016", "pg089_n0017", "pg089_n0019", "pg089_n0021", "pg089_n0022"],
+    91: ["pg091_n0002", "pg091_im001", "pg091_im004", "pg091_im003", "pg091_im002", "pg091_n0005", "pg091_n0007", "pg091_n0008", "pg091_n0009", "pg091_n0010", "pg091_n0012", "pg091_n0013", "pg091_n0023", "pg091_n0024", "pg091_n0015", "pg091_n0016", "pg091_n0017", "pg091_n0018"],
+    93: ["pg093_n0003", "pg093_n0005", "pg093_n0007", "pg093_n0009", "pg093_n0010", "pg093_n0011", "pg093_n0026", "pg093_im001", "pg093_n0027", "pg093_n0013", "pg093_n0014", "pg093_n0029", "pg093_n0032", "pg093_n0034", "pg093_n0016", "pg093_n0018", "pg093_n0019", "pg093_n0020"],
+    99: ["pg099_n0002", "pg099_n0003", "pg099_n0023", "pg099_im001", "pg099_n0024", "pg099_n0005", "pg099_n0006", "pg099_n0007", "pg099_n0008", "pg099_n0009", "pg099_n0011", "pg099_n0013", "pg099_n0014", "pg099_n0015", "pg099_n0016", "pg099_n0017", "pg099_n0027", "pg099_im002", "pg099_n0028"],
     102: ["pg102_n0003", "pg102_n0005", "pg102_n0007", "pg102_n0008", "pg102_n0010", "pg102_n0012", "pg102_n0013", "pg102_n0014", "pg102_n0015", "pg102_n0016", "pg102_im002", "pg102_n0018"],
+    103: ["pg103_n0002", "pg103_n0004", "pg103_n0005", "pg103_n0006", "pg103_n0007", "pg103_n0009", "pg103_n0011", "pg103_n0012", "pg103_n0013", "pg103_n0014", "pg103_n0015", "pg103_n0032", "pg103_n0033", "pg103_n0017", "pg103_n0018", "pg103_n0019", "pg103_n0022", "pg103_n0024", "pg103_n0026"],
+    115: ["pg115_n0002", "pg115_n0004", "pg115_n0005", "pg115_n0007", "pg115_n0008", "pg115_n0011", "pg115_n0012", "pg115_n0014", "pg115_n0015", "pg115_n0017", "pg115_n0018", "pg115_n0020", "pg115_n0022", "pg115_n0023", "pg115_n0026", "pg115_n0027", "pg115_n0029", "pg115_n0030", "pg115_n0032", "pg115_n0033", "pg115_n0035", "pg115_n0036", "pg115_n0038", "pg115_n0039"],
+    116: ["pg116_n0002", "pg116_n0003", "pg116_n0005", "pg116_n0007", "pg116_n0008", "pg116_n0035", "pg116_n0036", "pg116_n0010", "pg116_n0013", "pg116_n0014", "pg116_n0016", "pg116_n0017", "pg116_n0018", "pg116_n0020", "pg116_n0021", "pg116_n0022", "pg116_n0024", "pg116_n0025", "pg116_n0026", "pg116_n0028", "pg116_n0029"],
+    123: ["pg123_n0002", "pg123_n0004", "pg123_n0007", "pg123_n0008", "pg123_n0009", "pg123_n0010", "pg123_n0011", "pg123_n0012", "pg123_n0013", "pg123_n0014", "pg123_n0015", "pg123_n0016", "pg123_n0017", "pg123_n0018", "pg123_n0021", "pg123_n0025", "pg123_n0027", "pg123_n0030", "pg123_n0032"],
+    124: ["pg124_im001", "pg124_n0002", "pg124_n0003", "pg124_im002", "pg124_n0005", "pg124_n0007", "pg124_n0008", "pg124_n0009", "pg124_n0010", "pg124_im003", "pg124_n0012", "pg124_n0013", "pg124_n0015", "pg124_n0028", "pg124_n0029", "pg124_n0017", "pg124_n0018", "pg124_n0019", "pg124_n0021", "pg124_n0022"],
+    126: ["pg126_n0002", "pg126_n0003", "pg126_n0004", "pg126_n0005", "pg126_n0006", "pg126_n0008", "pg126_n0009", "pg126_n0010", "pg126_n0011", "pg126_n0012", "pg126_n0013", "pg126_n0014", "pg126_n0023", "pg126_n0024", "pg126_n0027", "pg126_n0029", "pg126_n0031", "pg126_n0033", "pg126_n0016", "pg126_n0017", "pg126_n0018"],
+    129: ["pg129_n0002", "pg129_n0022", "pg129_n0023", "pg129_n0004", "pg129_n0005", "pg129_n0006", "pg129_n0008", "pg129_n0009", "pg129_n0010", "pg129_n0012", "pg129_n0014", "pg129_n0015", "pg129_n0016", "pg129_n0017"],
+    137: ["pg137_n0002", "pg137_n0003", "pg137_n0004", "pg137_n0005", "pg137_n0006", "pg137_n0007", "pg137_n0022", "pg137_n0023", "pg137_n0009", "pg137_n0010", "pg137_n0011", "pg137_n0012", "pg137_n0013", "pg137_n0014", "pg137_n0015", "pg137_n0016"],
+    138: ["pg138_n0003", "pg138_n0006", "pg138_n0007", "pg138_n0009", "pg138_n0010", "pg138_n0012", "pg138_n0013", "pg138_n0015", "pg138_n0016", "pg138_n0018", "pg138_n0019", "pg138_n0021", "pg138_n0022", "pg138_n0024", "pg138_n0025", "pg138_n0027", "pg138_n0029", "pg138_n0030"],
     141: ["pg141_n0002", "pg141_n0003", "pg141_n0024", "pg141_n0025", "pg141_n0005", "pg141_n0007", "pg141_n0008", "pg141_n0009", "pg141_n0028", "pg141_n0029", "pg141_n0011", "pg141_n0012", "pg141_n0013", "pg141_n0014", "pg141_n0016", "pg141_n0017"],
     142: ["pg142_n0002", "pg142_n0003", "pg142_n0005", "pg142_n0006", "pg142_n0007", "pg142_n0008", "pg142_n0010", "pg142_n0012", "pg142_n0013", "pg142_n0014", "pg142_n0015", "pg142_n0026", "pg142_n0027", "pg142_n0017", "pg142_n0018", "pg142_n0020"],
     148: ["pg148_n0002", "pg148_n0004", "pg148_n0005", "pg148_n0006", "pg148_n0007", "pg148_n0008", "pg148_n0009", "pg148_n0031", "pg148_n0011", "pg148_n0013", "pg148_n0014", "pg148_n0015", "pg148_n0016", "pg148_n0017", "pg148_n0018", "pg148_n0019", "pg148_n0021", "pg148_n0023", "pg148_n0024"],
+    151: ["pg151_n0003", "pg151_n0004", "pg151_n0006", "pg151_n0007", "pg151_n0033", "pg151_n0034", "pg151_n0009", "pg151_n0011", "pg151_n0012", "pg151_n0037", "pg151_n0038", "pg151_n0014", "pg151_n0017", "pg151_n0018", "pg151_n0019", "pg151_n0020", "pg151_n0022", "pg151_n0023", "pg151_n0025", "pg151_n0026"],
     152: ["pg152_n0002", "pg152_n0005", "pg152_n0006", "pg152_n0008", "pg152_n0009", "pg152_n0011", "pg152_n0012", "pg152_n0040", "pg152_n0042", "pg152_n0043", "pg152_n0045", "pg152_n0046", "pg152_n0048", "pg152_n0049", "pg152_n0051", "pg152_n0052", "pg152_n0054", "pg152_n0055", "pg152_n0057", "pg152_n0058", "pg152_n0014", "pg152_n0018", "pg152_n0020", "pg152_n0023", "pg152_n0025", "pg152_n0028", "pg152_n0030", "pg152_n0033", "pg152_n0035"]
   };
 
@@ -248,7 +267,11 @@
     pg038_n0007: "Vilevile, Kaole kuna urithi wa bidhaa kama sahani na shanga zilizoletwa na wafanyabiashara kutoka Mashariki ya Mbali na Kati.",
     pg038_n0009: "Makumbusho mbalimbali nchini zina bidhaa kama vile vigae, vyombo na shanga zilizoletwa na wafanyabiashara kutoka Mashariki ya Mbali na Kati.",
     pg039_n0013: "Mitindo ya mavazi iliyoletwa na Waarabu",
-    pg040_n0003: "Kazi ya kufanya namba 3"
+    pg040_n0003: "Kazi ya kufanya namba 3",
+    pg048_n0013: "(a)",
+    pg048_n0016: "(b)",
+    pg048_n0019: "(c)",
+    pg048_n0022: "(d)"
   };
   const captionContinuationIds = new Set(["pg101_n0005", "pg108_n0028", "pg128_n0023", "pg130_n0019"]);
   const page75TableIds = new Set(["pg075_n0024", "pg075_n0026", "pg075_n0028", "pg075_n0031", "pg075_n0033", "pg075_n0036", "pg075_n0039", "pg075_n0041", "pg075_n0044", "pg075_n0047", "pg075_n0049", "pg075_n0052", "pg075_n0055", "pg075_n0057", "pg075_n0060"]);
@@ -259,6 +282,7 @@
   const exerciseBreakBefore = {
     74: new Set(["pg074_n0013"]),
     78: new Set(["pg078_n0010"]),
+    88: new Set(["pg088_n0017"]),
     95: new Set(["pg095_n0019"]),
     118: new Set(["pg118_n0012"]),
     130: new Set(["pg130_n0012"])
@@ -511,6 +535,25 @@
     const figure = element("figure", "flow-diagram flow-family-tree");
     figure.setAttribute("aria-label", "Mti wa familia");
     figure.appendChild(element("h3", "", "Familia"));
+    const connectors = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    connectors.setAttribute("class", "flow-tree-connectors");
+    connectors.setAttribute("viewBox", "0 0 100 100");
+    connectors.setAttribute("preserveAspectRatio", "none");
+    connectors.setAttribute("aria-hidden", "true");
+    connectors.innerHTML = `
+      <defs>
+        <marker id="family-tree-arrow" markerWidth="8" markerHeight="8" refX="6.5" refY="4" orient="auto">
+          <path d="M0,0 L8,4 L0,8 Z" fill="#252525"></path>
+        </marker>
+      </defs>
+      <path d="M50 0 V33" marker-end="url(#family-tree-arrow)"></path>
+      <path d="M22 33 H78"></path>
+      <path d="M50 33 V62" marker-end="url(#family-tree-arrow)"></path>
+      <path d="M14 62 H86"></path>
+      <path d="M14 62 V100" marker-end="url(#family-tree-arrow)"></path>
+      <path d="M50 62 V100" marker-end="url(#family-tree-arrow)"></path>
+      <path d="M86 62 V100" marker-end="url(#family-tree-arrow)"></path>`;
+    figure.appendChild(connectors);
     const parents = element("div", "flow-tree-level flow-tree-parents");
     parents.appendChild(element("span", "", "Baba"));
     parents.appendChild(element("span", "", "Mama"));
@@ -518,9 +561,42 @@
     const children = element("div", "flow-tree-level flow-tree-children");
     children.appendChild(element("span", "", "Kaka"));
     children.appendChild(element("span", "", "Mimi"));
-    children.appendChild(element("span", "", "Dada"));
+    children.appendChild(element("span", "", "dada"));
     figure.appendChild(children);
-    figure.appendChild(element("figcaption", "", "Kielelezo namba 2: Mti wa familia"));
+    const caption = element("figcaption", "", "");
+    caption.appendChild(element("strong", "", "Kielelezo namba 2:"));
+    caption.appendChild(document.createTextNode(" Mti wa familia"));
+    figure.appendChild(caption);
+    return figure;
+  }
+
+  function buildExtendedFamilyTree(descriptions) {
+    const figure = element("figure", "flow-figure flow-page127-family-diagram");
+    const diagram = element("div", "flow-family-relations");
+    diagram.setAttribute("role", "img");
+    diagram.setAttribute("aria-label", descriptions.pg127_im016 || "Mti wa ndugu wa karibu na familia");
+    const connectors = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    connectors.setAttribute("class", "flow-extended-tree-connectors");
+    connectors.setAttribute("viewBox", "0 0 100 100");
+    connectors.setAttribute("preserveAspectRatio", "none");
+    connectors.setAttribute("aria-hidden", "true");
+    connectors.innerHTML = `
+      <defs>
+        <marker id="extended-family-arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+          <path d="M0,0 L7,3.5 L0,7 Z" fill="#2f69ad"></path>
+        </marker>
+      </defs>
+      <path d="M25 19 V29 H8.3 M25 29 H41.7"></path>
+      <path d="M8.3 29 V34 M25 29 V34 M41.7 29 V34" marker-end="url(#extended-family-arrow)"></path>
+      <path d="M75 19 V29 H58.3 M75 29 H91.7"></path>
+      <path d="M58.3 29 V34 M75 29 V34 M91.7 29 V34" marker-end="url(#extended-family-arrow)"></path>
+      <path d="M8.3 58 V69 M25 58 V69 M41.7 58 V69 M58.3 58 V69 M75 58 V69 M91.7 58 V69" marker-end="url(#extended-family-arrow)"></path>`;
+    diagram.appendChild(connectors);
+    [
+      "pg127_n0010", "pg127_n0011", "pg127_n0012", "pg127_n0013", "pg127_n0014", "pg127_n0015", "pg127_n0016", "pg127_n0017",
+      "pg127_n0018", "pg127_n0019", "pg127_n0020", "pg127_n0021", "pg127_n0022", "pg127_n0023"
+    ].forEach((id, index) => diagram.appendChild(element("span", `flow-relation-label flow-relation-label-${index + 1}`, descriptions[id])));
+    figure.appendChild(diagram);
     return figure;
   }
 
@@ -544,6 +620,7 @@
     if (sourceOrder[page]) {
       const rank = new Map(sourceOrder[page].map((id, index) => [id, index]));
       spans.sort((a, b) => (rank.get(a.dataset.id) ?? 9999) - (rank.get(b.dataset.id) ?? 9999));
+      spans.forEach((span) => hook.appendChild(span));
     }
     const descriptions = {};
     spans.forEach((span) => { descriptions[span.dataset.id] = span.textContent.trim(); });
@@ -588,18 +665,411 @@
       }
       if (page === 63 && ["pg063_n0024", "pg063_ac001", "pg063_ac002", "pg063_n0031", "pg063_n0033", "pg063_n0036", "pg063_n0039", "pg063_n0041", "pg063_n0043", "pg063_n0047", "pg063_n0049", "pg063_n0026", "pg063_n0028", "pg063_n0054", "pg063_n0056", "pg063_n0061", "pg063_n0063", "pg063_n0068", "pg063_n0070", "pg063_n0075", "pg063_n0077", "pg063_n0082", "pg063_n0084", "pg063_n0089", "pg063_n0091", "pg063_n0096", "pg063_n0098", "pg063_ac003", "pg063_ac004"].includes(id)) return;
       if (page === 69 && id === "pg069_n0010") closeCollections();
+      if (page === 75 && id === "pg075_n0002") {
+        inner.appendChild(element("p", "flow-paragraph", `${text} ${descriptions.pg075_n0003}`));
+        return;
+      }
+      if (page === 75 && id === "pg075_n0003") return;
       if (page === 75 && id === "pg075_n0022") {
         (exercise || inner).appendChild(buildMatchingTable());
         return;
       }
       if (page === 75 && page75TableIds.has(id)) return;
+      if (page === 76 && id === "pg076_n0039") {
+        const glossary = element("dl", "flow-glossary");
+        [
+          ["pg076_n0039", "pg076_n0041"],
+          ["pg076_n0044", "pg076_n0046"],
+          ["pg076_n0049", "pg076_n0051"]
+        ].forEach(([termId, definitionId]) => {
+          glossary.appendChild(element("dt", "", descriptions[termId]));
+          glossary.appendChild(element("dd", "", descriptions[definitionId]));
+        });
+        inner.appendChild(glossary);
+        return;
+      }
+      if (page === 76 && ["pg076_n0041", "pg076_n0044", "pg076_n0046", "pg076_n0049", "pg076_n0051"].includes(id)) return;
+      if (page === 78 && id === "pg078_n0010") {
+        inner.appendChild(element("p", "flow-paragraph", ["pg078_n0010", "pg078_n0011", "pg078_n0012"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 78 && ["pg078_n0011", "pg078_n0012"].includes(id)) return;
+      if (page === 78 && id === "pg078_n0014") {
+        inner.appendChild(element("p", "flow-paragraph", ["pg078_n0014", "pg078_n0015", "pg078_n0016", "pg078_n0017", "pg078_n0018"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 78 && ["pg078_n0015", "pg078_n0016", "pg078_n0017", "pg078_n0018"].includes(id)) return;
+      if (page === 87 && id === "pg087_n0003") {
+        const principles = element("ol", "flow-list flow-letter-list");
+        [
+          ["(c)", ["pg087_n0004", "pg087_n0005", "pg087_n0006"]],
+          ["(d)", ["pg087_n0009", "pg087_n0010"]],
+          ["(e)", ["pg087_n0013", "pg087_n0014"]],
+          ["(f)", ["pg087_n0017", "pg087_n0018"]]
+        ].forEach(([marker, textIds]) => {
+          const item = element("li", "flow-list-item");
+          item.dataset.marker = marker;
+          item.appendChild(element("span", "", textIds.map((textId) => descriptions[textId]).join(" ")));
+          principles.appendChild(item);
+        });
+        inner.appendChild(principles);
+        return;
+      }
+      if (page === 87 && ["pg087_n0004", "pg087_n0005", "pg087_n0006", "pg087_n0008", "pg087_n0009", "pg087_n0010", "pg087_n0012", "pg087_n0013", "pg087_n0014", "pg087_n0016", "pg087_n0017", "pg087_n0018"].includes(id)) return;
+      if (page === 88 && id === "pg088_n0002") {
+        inner.appendChild(element("p", "flow-paragraph", ["pg088_n0002", "pg088_n0003", "pg088_n0004", "pg088_n0005", "pg088_n0006", "pg088_n0007", "pg088_n0008"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 88 && ["pg088_n0003", "pg088_n0004", "pg088_n0005", "pg088_n0006", "pg088_n0007", "pg088_n0008"].includes(id)) return;
+      if (page === 88 && id === "pg088_n0010") {
+        inner.appendChild(element("p", "flow-paragraph", ["pg088_n0010", "pg088_n0011", "pg088_n0012", "pg088_n0013"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 88 && ["pg088_n0011", "pg088_n0012", "pg088_n0013"].includes(id)) return;
+      if (page === 88 && id === "pg088_n0014") {
+        inner.appendChild(element("p", "flow-paragraph", ["pg088_n0014", "pg088_n0015"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 88 && id === "pg088_n0015") return;
+      if (page === 88 && id === "pg088_n0017") {
+        inner.appendChild(element("p", "flow-paragraph", ["pg088_n0017", "pg088_n0018"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 88 && id === "pg088_n0018") return;
+      if (page === 89 && id === "pg089_n0002") {
+        inner.appendChild(element("p", "flow-paragraph", ["pg089_n0002", "pg089_n0003", "pg089_n0004"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 89 && ["pg089_n0003", "pg089_n0004"].includes(id)) return;
+      if (page === 89 && id === "pg089_n0006") {
+        inner.appendChild(element("p", "flow-paragraph", ["pg089_n0006", "pg089_n0007"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 89 && id === "pg089_n0007") return;
+      if (page === 89 && id === "pg089_n0010") {
+        const benefits = element("ol", "flow-list flow-letter-list");
+        ["pg089_n0010", "pg089_n0012", "pg089_n0014"].forEach((textId) => {
+          const itemText = descriptions[textId];
+          const marker = itemText.match(/^\([a-c]\)/i)?.[0] || "";
+          const item = element("li", "flow-list-item");
+          item.dataset.marker = marker;
+          item.appendChild(element("span", "", itemText.replace(/^\([a-c]\)\s*/i, "")));
+          benefits.appendChild(item);
+        });
+        inner.appendChild(benefits);
+        return;
+      }
+      if (page === 89 && ["pg089_n0012", "pg089_n0014"].includes(id)) return;
+      if (page === 89 && id === "pg089_n0016") {
+        inner.appendChild(element("p", "flow-paragraph", ["pg089_n0016", "pg089_n0017"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 89 && id === "pg089_n0017") return;
+      if (page === 89 && id === "pg089_n0021") {
+        inner.appendChild(element("p", "flow-paragraph", ["pg089_n0021", "pg089_n0022"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 89 && id === "pg089_n0022") return;
+      if (page === 91 && id === "pg091_n0007") {
+        inner.appendChild(element("p", "flow-paragraph", ["pg091_n0007", "pg091_n0008", "pg091_n0009", "pg091_n0010"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 91 && ["pg091_n0008", "pg091_n0009", "pg091_n0010"].includes(id)) return;
+      if (page === 91 && id === "pg091_n0012") {
+        inner.appendChild(element("p", "flow-paragraph", ["pg091_n0012", "pg091_n0013"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 91 && id === "pg091_n0013") return;
+      if (page === 91 && id === "pg091_n0015") {
+        inner.appendChild(element("p", "flow-paragraph", ["pg091_n0015", "pg091_n0016", "pg091_n0017", "pg091_n0018"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 91 && ["pg091_n0016", "pg091_n0017", "pg091_n0018"].includes(id)) return;
+      if (page === 93 && id === "pg093_n0003") {
+        const instructions = element("ol", "flow-list flow-letter-list");
+        ["pg093_n0003", "pg093_n0005", "pg093_n0007"].forEach((textId) => {
+          const itemText = descriptions[textId];
+          const marker = itemText.match(/^\([b-d]\)/i)?.[0] || "";
+          const item = element("li", "flow-list-item");
+          item.dataset.marker = marker;
+          item.appendChild(element("span", "", itemText.replace(/^\([b-d]\)\s*/i, "")));
+          instructions.appendChild(item);
+        });
+        inner.appendChild(instructions);
+        return;
+      }
+      if (page === 93 && ["pg093_n0005", "pg093_n0007"].includes(id)) return;
+      if (page === 93 && id === "pg093_n0009") {
+        inner.appendChild(element("p", "flow-paragraph", ["pg093_n0009", "pg093_n0010", "pg093_n0011"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 93 && ["pg093_n0010", "pg093_n0011"].includes(id)) return;
+      if (page === 93 && id === "pg093_n0013") {
+        inner.appendChild(element("p", "flow-paragraph", ["pg093_n0013", "pg093_n0014"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 93 && id === "pg093_n0014") return;
+      if (page === 93 && id === "pg093_n0018") {
+        inner.appendChild(element("p", "flow-paragraph", ["pg093_n0018", "pg093_n0019", "pg093_n0020"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 93 && ["pg093_n0019", "pg093_n0020"].includes(id)) return;
+      if (page === 99 && id === "pg099_n0002") {
+        inner.appendChild(element("p", "flow-paragraph", ["pg099_n0002", "pg099_n0003"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 99 && id === "pg099_n0003") return;
+      if (page === 99 && id === "pg099_n0005") {
+        inner.appendChild(element("p", "flow-paragraph", ["pg099_n0005", "pg099_n0006", "pg099_n0007", "pg099_n0008", "pg099_n0009"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 99 && ["pg099_n0006", "pg099_n0007", "pg099_n0008", "pg099_n0009"].includes(id)) return;
+      if (page === 99 && id === "pg099_n0013") {
+        inner.appendChild(element("p", "flow-paragraph", ["pg099_n0013", "pg099_n0014", "pg099_n0015", "pg099_n0016", "pg099_n0017"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 99 && ["pg099_n0014", "pg099_n0015", "pg099_n0016", "pg099_n0017"].includes(id)) return;
+      if (page === 103 && id === "pg103_n0004") {
+        inner.appendChild(element("p", "flow-paragraph", ["pg103_n0004", "pg103_n0005", "pg103_n0006", "pg103_n0007"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 103 && ["pg103_n0005", "pg103_n0006", "pg103_n0007"].includes(id)) return;
+      if (page === 103 && id === "pg103_n0011") {
+        inner.appendChild(element("p", "flow-paragraph", ["pg103_n0011", "pg103_n0012", "pg103_n0013", "pg103_n0014", "pg103_n0015"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 103 && ["pg103_n0012", "pg103_n0013", "pg103_n0014", "pg103_n0015"].includes(id)) return;
+      if (page === 103 && id === "pg103_n0017") {
+        inner.appendChild(element("p", "flow-paragraph", ["pg103_n0017", "pg103_n0018", "pg103_n0019"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 103 && ["pg103_n0018", "pg103_n0019"].includes(id)) return;
+      if (page === 103 && id === "pg103_n0022") {
+        const aims = element("ol", "flow-list flow-letter-list");
+        ["pg103_n0022", "pg103_n0024", "pg103_n0026"].forEach((textId) => {
+          const itemText = descriptions[textId];
+          const marker = itemText.match(/^\([a-c]\)/i)?.[0] || "";
+          const item = element("li", "flow-list-item");
+          item.dataset.marker = marker;
+          item.appendChild(element("span", "", itemText.replace(/^\([a-c]\)\s*/i, "")));
+          aims.appendChild(item);
+        });
+        inner.appendChild(aims);
+        return;
+      }
+      if (page === 103 && ["pg103_n0024", "pg103_n0026"].includes(id)) return;
+      if (page === 115 && id === "pg115_n0004") {
+        inner.appendChild(element("p", "flow-paragraph", ["pg115_n0004", "pg115_n0005"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 115 && id === "pg115_n0005") return;
+      if (page === 115 && id === "pg115_n0007") {
+        inner.appendChild(element("p", "flow-paragraph", ["pg115_n0007", "pg115_n0008"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 115 && id === "pg115_n0008") return;
+      if (page === 115 && id === "pg115_n0022") {
+        inner.appendChild(element("p", "flow-paragraph", ["pg115_n0022", "pg115_n0023"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 115 && id === "pg115_n0023") return;
+      if (page === 115 && id === "pg115_n0011") {
+        const economicBenefits = element("ol", "flow-list flow-letter-list");
+        [["pg115_n0011", "pg115_n0012"], ["pg115_n0014", "pg115_n0015"], ["pg115_n0017", "pg115_n0018"]].forEach(([markerId, textId]) => {
+          const item = element("li", "flow-list-item");
+          item.dataset.marker = descriptions[markerId];
+          item.appendChild(element("span", "", descriptions[textId]));
+          economicBenefits.appendChild(item);
+        });
+        inner.appendChild(economicBenefits);
+        return;
+      }
+      if (page === 115 && ["pg115_n0012", "pg115_n0014", "pg115_n0015", "pg115_n0017", "pg115_n0018"].includes(id)) return;
+      if (page === 115 && id === "pg115_n0026") {
+        const socialBenefits = element("ol", "flow-list flow-letter-list");
+        [["pg115_n0026", "pg115_n0027"], ["pg115_n0029", "pg115_n0030"], ["pg115_n0032", "pg115_n0033"], ["pg115_n0035", "pg115_n0036"], ["pg115_n0038", "pg115_n0039"]].forEach(([markerId, textId]) => {
+          const item = element("li", "flow-list-item");
+          item.dataset.marker = descriptions[markerId];
+          item.appendChild(element("span", "", descriptions[textId]));
+          socialBenefits.appendChild(item);
+        });
+        inner.appendChild(socialBenefits);
+        return;
+      }
+      if (page === 115 && ["pg115_n0027", "pg115_n0029", "pg115_n0030", "pg115_n0032", "pg115_n0033", "pg115_n0035", "pg115_n0036", "pg115_n0038", "pg115_n0039"].includes(id)) return;
+      if (page === 116 && id === "pg116_n0002") {
+        const continuation = element("ol", "flow-list flow-letter-list");
+        const item = element("li", "flow-list-item");
+        item.dataset.marker = "(f)";
+        item.appendChild(element("span", "", text.replace(/^\(f\)\s*/i, "")));
+        continuation.appendChild(item);
+        inner.appendChild(continuation);
+        return;
+      }
+      if (page === 116 && id === "pg116_n0007") {
+        inner.appendChild(element("p", "flow-paragraph", ["pg116_n0007", "pg116_n0008"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 116 && id === "pg116_n0008") return;
+      if (page === 116 && id === "pg116_n0013") {
+        const methods = element("ol", "flow-list flow-letter-list");
+        [
+          ["pg116_n0013", ["pg116_n0014"]],
+          ["pg116_n0016", ["pg116_n0017", "pg116_n0018"]],
+          ["pg116_n0020", ["pg116_n0021", "pg116_n0022"]],
+          ["pg116_n0024", ["pg116_n0025", "pg116_n0026"]],
+          ["pg116_n0028", ["pg116_n0029"]]
+        ].forEach(([markerId, textIds]) => {
+          const item = element("li", "flow-list-item");
+          item.dataset.marker = descriptions[markerId];
+          item.appendChild(element("span", "", textIds.map((textId) => descriptions[textId]).join(" ")));
+          methods.appendChild(item);
+        });
+        inner.appendChild(methods);
+        return;
+      }
+      if (page === 116 && ["pg116_n0014", "pg116_n0016", "pg116_n0017", "pg116_n0018", "pg116_n0020", "pg116_n0021", "pg116_n0022", "pg116_n0024", "pg116_n0025", "pg116_n0026", "pg116_n0028", "pg116_n0029"].includes(id)) return;
+      if (page === 123 && id === "pg123_n0002") {
+        const continuation = element("ol", "flow-list flow-letter-list");
+        const item = element("li", "flow-list-item");
+        item.dataset.marker = "(h)";
+        item.appendChild(element("span", "", text.replace(/^\(h\)\s*/i, "")));
+        continuation.appendChild(item);
+        inner.appendChild(continuation);
+        return;
+      }
+      if (page === 123 && id === "pg123_n0004") {
+        inner.appendChild(element("p", "flow-paragraph", text));
+        return;
+      }
+      if (page === 123 && id === "pg123_n0025") {
+        closeCollections();
+        const glossary = element("dl", "flow-glossary");
+        [["pg123_n0025", "pg123_n0027"], ["pg123_n0030", "pg123_n0032"]].forEach(([termId, definitionId]) => {
+          glossary.appendChild(element("dt", "", descriptions[termId]));
+          glossary.appendChild(element("dd", "", descriptions[definitionId]));
+        });
+        inner.appendChild(glossary);
+        return;
+      }
+      if (page === 123 && ["pg123_n0027", "pg123_n0030", "pg123_n0032"].includes(id)) return;
+      if (page === 124 && id === "pg124_n0007") {
+        inner.appendChild(element("p", "flow-paragraph", ["pg124_n0007", "pg124_n0008", "pg124_n0009", "pg124_n0010"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 124 && ["pg124_n0008", "pg124_n0009", "pg124_n0010"].includes(id)) return;
+      if (page === 124 && id === "pg124_n0017") {
+        inner.appendChild(element("p", "flow-paragraph", ["pg124_n0017", "pg124_n0018", "pg124_n0019"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 124 && ["pg124_n0018", "pg124_n0019"].includes(id)) return;
+      if (page === 124 && id === "pg124_n0021") {
+        inner.appendChild(element("p", "flow-paragraph", ["pg124_n0021", "pg124_n0022"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 124 && id === "pg124_n0022") return;
+      if (page === 126 && id === "pg126_n0002") {
+        inner.appendChild(element("p", "flow-paragraph", ["pg126_n0002", "pg126_n0003", "pg126_n0004", "pg126_n0005"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 126 && ["pg126_n0003", "pg126_n0004", "pg126_n0005"].includes(id)) return;
+      if (page === 126 && id === "pg126_n0006") {
+        inner.appendChild(element("p", "flow-paragraph flow-figure-instruction", text));
+        return;
+      }
+      if (page === 126 && id === "pg126_n0016") {
+        closeCollections();
+        inner.appendChild(element("p", "flow-paragraph", ["pg126_n0016", "pg126_n0017", "pg126_n0018"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 126 && ["pg126_n0017", "pg126_n0018"].includes(id)) return;
       if (page === 126 && id === "pg126_n0008") {
         closeCollections();
         inner.appendChild(buildFamilyTree());
         return;
       }
       if (page === 126 && page126TreeIds.has(id)) return;
+      if (page === 127 && id === "pg127_n0003") {
+        inner.appendChild(element("p", "flow-paragraph", ["pg127_n0003", "pg127_n0004"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 127 && id === "pg127_n0004") return;
+      if (page === 127 && id === "pg127_n0008") {
+        inner.appendChild(element("p", "flow-paragraph flow-figure-instruction", text));
+        return;
+      }
+      if (page === 127 && id === "pg127_im016") {
+        closeCollections();
+        lastFigure = buildExtendedFamilyTree(descriptions);
+        inner.appendChild(lastFigure);
+        return;
+      }
       if (page === 127 && page127DiagramLabelIds.has(id)) return;
+      if (page === 129 && id === "pg129_n0004") {
+        inner.appendChild(element("p", "flow-paragraph", ["pg129_n0004", "pg129_n0005", "pg129_n0006"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 129 && ["pg129_n0005", "pg129_n0006"].includes(id)) return;
+      if (page === 129 && id === "pg129_n0008") {
+        inner.appendChild(element("p", "flow-paragraph", ["pg129_n0008", "pg129_n0009", "pg129_n0010"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 129 && ["pg129_n0009", "pg129_n0010"].includes(id)) return;
+      if (page === 129 && id === "pg129_n0014") {
+        inner.appendChild(element("p", "flow-paragraph", ["pg129_n0014", "pg129_n0015", "pg129_n0016"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 129 && ["pg129_n0015", "pg129_n0016"].includes(id)) return;
+      if (page === 129 && id === "pg129_n0017") {
+        inner.appendChild(element("p", "flow-paragraph flow-figure-instruction", text));
+        return;
+      }
+      if (page === 137 && id === "pg137_n0002") {
+        inner.appendChild(element("p", "flow-paragraph", ["pg137_n0002", "pg137_n0003", "pg137_n0004", "pg137_n0005", "pg137_n0006", "pg137_n0007"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 137 && ["pg137_n0003", "pg137_n0004", "pg137_n0005", "pg137_n0006", "pg137_n0007"].includes(id)) return;
+      if (page === 137 && id === "pg137_n0009") {
+        inner.appendChild(element("p", "flow-paragraph", ["pg137_n0009", "pg137_n0010", "pg137_n0011", "pg137_n0012", "pg137_n0013", "pg137_n0014", "pg137_n0015", "pg137_n0016"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 137 && ["pg137_n0010", "pg137_n0011", "pg137_n0012", "pg137_n0013", "pg137_n0014", "pg137_n0015", "pg137_n0016"].includes(id)) return;
+      if (page === 138 && id === "pg138_n0029") {
+        closeCollections();
+        const glossary = element("dl", "flow-glossary flow-page138-glossary");
+        glossary.appendChild(element("dt", "", text));
+        glossary.appendChild(element("dd", "", descriptions.pg138_n0030));
+        inner.appendChild(glossary);
+        return;
+      }
+      if (page === 138 && id === "pg138_n0030") return;
+      if (page === 151 && id === "pg151_n0006") {
+        inner.appendChild(element("p", "flow-paragraph", ["pg151_n0006", "pg151_n0007"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 151 && id === "pg151_n0007") return;
+      if (page === 151 && id === "pg151_n0011") {
+        inner.appendChild(element("p", "flow-paragraph", ["pg151_n0011", "pg151_n0012"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 151 && id === "pg151_n0012") return;
+      if (page === 151 && id === "pg151_im001") return;
+      if (page === 151 && id === "pg151_n0017") {
+        const duties = element("ol", "flow-list flow-letter-list");
+        [
+          ["(a)", ["pg151_n0018", "pg151_n0019", "pg151_n0020"]],
+          ["(b)", ["pg151_n0023"]],
+          ["(c)", ["pg151_n0026"]]
+        ].forEach(([marker, textIds]) => {
+          const item = element("li", "flow-list-item");
+          item.dataset.marker = marker;
+          item.appendChild(element("span", "", textIds.map((textId) => descriptions[textId]).join(" ")));
+          duties.appendChild(item);
+        });
+        inner.appendChild(duties);
+        return;
+      }
+      if (page === 151 && ["pg151_n0018", "pg151_n0019", "pg151_n0020", "pg151_n0022", "pg151_n0023", "pg151_n0025", "pg151_n0026"].includes(id)) return;
       if (page === 140 && id === "pg140_n0012") {
         (exercise || inner).appendChild(buildClassificationTable());
         return;
@@ -707,7 +1177,9 @@
         return;
       }
 
-      if (isBookHeading(text)) {
+      if (["pg048_n0008", "pg051_n0017", "pg075_n0006", "pg077_n0018"].includes(id)) closeCollections();
+
+      if (isBookHeading(text) && !["pg047_n0006", "pg048_n0008", "pg048_n0010"].includes(id)) {
         closeCollections();
         inner.appendChild(element("h2", text === "Msamiati" ? "flow-vocabulary-title" : "flow-heading", text));
         return;
@@ -770,6 +1242,17 @@
       target.appendChild(element("p", "flow-paragraph", text));
       if (target.classList.contains("flow-activity") || target.classList.contains("flow-fikiri")) exercise = null;
     });
+
+    if (page === 76) {
+      const vocabularyTitle = inner.querySelector(".flow-vocabulary-title");
+      if (vocabularyTitle) {
+        const exerciseBox = element("section", "flow-page76-exercise");
+        while (inner.firstChild && inner.firstChild !== vocabularyTitle) {
+          exerciseBox.appendChild(inner.firstChild);
+        }
+        inner.insertBefore(exerciseBox, vocabularyTitle);
+      }
+    }
 
     if (page === 26) {
       inner.appendChild(element("p", "flow-paragraph", "Vitendo vya kimaadili ni muhimu katika maisha yetu. Vitendo hivi hujenga umoja katika jamii bila ya kujali tofauti za kijinsi,"));
