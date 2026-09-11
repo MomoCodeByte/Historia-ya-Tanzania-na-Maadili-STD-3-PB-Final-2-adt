@@ -12,6 +12,8 @@
     activeAudio: null,
     activeId: "",
     activeIndex: -1,
+    semanticId: "",
+    semanticWords: [],
   };
 
   function wordsForDisplay(text) {
@@ -44,6 +46,8 @@
       .sw-page-word-layer{position:absolute;z-index:20;inset:0;width:100%;height:100%;pointer-events:none;overflow:hidden}
       .sw-page-word-box{position:absolute;box-sizing:border-box;border-radius:1px;background:transparent;transition:background-color .06s linear}
       .sw-page-word-box.is-active{background:rgba(255,235,59,.82);outline:2px solid rgba(245,158,11,.9)}
+      ::highlight(sw-readalong-active){background:#fde047;color:#111827;text-decoration:underline 2px #dc2626;text-underline-offset:2px}
+      .sw-readalong-sentence-active{border-radius:4px;background:rgba(253,224,71,.35);box-shadow:0 0 0 2px rgba(234,179,8,.2)}
       @media(max-width:640px){#sw-readalong-panel{bottom:78px;width:96vw;padding:8px 10px 10px;font-size:17px;line-height:1.45}}
     `;
     document.head.appendChild(style);
@@ -84,6 +88,95 @@
     if (current === printed) return;
     if (current) current.classList.remove("is-active");
     if (printed) printed.classList.add("is-active");
+  }
+
+  function normalizedWord(word) {
+    const raw = String(word || "").normalize("NFKC").toLocaleLowerCase("sw");
+    const compact = raw.replace(/[^\p{L}\p{N}]+/gu, "");
+    return compact || raw;
+  }
+
+  function visiblePageWords() {
+    const root = document.querySelector(".source-page-inner") || document.getElementById("content");
+    if (!root) return [];
+    const words = [];
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+      acceptNode(node) {
+        const parent = node.parentElement;
+        if (!parent || !node.nodeValue?.trim()) return NodeFilter.FILTER_REJECT;
+        if (parent.closest('.page-narration-hook,[hidden],[aria-hidden="true"],script,style,textarea')) {
+          return NodeFilter.FILTER_REJECT;
+        }
+        return NodeFilter.FILTER_ACCEPT;
+      },
+    });
+    let node = walker.nextNode();
+    while (node) {
+      const matcher = /\S+/g;
+      let match = matcher.exec(node.nodeValue);
+      while (match) {
+        words.push({
+          node,
+          start: match.index,
+          end: match.index + match[0].length,
+          key: normalizedWord(match[0]),
+        });
+        match = matcher.exec(node.nodeValue);
+      }
+      node = walker.nextNode();
+    }
+    return words;
+  }
+
+  function prepareSemanticWords(id) {
+    state.semanticId = id;
+    state.semanticWords = [];
+    const wanted = wordsForDisplay(state.texts[id]).map(normalizedWord);
+    if (!wanted.length) return;
+    const pageWords = visiblePageWords();
+    const lastStart = pageWords.length - wanted.length;
+    for (let start = 0; start <= lastStart; start += 1) {
+      let matches = true;
+      for (let index = 0; index < wanted.length; index += 1) {
+        if (pageWords[start + index].key !== wanted[index]) {
+          matches = false;
+          break;
+        }
+      }
+      if (matches) {
+        state.semanticWords = pageWords.slice(start, start + wanted.length);
+        return;
+      }
+    }
+  }
+
+  function clearSemanticHighlight() {
+    CSS.highlights?.delete("sw-readalong-active");
+    document.querySelectorAll(".sw-readalong-sentence-active").forEach((element) => {
+      element.classList.remove("sw-readalong-sentence-active");
+    });
+  }
+
+  function setSemanticHighlight(id, index) {
+    if (state.semanticId !== id) prepareSemanticWords(id);
+    clearSemanticHighlight();
+    const word = state.semanticWords[index];
+    if (!word) return;
+    const range = document.createRange();
+    range.setStart(word.node, word.start);
+    range.setEnd(word.node, word.end);
+    if (CSS.highlights && typeof Highlight === "function") {
+      CSS.highlights.set("sw-readalong-active", new Highlight(range));
+    } else {
+      word.node.parentElement?.classList.add("sw-readalong-sentence-active");
+    }
+    const rect = range.getBoundingClientRect();
+    if (rect.bottom < 70 || rect.top > window.innerHeight - 110) {
+      word.node.parentElement?.scrollIntoView({
+        block: "center",
+        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
+      });
+    }
   }
 
   function mirrorRuntimeHighlight() {
@@ -161,6 +254,7 @@
     const active = panel.querySelector(`[data-word-index="${index}"]`);
     if (active) active.classList.add("is-active");
     setPrintedHighlight(id, index);
+    setSemanticHighlight(id, index);
     state.activeIndex = index;
   }
 
@@ -175,7 +269,11 @@
     audio.addEventListener("timeupdate", () => update(audio));
     audio.addEventListener("seeking", () => update(audio));
     audio.addEventListener("ended", () => {
-      if (state.activeAudio === audio) ensurePanel().hidden = true;
+      if (state.activeAudio === audio) {
+        ensurePanel().hidden = true;
+        clearSemanticHighlight();
+        setPrintedHighlight("", -1);
+      }
     });
   }
 
