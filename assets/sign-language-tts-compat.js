@@ -10,27 +10,6 @@
   const nativeSpeak = window.speechSynthesis?.speak?.bind(window.speechSynthesis);
   const normalizeTtsText = (text) =>
     String(text).replace(/\bZoezi\s+la\s+1\b/gi, "Zoezi la Kwanza");
-  const signVideoFileOverrides = {
-    30: 31,
-    31: 32,
-    32: 33,
-    33: 34,
-    34: 35,
-    35: 36,
-    36: 37,
-    38: 30,
-  };
-
-  const currentPageNumber = () =>
-    Number(document.querySelector('meta[name="page-section-id"]')?.content);
-
-  const currentSignVideoHref = () => {
-    const pageNumber = currentPageNumber();
-    if (!Number.isInteger(pageNumber) || pageNumber < 1) return "";
-    const fileNumber = signVideoFileOverrides[pageNumber] || pageNumber;
-    return `./content/i18n/sw/video/page_${fileNumber}.mp4`;
-  };
-
   if (nativeSpeak) {
     window.speechSynthesis.speak = (utterance) => {
       if (utterance && typeof utterance.text === "string") {
@@ -44,11 +23,6 @@
     /\/content\/i18n\/[^/]+\/video\/page_\d+\.mp4(?:[?#]|$)/i.test(
       media.currentSrc || media.src || "",
     );
-
-  HTMLMediaElement.prototype.pause = function () {
-    if (isSignVideo(this)) return;
-    return nativePause.call(this);
-  };
 
   // Keep a single narration voice active. Some pages can start the next TTS
   // clip before the previous one has fully stopped, which sounds like two
@@ -65,12 +39,6 @@
 
   const prepareSignVideo = (video) => {
     if (!isSignVideo(video)) return;
-    const expectedHref = currentSignVideoHref();
-    if (expectedHref) {
-      const currentPath = new URL(video.currentSrc || video.src, document.baseURI).pathname;
-      const expectedPath = new URL(expectedHref, document.baseURI).pathname;
-      if (currentPath !== expectedPath) video.src = expectedHref;
-    }
     video.muted = true;
     video.defaultMuted = true;
     video.volume = 0;
