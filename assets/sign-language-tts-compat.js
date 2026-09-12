@@ -10,6 +10,26 @@
   const nativeSpeak = window.speechSynthesis?.speak?.bind(window.speechSynthesis);
   const normalizeTtsText = (text) =>
     String(text).replace(/\bZoezi\s+la\s+1\b/gi, "Zoezi la Kwanza");
+  const signVideoFileOverrides = {
+    30: 31,
+    31: 32,
+    32: 33,
+    33: 34,
+    34: 35,
+    35: 36,
+    36: 37,
+    38: 30,
+  };
+
+  const currentPageNumber = () =>
+    Number(document.querySelector('meta[name="page-section-id"]')?.content);
+
+  const currentSignVideoHref = () => {
+    const pageNumber = currentPageNumber();
+    if (!Number.isInteger(pageNumber) || pageNumber < 1) return "";
+    const fileNumber = signVideoFileOverrides[pageNumber] || pageNumber;
+    return `./content/i18n/sw/video/page_${fileNumber}.mp4`;
+  };
 
   if (nativeSpeak) {
     window.speechSynthesis.speak = (utterance) => {
@@ -45,6 +65,12 @@
 
   const prepareSignVideo = (video) => {
     if (!isSignVideo(video)) return;
+    const expectedHref = currentSignVideoHref();
+    if (expectedHref) {
+      const currentPath = new URL(video.currentSrc || video.src, document.baseURI).pathname;
+      const expectedPath = new URL(expectedHref, document.baseURI).pathname;
+      if (currentPath !== expectedPath) video.src = expectedHref;
+    }
     video.muted = true;
     video.defaultMuted = true;
     video.volume = 0;
@@ -59,11 +85,8 @@
   // puts it in the browser cache before the learner opens the sign panel and
   // removes the visible wait that otherwise happens on every page.
   const warmCurrentSignVideo = () => {
-    const pageNumber = Number(
-      document.querySelector('meta[name="page-section-id"]')?.content,
-    );
-    if (!Number.isInteger(pageNumber) || pageNumber < 1) return;
-    const href = `./content/i18n/sw/video/page_${pageNumber}.mp4`;
+    const href = currentSignVideoHref();
+    if (!href) return;
     const preload = document.createElement("link");
     preload.rel = "preload";
     preload.as = "video";

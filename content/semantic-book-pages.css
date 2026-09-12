@@ -1216,6 +1216,24 @@ body.semantic-book-body {
 .flow-fikiri h2 { background: #155fa8; }
 .flow-utangulizi h2 { background: #2085ad; }
 
+.flow-page-25 .flow-exercise {
+  border-color: #079d88;
+  border-top-color: #e51c2b;
+  background: #dceff2;
+}
+
+.flow-page-25 .flow-exercise h2 {
+  background: #159f86;
+}
+
+.flow-page-25 .flow-list-item {
+  grid-template-columns: 4.1cqw minmax(0, 1fr);
+}
+
+.flow-page-25 .flow-list-item::before {
+  white-space: nowrap;
+}
+
 .flow-activity .flow-paragraph,
 .flow-fikiri .flow-paragraph,
 .flow-exercise .flow-paragraph,
