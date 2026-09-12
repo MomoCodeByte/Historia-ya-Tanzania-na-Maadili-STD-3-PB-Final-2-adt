@@ -19,6 +19,12 @@ def main() -> None:
     for required in (
         "./assets/book-interactions.css",
         "./assets/book-interactions.js",
+        "./assets/mobile-sheet-drag.css",
+        "./assets/mobile-sheet-drag.js",
+        "./assets/reader-toolbar.css",
+        "./assets/reader-toolbar-overrides.css",
+        "./assets/sign-language-video.css",
+        "./assets/sign-language-video.js",
         "./assets/viewer-responsive.css",
     ):
         inline.setdefault(required, "")

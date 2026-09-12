@@ -36,7 +36,7 @@ def render(pdf_path: Path, output_dir: Path, scale: float, quality: int) -> None
     removed = remove_watermark_forms(document)
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    for page_number, page in enumerate(document, start=1):
+    for page_number, page in enumerate(document, start=2):
         pixmap = page.get_pixmap(
             matrix=pymupdf.Matrix(scale, scale),
             colorspace=pymupdf.csRGB,

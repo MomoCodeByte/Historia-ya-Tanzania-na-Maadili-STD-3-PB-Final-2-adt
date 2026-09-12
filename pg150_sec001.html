@@ -9,7 +9,12 @@
   <link href="./content/tailwind_output.css" rel="stylesheet">
   <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
   <link href="./assets/fonts.css" rel="stylesheet">
+  <link href="./assets/reader-toolbar.css?v=20" rel="stylesheet">
+  <link href="./assets/mobile-sheet-drag.css?v=20" rel="stylesheet">
+  <link href="./assets/reader-toolbar-overrides.css?v=20" rel="stylesheet">
+  <link href="./assets/sign-language-video.css?v=20" rel="stylesheet">
   <link href="./content/semantic-book-pages.css?v=47" rel="stylesheet">
+<link rel="stylesheet" href="./assets/book-interactions.css?v=1">
   <link rel="stylesheet" href="./assets/viewer-responsive.css?v=1">
 </head>
 <body class="semantic-book-body min-h-screen">
@@ -19,36 +24,132 @@
       <section role="article" data-section-type="semantic_text_page" data-section-id="pg150_sec001" class="semantic-page source-front-page semantic-flow-page">
         <div class="source-page-inner" data-page-number="150"></div>
         <div class="page-narration-hook" aria-hidden="true">
-          <span data-id="pg150_n0003">Uwazi</span>
-          <span data-id="pg150_n0005">Ukuzaji na utunzaji wa maadili vilifanyika katika misingi ya uwazi.</span>
-          <span data-id="pg150_n0006">Hii iliwasaidia watu kutambua na kujifunza matendo mema na athari za matendo mabaya.</span>
-          <span data-id="pg150_n0007">Pia, iliwasaidia watu wengine kutambua njia sahihi za kukuza na kutunza maadili ya jamii.</span>
-          <span data-id="pg150_n0008">Aidha, uwazi uliwasaidia watu kufichua matendo maovu yanayoendelea kwenye jamii yao.</span>
-          <span data-id="pg150_n0009">Tatizo la kimaadili lilijadiliwa kwa uwazi na familia kama inavyoonekana katika Kielelezo namba 5.</span>
-          <span data-id="pg150_im001">Wazazi na watoto wamekaa sebuleni wakizungumza kwa uwazi. Wanasikilizana na kubadilishana mawazo kwa upendo.</span>
-          <span data-id="pg150_n0011">Kielezo namba 5: Wazazi na watoto wakizungumza kwa uwazi</span>
-          <span data-id="pg150_n0013">Hali hii iliondoa upendeleo na ukweli ulijulikana.</span>
-          <span data-id="pg150_n0014">Adhabu zilitolewa kwa uwazi ili watu wote watambue athari za tabia mbaya.</span>
-          <span data-id="pg150_n0015">Hii ilisaidia kukuza na kutunza maadili ya familia, ukoo na jamii.</span>
-          <span data-id="pg150_n0017">Umoja</span>
-          <span data-id="pg150_n0019">Ukuzaji na utunzaji wa maadili ulifanyika kwa umoja.</span>
-          <span data-id="pg150_n0020">Jamii nzima ilishirikiana katika kukuza na kutunza maadili.</span>
-          <span data-id="pg150_n0021">Jamii nzima ilikubaliana katika kanuni, sheria na taratibu za jamii zao.</span>
-          <span data-id="pg150_n0022">Hivyo, kila mmoja aliwajibika kuzifuata na kuzilinda.</span>
-          <span data-id="pg150_n0023">Hapakuwa na mtu aliyetenda kinyume na maadili ya jamii yake.</span>
-
-
+          <span data-id="pg150_n0001">Pia, kamati hii husimamia maadili ya wanafunzi na walimu shuleni.</span>
+          <span data-id="pg150_n0004">Kazi ya kufanya namba 11</span>
+          <span data-id="pg150_n0005">Andika majukumu ya kamati ya shule katika kukuza na kutunza maadili mema kwa wanafunzi na walimu shuleni.</span>
+          <span data-id="pg150_n0007">Misingi ya ukuzaji na utunzaji wa maadili ya jamii</span>
+          <span data-id="pg150_n0009">Jamii zilikuwa na misingi ya ukuzaji na utunzaji wa maadili.</span>
+          <span data-id="pg150_n0010">Misingi hiyo ilisisitiza uadilifu, haki, usawa na uwazi katika kukuza na kutunza maadili ya jamii.</span>
+          <span data-id="pg150_n0012">Uadilifu</span>
+          <span data-id="pg150_n0014">Ukuzaji na utunzaji wa maadili ulizingatia misingi ya uadilifu.</span>
+          <span data-id="pg150_n0015">Watu waliosimamia maadili walikuwa wawazi, wakweli na watenda haki kwa watu wote.</span>
+          <span data-id="pg150_n0016">Hapakuwa na upendeleo.</span>
+          <span data-id="pg150_n0017">Kila mtu alipewa onyo au adhabu kwa usawa kulingana na kosa husika.</span>
+          <span data-id="pg150_n0018">Misingi hii ilisaidia kuwepo kwa uaminifu na heshima pale viongozi wa jamii waliposisitiza na kusimamia utekelezaji wa maadili ya jamii.</span>
+          <span data-id="pg150_n0020">Haki na usawa</span>
+          <span data-id="pg150_n0022">Misingi ya haki na usawa pia ilizingatiwa katika ukuzaji na utunzaji wa maadili.</span>
+          <span data-id="pg150_n0023">Misingi hii ilisaidia kumpa kila mtu stahiki na haki yake bila upendeleo.</span>
+          <span data-id="pg150_n0024">Usawa katika kupata haki ulizingatiwa bila kujali hali ya mtu.</span>
+          <span data-id="pg150_n0030">Kazi ya kufanya namba 12</span>
+          <span data-id="pg150_n0031">Tafuta na andika maana ya maneno uadilifu, haki, umoja, usawa na uwazi kutoka katika vyanzo mbalimbali ikiwemo tovuti na maktaba mtandao.</span>
         </div>
       </section>
     </div>
   </main>
+<!-- BOOK_INTERACTIONS_START -->
+<aside id="book-interactive-shell" class="book-interactive-shell" hidden aria-hidden="true" aria-label="Mazoezi ya ukurasa huu"><h2 class="book-interactive-shell__title">Mazoezi ya ukurasa huu</h2><section data-section-type="activity_open_ended_answer" data-section-id="pg150_sec001" class="mx-auto max-w-4xl">
+
+    <!-- Intro Text -->
+    <p class="mb-8 text-[22px] leading-[1.5] text-black max-lg:text-[20px] max-sm:text-[18px] max-sm:leading-[1.4]">
+      <span>Pia, kamati hii husimamia maadili ya wanafunzi na walimu shuleni.</span>
+    </p>
+
+    <!-- Image -->
+
+
+    <!-- Activity Box -->
+    <div class="relative mb-8 pt-8 max-sm:pt-5">
+      <div class="relative rounded-2xl border border-orange-300 bg-[#dceceb] px-8 py-8 max-lg:px-6 max-lg:py-7 max-sm:px-5 max-sm:py-5 shadow-sm">
+
+        <!-- Title Badge -->
+        <div class="absolute left-1/2 top-0 z-20 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap rounded-full bg-gradient-to-b from-emerald-500 via-emerald-700 to-emerald-900 px-10 py-2.5 text-center text-white shadow-lg max-lg:px-8 max-sm:static max-sm:mb-4 max-sm:inline-block max-sm:translate-x-0 max-sm:translate-y-0 max-sm:px-6 max-sm:py-2">
+          <h1 class="text-[1.2rem] font-bold leading-none max-lg:text-[1.05rem] max-sm:text-[0.95rem]">
+            Kazi ya kufanya namba 11
+          </h1>
+        </div>
+
+        <div class="flex items-start gap-6 pt-2 max-lg:gap-5 max-sm:flex-col max-sm:items-start max-sm:gap-4 max-sm:pt-0">
+
+          <!-- Round Activities Icon -->
+          <div class="flex h-28 w-28 shrink-0 items-center justify-center rounded-full border-[7px] border-emerald-700 bg-white shadow-md max-lg:h-24 max-lg:w-24 max-sm:h-20 max-sm:w-20">
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 max-lg:h-10 max-lg:w-10 max-sm:h-9 max-sm:w-9 text-emerald-800" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
+            </svg>
+
+          </div>
+
+          <!-- Question -->
+          <div class="flex-1">
+            <p class="text-[1.15rem] leading-[1.5] text-neutral-800 max-lg:text-[1.05rem] max-sm:text-[1rem]">
+              <span>Andika majukumu ya kamati ya shule katika kukuza na kutunza maadili mema kwa wanafunzi na walimu shuleni.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Answer Area -->
+    <div class="overflow-hidden rounded-2xl border border-slate-300 bg-white shadow-sm">
+      <textarea class="block min-h-[240px] w-full resize-none border-0 bg-transparent p-5 text-[20px] leading-[1.8] outline-none max-lg:text-[18px] max-sm:min-h-[220px] max-sm:p-4 max-sm:text-[17px]" style="background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 33px, #cbd5e1 34px, transparent 36px);" data-aria-id="aria-1-0-0" aria-label="Majibu kuhusu majukumu ya kamati ya shule katika kukuza na kutunza maadili mema kwa wanafunzi na walimu shuleni" tabindex="0"></textarea>
+    </div>
+
+  </section>
+
+<section data-section-type="activity_fill_in_the_blank" data-section-id="pg150_sec003" class="mx-auto max-w-4xl">
+
+    <div class="relative rounded-2xl border border-orange-300 bg-[#dceceb] px-8 pt-14 pb-7 shadow-sm max-lg:px-6 max-lg:pt-14 max-sm:px-5 max-sm:pt-6 max-sm:pb-5">
+
+      <!-- Title Badge -->
+      <div class="absolute left-1/2 top-0 z-10 -translate-x-1/2 -translate-y-1/2 max-sm:static max-sm:mb-4 max-sm:translate-x-0 max-sm:translate-y-0 max-sm:flex max-sm:justify-center">
+        <div class="rounded-xl bg-gradient-to-b from-emerald-500 to-emerald-900 px-8 py-2.5 text-center text-[22px] font-bold leading-tight text-white shadow-md max-lg:text-[20px] max-sm:w-auto max-sm:max-w-[280px] max-sm:px-5 max-sm:py-2 max-sm:text-[18px]">
+          Kazi ya kufanya namba 12
+        </div>
+      </div>
+
+      <div class="flex items-start gap-6 max-sm:flex-col max-sm:items-start max-sm:gap-4">
+
+        <!-- Activity Icon -->
+        <div class="flex-shrink-0 self-start">
+          <div class="flex h-28 w-28 items-center justify-center rounded-full border-[7px] border-emerald-700 bg-white shadow-md max-lg:h-24 max-lg:w-24 max-sm:h-20 max-sm:w-20">
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 max-lg:h-10 max-lg:w-10 max-sm:h-9 max-sm:w-9 text-emerald-800" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
+            </svg>
+
+          </div>
+        </div>
+
+        <!-- Question + Answer -->
+        <div class="w-full flex-1">
+
+          <p class="mb-4 text-[1.15rem] leading-[1.5] text-neutral-800 max-lg:text-[1.05rem] max-sm:text-[1rem]">
+            <span>
+              Tafuta na andika maana ya maneno uadilifu, haki, umoja, usawa na uwazi kutoka katika vyanzo mbalimbali ikiwemo tovuti na maktaba mtandao.
+            </span>
+          </p>
+
+          <textarea class="min-h-[160px] w-full resize-none rounded-md border border-slate-400 bg-[#fffdf6] p-3 text-[18px] leading-[2.1rem] text-gray-800 shadow-inner [background-image:repeating-linear-gradient(to_bottom,transparent_0,transparent_31px,#cbd5e1_32px)] max-lg:min-h-[150px] max-lg:text-[17px] max-sm:min-h-[150px] max-sm:text-[16px]" data-aria-id="aria-1-0-0" data-activity-item="item-1" aria-label="Andika maana ya maneno uadilifu, haki, umoja, usawa na uwazi" tabindex="0"></textarea>
+
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+</aside>
+<!-- BOOK_INTERACTIONS_END -->
+
   <div class="relative z-50" id="interface-container"></div>
   <div class="relative z-50" id="nav-container"></div>
   <script src="./content/semantic-flow-pages.js?v=47"></script>
-  <script src="./assets/offline-preloader.js?v=responsive-20260904-1"></script>
+  <script src="./assets/offline-preloader.js?v=20"></script>
   <script src="./assets/scorm.js"></script>
   <script src="./assets/sign-language-tts-compat.js?v=audiofix-20260824-1"></script>
-  <script src="./assets/base.bundle.local.js?v=audiofix-20260824-1"></script>
+  <script src="./assets/base.bundle.local.js?v=20"></script>
+  <script src="./assets/sign-language-video.js?v=20"></script>
+  <script src="./assets/mobile-sheet-drag.js?v=20"></script>
   <script src="./assets/readalong-sw.js?v=follow-20260911-1"></script>
+  <script src="./assets/book-interactions.js?v=1"></script>
 </body>
 </html>

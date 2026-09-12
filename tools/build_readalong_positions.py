@@ -40,8 +40,8 @@ def build(pdf_path: Path) -> None:
     output: dict[str, dict[str, list[dict | None]]] = {}
     matched = total = 0
 
-    for page_number, page in enumerate(document, start=1):
-        html_path = ROOT / ("index.html" if page_number == 1 else f"pg{page_number:03}_sec001.html")
+    for page_number, page in enumerate(document, start=2):
+        html_path = ROOT / f"pg{page_number:03}_sec001.html"
         page_id = f"pg{page_number:03}_sec001"
         raw_words = [
             item for item in page.get_text("words", sort=True)

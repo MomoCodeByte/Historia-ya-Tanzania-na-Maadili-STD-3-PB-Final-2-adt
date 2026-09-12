@@ -11,7 +11,7 @@ def main() -> None:
     source = MANIFEST.read_text(encoding="utf-8")
     entries = [
         f'      <file href="images/pdf-pages/pg{number:03}.jpg"/>'
-        for number in range(1, 153)
+        for number in range(2, 154)
     ]
     source = "\n".join(
         line

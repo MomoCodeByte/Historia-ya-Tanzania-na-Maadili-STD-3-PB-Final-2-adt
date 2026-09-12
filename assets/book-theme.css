@@ -272,21 +272,21 @@ body :where(p, h1, h2, h3, h4, h5, h6, span, div, button, input, textarea, selec
 }
 
 /* Page 31: source-faithful housing section with a calm reading measure. */
-#content .pg037-housing-page {
+#content .pg038-housing-page {
   width: 100%;
   padding: clamp(1.5rem, 3.5vw, 3rem) clamp(1.25rem, 6vw, 4.75rem) clamp(3rem, 7vw, 5rem) !important;
 }
 
-#content .pg037-housing-page.book-source-first {
+#content .pg038-housing-page.book-source-first {
   padding-top: clamp(5.75rem, 9vw, 7.25rem) !important;
 }
 
-#content .pg037-housing-copy {
+#content .pg038-housing-copy {
   width: min(100%, 52rem);
   margin-inline: auto;
 }
 
-#content .pg037-housing-copy :where(.pg037-housing-continuation, .pg037-housing-body, .pg037-housing-summary) {
+#content .pg038-housing-copy :where(.pg038-housing-continuation, .pg038-housing-body, .pg038-housing-summary) {
   max-width: none;
   margin: 0;
   color: #242424;
@@ -295,11 +295,11 @@ body :where(p, h1, h2, h3, h4, h5, h6, span, div, button, input, textarea, selec
   text-align: left;
 }
 
-#content .pg037-housing-continuation {
+#content .pg038-housing-continuation {
   margin-bottom: clamp(1.4rem, 3vw, 2.1rem) !important;
 }
 
-#content h1.pg037-housing-title {
+#content h1.pg038-housing-title {
   margin: 0 0 .6rem;
   color: #0759ad !important;
   font-size: clamp(1.55rem, 3vw, 2rem) !important;
@@ -308,21 +308,21 @@ body :where(p, h1, h2, h3, h4, h5, h6, span, div, button, input, textarea, selec
   text-align: left;
 }
 
-#content .pg037-housing-body {
+#content .pg038-housing-body {
   margin-bottom: clamp(1.5rem, 3vw, 2.25rem) !important;
 }
 
-#content .pg037-housing-summary {
+#content .pg038-housing-summary {
   padding-top: clamp(1rem, 2.5vw, 1.5rem);
   border-top: 2px solid rgb(185 107 24 / 42%);
 }
 
 @media (max-width: 600px) {
-  #content .pg037-housing-page {
+  #content .pg038-housing-page {
     padding-inline: 1.15rem !important;
   }
 
-  #content .pg037-housing-page.book-source-first {
+  #content .pg038-housing-page.book-source-first {
     padding-top: 5.25rem !important;
   }
 }
@@ -867,17 +867,17 @@ body :where(p, h1, h2, h3, h4, h5, h6, span, div, button, input, textarea, selec
 }
 
 /* Page 39: readable health text without duplicated production artwork. */
-#content .pg045-health-page {
+#content .pg046-health-page {
   width: 100%;
   padding: clamp(5.75rem, 9vw, 7.25rem) clamp(1.25rem, 6vw, 4.75rem) clamp(2.5rem, 6vw, 4.5rem) !important;
 }
 
-#content .pg045-health-copy {
+#content .pg046-health-copy {
   width: min(100%, 52rem);
   margin-inline: auto;
 }
 
-#content .pg045-health-copy > p {
+#content .pg046-health-copy > p {
   max-width: none;
   margin: 0 0 clamp(1.2rem, 2.5vw, 1.75rem);
   color: #242424;
@@ -887,24 +887,24 @@ body :where(p, h1, h2, h3, h4, h5, h6, span, div, button, input, textarea, selec
 }
 
 /* Printed page 40: keep the summary hierarchy and scale from the PDF. */
-#content .pg046-summary-page {
+#content .pg047-summary-page {
   width: 100%;
   padding: clamp(5.75rem, 9vw, 7.25rem) clamp(1.25rem, 6vw, 4.75rem) clamp(2.5rem, 6vw, 4.5rem) !important;
 }
 
-#content .pg046-summary-copy {
+#content .pg047-summary-copy {
   width: min(100%, 52rem);
   margin-inline: auto;
 }
 
-#content .pg046-summary-copy > h1 {
+#content .pg047-summary-copy > h1 {
   margin: 0 0 .8rem !important;
   color: #0757a6 !important;
   font-size: clamp(1.35rem, 2.4vw, 1.75rem) !important;
   line-height: 1.15 !important;
 }
 
-#content .pg046-summary-copy > p {
+#content .pg047-summary-copy > p {
   max-width: none;
   margin: 0;
   color: #242424;
@@ -954,12 +954,12 @@ body :where(p, h1, h2, h3, h4, h5, h6, span, div, button, input, textarea, selec
     padding: .3rem .5rem !important;
   }
 
-  #content .pg045-health-page {
+  #content .pg046-health-page {
     padding-inline: 1.15rem !important;
     padding-top: 5.25rem !important;
   }
 
-  #content .pg046-summary-page {
+  #content .pg047-summary-page {
     padding-inline: 1.15rem !important;
     padding-top: 5.25rem !important;
   }

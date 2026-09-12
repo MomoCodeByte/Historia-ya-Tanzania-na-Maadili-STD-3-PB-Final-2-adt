@@ -11,28 +11,28 @@ from pathlib import Path
 
 
 TEXTS = {
-    "pg003_n0002": "Yaliyomo",
-    "pg005_n0002": "Utangulizi",
-    "pg114_n0002": "Sura ya Saba.",
+    "pg004_n0002": "Yaliyomo",
+    "pg006_n0002": "Utangulizi",
+    "pg115_n0002": "Sura ya Saba.",
     "activity_gen_haki": "Haki",
     "activity_gen_wajibu": "Wajibu",
-    "pg020_im001": "Mchoro wa mwanafunzi akiandika.",
-    "pg089_im001": "Mchoro wa mwanafunzi akiandika.",
-    "pg104_im001": "Mchoro wa mwanafunzi akiandika.",
-    "pg110_im001": "Mchoro wa mwanafunzi akiandika.",
+    "pg021_im001": "Mchoro wa mwanafunzi akiandika.",
+    "pg090_im001": "Mchoro wa mwanafunzi akiandika.",
+    "pg105_im001": "Mchoro wa mwanafunzi akiandika.",
+    "pg111_im001": "Mchoro wa mwanafunzi akiandika.",
 }
 
 AUDIO_REUSE = {
-    "pg003_n0002": "pg003_im001.mp3",
-    "pg005_n0002": "pg003_n0008.mp3",
-    "pg114_n0002": "pg003_n0047.mp3",
-    "activity_gen_haki": "pg063_n0026.mp3",
-    "activity_gen_wajibu": "pg063_n0028.mp3",
-    "pg063_n0036": "pg063_n0028.mp3",
-    "pg063_n0043": "pg063_n0026.mp3",
+    "pg004_n0002": "pg004_im001.mp3",
+    "pg006_n0002": "pg004_n0008.mp3",
+    "pg115_n0002": "pg004_n0047.mp3",
+    "activity_gen_haki": "pg064_n0026.mp3",
+    "activity_gen_wajibu": "pg064_n0028.mp3",
+    "pg064_n0036": "pg064_n0028.mp3",
+    "pg064_n0043": "pg064_n0026.mp3",
 }
 
-IMAGE_IDS = ("pg020_im001", "pg089_im001", "pg104_im001", "pg110_im001")
+IMAGE_IDS = ("pg021_im001", "pg090_im001", "pg105_im001", "pg111_im001")
 
 
 def load(path: Path):
@@ -59,7 +59,7 @@ def main() -> None:
     texts.update(TEXTS)
     audios.update(AUDIO_REUSE)
 
-    source_audio = template / "content/i18n/sw-TZ/audio/pg045_im001.mp3"
+    source_audio = template / "content/i18n/sw-TZ/audio/pg046_im001.mp3"
     for image_id in IMAGE_IDS:
         filename = f"{image_id}.mp3"
         shutil.copyfile(source_audio, language_root / "audio" / filename)
@@ -68,7 +68,7 @@ def main() -> None:
     save(texts_path, texts)
     save(audios_path, audios)
 
-    description = TEXTS["pg020_im001"]
+    description = TEXTS["pg021_im001"]
     for path in root.glob("pg*.html"):
         source = path.read_text(encoding="utf-8")
         updated = source

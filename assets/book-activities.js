@@ -14,7 +14,7 @@
     confirmClear: "Una uhakika unataka kufuta jibu lako?"
   };
 
-  const chapterPages = new Set([7, 30, 51, 65, 77, 98, 114, 124, 139]);
+  const chapterPages = new Set([8, 31, 52, 66, 78, 99, 115, 125, 140]);
   const responseSelector = [
     'section[data-section-type="activity_open_ended_answer"] textarea',
     'section[data-section-type="activity_fill_in_the_blank"] textarea',
@@ -383,27 +383,27 @@
 
   function normalizeSourceActivityArtwork() {
     const cropSpecs = {
-      pg014_im003: { top: 0, visible: 175 },
-      pg021_im004: { top: 45, visible: 191 },
-      pg022_im001: { top: 35, visible: 239 },
-      pg036_im003: { top: 45, visible: 241 }
+      pg015_im003: { top: 0, visible: 175 },
+      pg022_im004: { top: 45, visible: 191 },
+      pg023_im001: { top: 35, visible: 239 },
+      pg037_im003: { top: 45, visible: 241 }
     };
     const sourceTextOverrides = {
-      pg021_im003: "Kazi ya kufanya namba 15: Waulize wazazi au walezi kuhusu mila na desturi za jamii yako, kisha andika wajibu wako katika kuzitekeleza.",
-      pg033_im003: "Kazi ya kufanya namba 7: Waulize wazazi au walezi kuhusu mbinu zilizotumika kutoa elimu katika jamii inayowazunguka kabla ya ukoloni.",
-      pg089_im002: "Kazi ya kufanya namba 2: Jadili na kuandika mambo uliyojifunza kuhusu shughuli za kilimo kabla ya ukoloni.",
-      pg098_im002: "Kazi ya kufanya namba 10: Andika jinsi ya kuendeleza shughuli ya utengenezaji chumvi kwa maendeleo ya uchumi na jamii kwa sasa.",
-      pg107_im003: "Kazi ya kufanya namba 3: Andika maana ya maneno utu, heshima, upendo, ukweli, uaminifu na amani.",
-      pg152_im002: "Kazi ya kufanya namba 7: Fanya uchunguzi kuhusu maana ya ngoma zinazochezwa katika jamii yako ukizingatia midundo na maneno ya nyimbo hizo na nafasi yake katika kukuza na kutunza maadili."
+      pg022_im003: "Kazi ya kufanya namba 15: Waulize wazazi au walezi kuhusu mila na desturi za jamii yako, kisha andika wajibu wako katika kuzitekeleza.",
+      pg034_im003: "Kazi ya kufanya namba 7: Waulize wazazi au walezi kuhusu mbinu zilizotumika kutoa elimu katika jamii inayowazunguka kabla ya ukoloni.",
+      pg090_im002: "Kazi ya kufanya namba 2: Jadili na kuandika mambo uliyojifunza kuhusu shughuli za kilimo kabla ya ukoloni.",
+      pg099_im002: "Kazi ya kufanya namba 10: Andika jinsi ya kuendeleza shughuli ya utengenezaji chumvi kwa maendeleo ya uchumi na jamii kwa sasa.",
+      pg108_im003: "Kazi ya kufanya namba 3: Andika maana ya maneno utu, heshima, upendo, ukweli, uaminifu na amani.",
+      pg153_im002: "Kazi ya kufanya namba 7: Fanya uchunguzi kuhusu maana ya ngoma zinazochezwa katika jamii yako ukizingatia midundo na maneno ya nyimbo hizo na nafasi yake katika kukuza na kutunza maadili."
     };
     const fullArtworkIds = new Set([
-      "pg021_im003",
-      "pg033_im003",
-      "pg044_im003",
-      "pg089_im002",
-      "pg098_im002",
-      "pg107_im003",
-      "pg152_im002"
+      "pg022_im003",
+      "pg034_im003",
+      "pg045_im003",
+      "pg090_im002",
+      "pg099_im002",
+      "pg108_im003",
+      "pg153_im002"
     ]);
 
     function collapseFullArtworkLayout(image, section) {
@@ -454,8 +454,8 @@
     document.querySelectorAll([
       'img[alt*="Kazi ya kufanya namba"]',
       'img[alt^="Zoezi namba"]',
-      'img[data-id="pg021_im003"]',
-      'img[data-id="pg107_im003"]'
+      'img[data-id="pg022_im003"]',
+      'img[data-id="pg108_im003"]'
     ].join(",")).forEach((image) => {
       const apply = () => {
         if (image.dataset.bookTextConverted || image.dataset.bookSourceReady || image.naturalWidth < 600) return;
@@ -792,8 +792,8 @@
   }
 
   function pdfPhysicalPage(sectionNumber) {
-    const frontMatter = new Map([[1, 1], [2, 2], [3, 4], [4, 3], [5, 5], [6, 6]]);
-    return frontMatter.get(sectionNumber) || sectionNumber + 1;
+    const frontMatter = new Map([[2, 1], [3, 2], [4, 4], [5, 3], [6, 5], [7, 6]]);
+    return frontMatter.get(sectionNumber) || sectionNumber;
   }
 
   function enablePdfFacsimile() {
