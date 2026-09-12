@@ -113,6 +113,7 @@ def main() -> None:
         34: 35,
         35: 36,
         36: 37,
+        37: 38,
         38: 30,
     }
     for page_number, page in enumerate(pages, start=1):

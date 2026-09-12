@@ -52514,7 +52514,7 @@ function useAtomValueWithDelay<Value>(
   };
   async function loadAppConfig(versionParam = "") {
     try {
-      const url = `./assets/config.json${versionParam ? `?v=${versionParam}` : ""}`;
+      const url = `./assets/config.json?v=28${versionParam ? `&v=${versionParam}` : ""}`;
       const res = await fetch(url);
       if (!res.ok) return DEFAULT_CONFIG2;
       const config = await res.json();
