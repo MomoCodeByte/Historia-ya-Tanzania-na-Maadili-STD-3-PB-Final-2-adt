@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def main() -> None:
-    preloader_path = ROOT / "assets" / "offline-preloader.js"
+    preloader_path = ROOT / "assets" / "offline-preloader-data.js"
     source = preloader_path.read_text(encoding="utf-8-sig")
     marker = "var INLINE = "
     start = source.index(marker) + len(marker)
