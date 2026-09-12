@@ -107,7 +107,7 @@ def main() -> None:
 
     video_file_overrides = {
         30: 31,
-        31: 32,
+        31: 30,
         32: 33,
         33: 34,
         34: 35,
