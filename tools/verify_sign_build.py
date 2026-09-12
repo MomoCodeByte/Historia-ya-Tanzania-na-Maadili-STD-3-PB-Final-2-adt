@@ -105,9 +105,20 @@ def main() -> None:
         if not has_h264_video:
             non_h264.append(path.name)
 
+    video_file_overrides = {
+        31: 32,
+        32: 33,
+        33: 34,
+        34: 35,
+        35: 36,
+        36: 37,
+        37: 38,
+        39: 31,
+    }
     for page_number, page in enumerate(pages, start=1):
         assert page["page_number"] == page_number
-        assert videos[f"video-{page_number}"] == f"page_{page_number}.mp4"
+        expected_file_number = video_file_overrides.get(page_number, page_number)
+        assert videos[f"video-{page_number}"] == f"page_{expected_file_number}.mp4"
         html = (ROOT / page["href"]).read_text(encoding="utf-8")
         assert f'content="{page_number}"' in html
         assert "sign-language-tts-compat.js" in html

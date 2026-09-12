@@ -204,6 +204,7 @@
   const metadataPattern = /(FOR ONLINE (?:READING|USE) ONLY|\.indd\b|^\d{2}\/\d{2}\/\d{4}\s+\d{1,2}:\d{2}$)/i;
 
   const sourceOrder = {
+    25: ["pg026_n0003", "pg026_n0005", "pg026_n0007", "pg026_n0008", "pg026_n0011", "pg026_n0013", "pg026_n0015", "pg026_n0017", "pg026_n0019", "pg026_n0021", "pg026_n0033", "pg026_n0034", "pg026_n0035", "pg026_n0023", "pg026_n0024", "pg026_n0027"],
     27: ["pg028_n0002", "pg028_n0003", "pg028_n0006", "pg028_n0007", "pg028_n0009", "pg028_n0010", "pg028_n0012", "pg028_n0013", "pg028_n0015", "pg028_n0016", "pg028_n0018", "pg028_n0019", "pg028_n0021", "pg028_n0022", "pg028_n0024", "pg028_n0025", "pg028_n0039", "pg028_im002_ai1", "pg028_n0040", "pg028_n0027", "pg028_n0028", "pg028_n0029", "pg028_n0030", "pg028_n0031", "pg028_n0032", "pg028_n0033"],
     40: ["pg041_n0006", "pg041_n0003", "pg041_n0004", "pg041_n0008", "pg041_n0010", "pg041_n0011", "pg041_n0012", "pg041_im001", "pg041_n0014", "pg041_n0016"],
     48: ["pg049_n0006", "pg049_n0003", "pg049_n0004", "pg049_n0008", "pg049_n0009", "pg049_n0010", "pg049_n0013", "pg049_n0014", "pg049_n0016", "pg049_n0017", "pg049_n0019", "pg049_n0020", "pg049_n0022", "pg049_n0023", "pg049_n0025", "pg049_n0026", "pg049_n0028", "pg049_n0029", "pg049_n0031", "pg049_n0032", "pg049_n0034", "pg049_n0035"],
@@ -661,6 +662,52 @@
       if (page === 71 && /^[A-D]\.$/.test(text)) return;
       if (Object.values(imageLabels[page] || {}).includes(text)) return;
       if (captionContinuationIds.has(id)) return;
+      if (page === 25 && id === "pg026_n0003") {
+        const examples = element("ol", "flow-list flow-letter-list");
+        ["pg026_n0003", "pg026_n0005"].forEach((textId) => {
+          const itemText = descriptions[textId];
+          const item = element("li", "flow-list-item");
+          item.dataset.marker = itemText.match(/^\([mn]\)/i)?.[0] || "";
+          item.appendChild(element("span", "", itemText.replace(/^\([mn]\)\s*/i, "")));
+          examples.appendChild(item);
+        });
+        inner.appendChild(examples);
+        return;
+      }
+      if (page === 25 && id === "pg026_n0005") return;
+      if (page === 25 && id === "pg026_n0007") {
+        inner.appendChild(element("p", "flow-paragraph", ["pg026_n0007", "pg026_n0008"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 25 && id === "pg026_n0008") return;
+      if (page === 25 && id === "pg026_n0011") {
+        const effects = element("ol", "flow-list flow-letter-list");
+        ["pg026_n0011", "pg026_n0013", "pg026_n0015", "pg026_n0017", "pg026_n0019", "pg026_n0021"].forEach((textId) => {
+          const itemText = descriptions[textId];
+          const item = element("li", "flow-list-item");
+          item.dataset.marker = itemText.match(/^\([a-f]\)/i)?.[0] || "";
+          item.appendChild(element("span", "", itemText.replace(/^\([a-f]\)\s*/i, "")));
+          effects.appendChild(item);
+        });
+        inner.appendChild(effects);
+        return;
+      }
+      if (page === 25 && ["pg026_n0013", "pg026_n0015", "pg026_n0017", "pg026_n0019", "pg026_n0021"].includes(id)) return;
+      if (page === 25 && id === "pg026_n0023") {
+        closeCollections();
+        inner.appendChild(element("p", "flow-paragraph", ["pg026_n0023", "pg026_n0024"].map((textId) => descriptions[textId]).join(" ")));
+        return;
+      }
+      if (page === 25 && id === "pg026_n0024") return;
+      if (page === 25 && id === "pg026_n0027") {
+        const prevention = element("ol", "flow-list flow-letter-list");
+        const item = element("li", "flow-list-item");
+        item.dataset.marker = "(a)";
+        item.appendChild(element("span", "", text.replace(/^\(a\)\s*/i, "")));
+        prevention.appendChild(item);
+        inner.appendChild(prevention);
+        return;
+      }
       if (page === 63 && id === "pg064_n0022") {
         (exercise || inner).appendChild(buildRightsTable());
         return;
@@ -1263,7 +1310,7 @@
     if (page === 52) section.classList.add("flow-table-page");
     section.classList.add(`flow-page-${page}`);
     if (page >= 73) section.classList.add("flow-late-page");
-    if ([24, 26, 27, 28, 29, 47, 48, 49, 50, 53, 54, 55, 57, 59, 62, 63, 64, 66, 68, 69, 70, 71, 72].includes(page) || page >= 73) section.classList.add("flow-dense-page");
+    if ([24, 25, 26, 27, 28, 29, 47, 48, 49, 50, 53, 54, 55, 57, 59, 62, 63, 64, 66, 68, 69, 70, 71, 72].includes(page) || page >= 73) section.classList.add("flow-dense-page");
     if ([30, 51, 65, 77, 98, 114, 124, 139].includes(page)) section.classList.add("flow-chapter-page");
   }
 

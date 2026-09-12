@@ -219,13 +219,26 @@ def main() -> int:
     for name in sorted(actual_images - image_refs):
         issues.append(f"unlinked image file: {name}")
 
-    expected_videos = {f"video-{number}": f"page_{number}.mp4" for number in range(1, 155)}
+    video_file_overrides = {
+        31: 32,
+        32: 33,
+        33: 34,
+        34: 35,
+        35: 36,
+        36: 37,
+        37: 38,
+        39: 31,
+    }
+    expected_videos = {
+        f"video-{number}": f"page_{video_file_overrides.get(number, number)}.mp4"
+        for number in range(1, 155)
+    }
     if videos != expected_videos:
-        issues.append("video map is not the exact page 1-154 mapping")
+        issues.append("video map does not match the page 1-154 content assignments")
     actual_videos = {
         path.name for path in (language_root / "video").glob("page_*.mp4")
     }
-    expected_video_files = set(expected_videos.values())
+    expected_video_files = {f"page_{number}.mp4" for number in range(1, 155)}
     for name in sorted(expected_video_files - actual_videos):
         issues.append(f"video file missing: {name}")
     for name in sorted(actual_videos - expected_video_files):
