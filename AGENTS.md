@@ -8,8 +8,8 @@ This document describes the structure of this Accessible Digital Textbook (ADT) 
 
 - **Source language**: `sw`
 - **Available languages in this bundle**: `sw`
-- **Total pages**: 330
-- **Quizzes**: yes
+- **Total pages**: 154 (front cover through back cover)
+- **Quizzes**: no standalone quiz pages in the reading spine
 - **Glossary**: yes
 
 ## Quick Overview
@@ -51,7 +51,7 @@ Historia-ya-Tanzania-na-Maadili-STD-3-PB-Final-2/
 │   │       └── {lang}/               # One directory per language: sw
 │   │           ├── texts.json        # All text content (textId → string)
 │   │           ├── audios.json       # Audio mappings (textId → mp3 filename)
-│   │           ├── videos.json       # Video mappings (currently unused)
+│   │           ├── videos.json       # Sign-language video mappings by page
 │   │           ├── glossary.json     # Glossary entries (word → object)
 │   │           └── audio/            # MP3 files for read-aloud / TTS
 │   │
