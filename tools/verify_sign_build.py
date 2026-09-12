@@ -106,14 +106,14 @@ def main() -> None:
             non_h264.append(path.name)
 
     video_file_overrides = {
+        30: 31,
         31: 32,
         32: 33,
         33: 34,
         34: 35,
         35: 36,
         36: 37,
-        37: 38,
-        39: 31,
+        38: 30,
     }
     for page_number, page in enumerate(pages, start=1):
         assert page["page_number"] == page_number
