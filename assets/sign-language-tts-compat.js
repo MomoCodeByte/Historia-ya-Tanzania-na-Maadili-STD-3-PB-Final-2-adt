@@ -11,14 +11,14 @@
   const normalizeTtsText = (text) =>
     String(text).replace(/\bZoezi\s+la\s+1\b/gi, "Zoezi la Kwanza");
   const signVideoFileOverrides = {
+    30: 31,
     31: 32,
     32: 33,
     33: 34,
     34: 35,
     35: 36,
     36: 37,
-    37: 38,
-    39: 31,
+    38: 30,
   };
 
   const currentPageNumber = () =>
