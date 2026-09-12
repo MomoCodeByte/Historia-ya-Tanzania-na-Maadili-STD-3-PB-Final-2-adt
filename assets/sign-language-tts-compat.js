@@ -81,21 +81,6 @@
     if (video.networkState === HTMLMediaElement.NETWORK_EMPTY) video.load();
   };
 
-  // Fetch the current page's sign video as soon as the book page opens. This
-  // puts it in the browser cache before the learner opens the sign panel and
-  // removes the visible wait that otherwise happens on every page.
-  const warmCurrentSignVideo = () => {
-    const href = currentSignVideoHref();
-    if (!href) return;
-    const preload = document.createElement("link");
-    preload.rel = "preload";
-    preload.as = "video";
-    preload.type = "video/mp4";
-    preload.href = href;
-    document.head.append(preload);
-    fetch(href, { cache: "force-cache", priority: "high" }).catch(() => {});
-  };
-
   const hideSubmitButtons = (root) => {
     root.querySelectorAll?.("button").forEach((button) => {
       const label = (button.getAttribute("aria-label") || "").trim();
@@ -151,7 +136,6 @@
     attributeFilter: ["src"],
   });
 
-  warmCurrentSignVideo();
   hideSubmitButtons(document);
   suppressFooterTts(document);
 })();
