@@ -106,8 +106,6 @@ def main() -> None:
             non_h264.append(path.name)
 
     video_file_overrides = {
-        30: 31,
-        31: 30,
         32: 33,
         33: 34,
         34: 35,
