@@ -26,6 +26,7 @@
               adlcp:scormtype="sco"
               href="index.html">
       <file href="assets/base.bundle.local.js"/>
+      <file href="assets/base.bundle.min.js"/>
       <file href="assets/book-interactions.css"/>
       <file href="assets/book-interactions.js"/>
       <file href="assets/config.json"/>
@@ -56,6 +57,7 @@
       <file href="assets/media-playback-independence.js"/>
       <file href="assets/mobile-sheet-drag.css"/>
       <file href="assets/mobile-sheet-drag.js"/>
+      <file href="assets/offline-preloader-data.js"/>
       <file href="assets/offline-preloader.js"/>
       <file href="assets/readalong-sw.js"/>
       <file href="assets/reader-toolbar-overrides.css"/>

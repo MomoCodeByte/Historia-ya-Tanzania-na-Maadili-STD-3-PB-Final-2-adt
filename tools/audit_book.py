@@ -54,7 +54,6 @@ def main() -> int:
         "./assets/scorm.js",
         "./assets/sign-language-tts-compat.js",
         "./assets/media-playback-independence.js",
-        "./assets/base.bundle.local.js",
         "./assets/sign-language-video.js",
         "./assets/mobile-sheet-drag.js",
         "./assets/readalong-sw.js",
@@ -109,8 +108,26 @@ def main() -> int:
         for required in required_page_resources:
             if required not in source:
                 issues.append(f"missing shared resource: {href} -> {required}")
+        if not any(
+            runtime in source
+            for runtime in (
+                "./assets/base.bundle.local.js",
+                "./assets/base.bundle.min.js",
+            )
+        ):
+            issues.append(f"missing shared reader runtime: {href}")
         if "https://fonts.googleapis.com" in source or "https://fonts.gstatic.com" in source:
             issues.append(f"external font dependency: {href}")
+
+        if 'id="book-interactive-shell"' in source:
+            issues.append(f"prohibited alternate exercise page: {href}")
+        if "book-page-mode-toggle" in source:
+            issues.append(f"prohibited floating exercise button: {href}")
+        if 'id="book-inline-activities-source"' in source:
+            if "./assets/book-interactions.css" not in source:
+                issues.append(f"missing inline exercise styles: {href}")
+            if "./assets/book-interactions.js" not in source:
+                issues.append(f"missing inline exercise placement: {href}")
 
         if href.startswith("qz"):
             answer_block = re.search(
@@ -219,18 +236,8 @@ def main() -> int:
     for name in sorted(actual_images - image_refs):
         issues.append(f"unlinked image file: {name}")
 
-    video_file_overrides = {
-        31: 32,
-        32: 33,
-        33: 34,
-        34: 35,
-        35: 36,
-        36: 37,
-        37: 38,
-        39: 31,
-    }
     expected_videos = {
-        f"video-{number}": f"page_{video_file_overrides.get(number, number)}.mp4"
+        f"video-{number}": f"page_{number}.mp4"
         for number in range(1, 155)
     }
     if videos != expected_videos:
@@ -264,7 +271,6 @@ def main() -> int:
 
     legacy_runtime = (
         "assets/auto-fit.js",
-        "assets/base.bundle.min.js",
         "assets/base.bundle.min.js.map",
         "assets/book-activities.js",
         "assets/book-theme.css",

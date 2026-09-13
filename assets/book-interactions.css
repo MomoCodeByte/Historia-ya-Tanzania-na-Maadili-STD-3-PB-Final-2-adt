@@ -1,57 +1,60 @@
-.book-interactive-shell {
-  width: min(100% - 2rem, 58rem);
-  margin: 1rem auto 6rem;
+#book-inline-activities-source[hidden] {
+  display: none !important;
+}
+
+.book-inline-activity-group {
+  width: min(calc(100% - 2rem), 58rem);
+  margin: clamp(1rem, 2.5vw, 2rem) auto;
   padding: clamp(1rem, 3vw, 2rem);
   border-radius: 1.25rem;
   background: #fff;
   box-shadow: 0 8px 30px rgb(0 0 0 / 14%);
 }
 
-.book-interactive-shell[hidden],
-.book-pdf-page-hidden {
-  display: none !important;
+.book-inline-activity-group > .book-inline-activity + .book-inline-activity {
+  margin-top: clamp(1.25rem, 3vw, 2.5rem);
 }
 
-.book-interactive-shell__title {
-  margin: 0 0 1.25rem;
-  color: #71391f;
-  font-size: clamp(1.5rem, 3vw, 2.15rem);
-  font-weight: 800;
-}
-
-.book-interactive-shell section {
+.book-inline-activity {
   margin-inline: auto;
 }
 
-.book-interactive-shell textarea,
-.book-interactive-shell input[type="text"] {
+.book-inline-activity textarea,
+.book-inline-activity input[type="text"] {
   color: #222 !important;
   background-color: #fff !important;
 }
 
-.book-page-mode-toggle {
-  position: fixed;
-  right: 1.25rem;
-  bottom: 5.25rem;
-  z-index: 220;
-  min-height: 2.8rem;
-  padding: .65rem 1.05rem;
-  border: 2px solid #fff;
-  border-radius: 999px;
-  background: #71391f;
-  box-shadow: 0 5px 16px rgb(0 0 0 / 28%);
-  color: #fff;
-  font-weight: 800;
+.book-inline-activity > textarea {
+  display: block;
+  width: 100%;
+  min-height: 9rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid #94a3b8;
+  border-radius: .5rem;
+  font: inherit;
+  line-height: 1.75;
+  resize: vertical;
 }
 
-.book-page-mode-toggle:focus-visible {
-  outline: 3px solid #16a6a1;
-  outline-offset: 3px;
+.book-page-mode-toggle {
+  display: none !important;
+}
+
+.book-inline-activity-group--fallback {
+  padding-top: 1rem;
+  border-top: 1px solid #cbd5e1;
+}
+
+.semantic-page .book-inline-activity-group,
+.source-page-inner .book-inline-activity-group {
+  container-type: inline-size;
 }
 
 @media (max-width: 640px) {
-  .book-page-mode-toggle {
-    right: .75rem;
-    bottom: 4.75rem;
+  .book-inline-activity-group {
+    width: calc(100% - 1rem);
+    margin-block: 1rem;
   }
 }

@@ -10,9 +10,10 @@ from pathlib import Path
 
 def main() -> None:
     root = Path(__file__).resolve().parents[1]
-    destination = root / "assets/offline-preloader.js"
+    data_bundle = root / "assets/offline-preloader-data.js"
+    destination = data_bundle if data_bundle.exists() else root / "assets/offline-preloader.js"
     source = destination.read_text(encoding="utf-8")
-    match = re.search(r"var INLINE = (\{.*?\});\n  var BASE_DIR", source, re.S)
+    match = re.search(r"var INLINE = (\{.*?\});\r?\n  var BASE_DIR", source, re.S)
     if not match:
         raise RuntimeError("Could not locate INLINE resources in offline-preloader.js")
     inline = json.loads(match.group(1))

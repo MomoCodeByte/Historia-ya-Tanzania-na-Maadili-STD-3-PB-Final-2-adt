@@ -49,18 +49,6 @@
     if (video.networkState === HTMLMediaElement.NETWORK_EMPTY) video.load();
   };
 
-  const hideSubmitButtons = (root) => {
-    root.querySelectorAll?.("button").forEach((button) => {
-      const label = (button.getAttribute("aria-label") || "").trim();
-      const text = (button.textContent || "").replace(/\s+/g, " ").trim();
-      if (label !== "Tuma" && text !== "Tuma") return;
-      button.hidden = true;
-      button.setAttribute("aria-hidden", "true");
-      button.setAttribute("tabindex", "-1");
-      button.style.setProperty("display", "none", "important");
-    });
-  };
-
   const suppressFooterTts = (root) => {
     root.querySelectorAll?.("[data-id]").forEach((element) => {
       const text = (element.textContent || "").replace(/\s+/g, " ").trim();
@@ -95,7 +83,6 @@
         node.querySelectorAll?.("video").forEach(prepareSignVideo);
       }
     }
-    hideSubmitButtons(document);
     suppressFooterTts(document);
   }).observe(document.documentElement, {
     childList: true,
@@ -104,6 +91,5 @@
     attributeFilter: ["src"],
   });
 
-  hideSubmitButtons(document);
   suppressFooterTts(document);
 })();
